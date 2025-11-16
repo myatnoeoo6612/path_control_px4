@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages",
+        "/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages",
+        "/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages",
+        "/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages",
+        "/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages",
+        "/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages",
+        "/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages",
+        "/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
