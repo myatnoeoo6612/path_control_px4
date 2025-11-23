@@ -1,0 +1,4 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o[0m
+[ 87%] Built target px4_visualizer
+[ 87%] Built target tf_node
+[ 87%] Built target trajectory_fly

@@ -43,11 +43,11 @@ public:
 
         // =========================== NEW WAYPOINTS (Square flight) ===========================
         square_waypoints_ = {
-            {0.0f, 0.0f, -5.0f}, // P0 (after takeoff)
-            {4.0f, 0.0f, -5.0f}, // P1
-            {4.0f, 5.0f, -5.0f}, // P2
-            {0.0f, 5.0f, -5.0f}, // P3
-            {0.0f, 0.0f, -5.0f}  // P4
+            {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
+            {4.0f, 0.0f, -4.0f}, // P1
+            {4.0f, 4.0f, -4.0f}, // P2
+            {0.0f, 4.0f, -4.0f}, // P3
+            {0.0f, 0.0f, -4.0f}  // P4
         };
     }
 
@@ -99,7 +99,7 @@ private:
 
         else if (state_ == "OFFBOARD")
         {
-            publish_setpoint(0, 0, -5, 0);
+            publish_setpoint(0, 0, -4, 0);
             set_offboard_mode();
             arm();
             state_ = "TAKEOFF";
@@ -107,7 +107,7 @@ private:
 
         else if (state_ == "TAKEOFF")
         {
-            publish_setpoint(0, 0, -5, 0);
+            publish_setpoint(0, 0, -4, 0);
             if (arm_state_ == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED)
             {
                 // Go to start point P0 and hold 3 seconds
@@ -211,7 +211,7 @@ private:
     // ========================= LERP TRAJECTORY GENERATION =======================
     void generate_linear_trajectory(const Eigen::Vector3f &start, const Eigen::Vector3f &end)
     {
-        const int N = 140;
+        const int N = 160;
         trajectory_points_.clear();
 
         visualization_msgs::msg::Marker line;

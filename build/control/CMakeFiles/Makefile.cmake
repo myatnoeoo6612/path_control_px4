@@ -959,6 +959,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/control_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/trajectory_fly.dir/DependInfo.cmake"
+  "CMakeFiles/auto_fly_test.dir/DependInfo.cmake"
   "CMakeFiles/px4_visualizer.dir/DependInfo.cmake"
   "CMakeFiles/tf_node.dir/DependInfo.cmake"
   )

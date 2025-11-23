@@ -211,6 +211,19 @@ trajectory_fly/fast:
 .PHONY : trajectory_fly/fast
 
 #=============================================================================
+# Target rules for targets named auto_fly_test
+
+# Build rule for target.
+auto_fly_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_fly_test
+.PHONY : auto_fly_test
+
+# fast build rule for target.
+auto_fly_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_fly_test.dir/build.make CMakeFiles/auto_fly_test.dir/build
+.PHONY : auto_fly_test/fast
+
+#=============================================================================
 # Target rules for targets named px4_visualizer
 
 # Build rule for target.
@@ -235,6 +248,30 @@ tf_node: cmake_check_build_system
 tf_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf_node.dir/build.make CMakeFiles/tf_node.dir/build
 .PHONY : tf_node/fast
+
+src/auto_fly_test.o: src/auto_fly_test.cpp.o
+.PHONY : src/auto_fly_test.o
+
+# target to build an object file
+src/auto_fly_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_fly_test.dir/build.make CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o
+.PHONY : src/auto_fly_test.cpp.o
+
+src/auto_fly_test.i: src/auto_fly_test.cpp.i
+.PHONY : src/auto_fly_test.i
+
+# target to preprocess a source file
+src/auto_fly_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_fly_test.dir/build.make CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.i
+.PHONY : src/auto_fly_test.cpp.i
+
+src/auto_fly_test.s: src/auto_fly_test.cpp.s
+.PHONY : src/auto_fly_test.s
+
+# target to generate assembly for a file
+src/auto_fly_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_fly_test.dir/build.make CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.s
+.PHONY : src/auto_fly_test.cpp.s
 
 src/px4_visualizer.o: src/px4_visualizer.cpp.o
 .PHONY : src/px4_visualizer.o
@@ -323,9 +360,13 @@ help:
 	@echo "... test"
 	@echo "... control_uninstall"
 	@echo "... uninstall"
+	@echo "... auto_fly_test"
 	@echo "... px4_visualizer"
 	@echo "... tf_node"
 	@echo "... trajectory_fly"
+	@echo "... src/auto_fly_test.o"
+	@echo "... src/auto_fly_test.i"
+	@echo "... src/auto_fly_test.s"
 	@echo "... src/px4_visualizer.o"
 	@echo "... src/px4_visualizer.i"
 	@echo "... src/px4_visualizer.s"

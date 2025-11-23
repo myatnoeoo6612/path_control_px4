@@ -1,6 +1,7 @@
 /home/myat/path_control_px4/build/control/CMakeFiles/uninstall.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/control_uninstall.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/trajectory_fly.dir
+/home/myat/path_control_px4/build/control/CMakeFiles/auto_fly_test.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/px4_visualizer.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/tf_node.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/test.dir

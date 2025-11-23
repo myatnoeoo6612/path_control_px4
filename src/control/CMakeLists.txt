@@ -30,6 +30,19 @@ ament_target_dependencies(trajectory_fly
   visualization_msgs
 )
 
+add_executable(auto_fly_test src/auto_fly_test.cpp)
+ament_target_dependencies(auto_fly_test
+  rclcpp 
+  px4_msgs 
+  std_msgs 
+  geometry_msgs 
+  tf2 
+  tf2_ros 
+  tf2_geometry_msgs
+  visualization_msgs
+)
+
+
 add_executable(px4_visualizer src/px4_visualizer.cpp)
 ament_target_dependencies(px4_visualizer
   rclcpp
@@ -56,6 +69,7 @@ install(TARGETS
   tf_node
   trajectory_fly
   px4_visualizer
+  auto_fly_test
   DESTINATION lib/${PROJECT_NAME}
 )
 
