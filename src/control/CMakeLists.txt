@@ -65,11 +65,24 @@ ament_target_dependencies(tf_node
   tf2_geometry_msgs
 )
 
+add_executable(land src/land.cpp)
+ament_target_dependencies(land
+  rclcpp 
+  px4_msgs 
+  std_msgs 
+  geometry_msgs 
+  tf2 
+  tf2_ros 
+  tf2_geometry_msgs
+  visualization_msgs
+)
+
 install(TARGETS
   tf_node
   trajectory_fly
   px4_visualizer
   auto_fly_test
+  land
   DESTINATION lib/${PROJECT_NAME}
 )
 

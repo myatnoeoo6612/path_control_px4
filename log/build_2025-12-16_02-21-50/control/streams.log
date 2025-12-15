@@ -1,0 +1,34 @@
+[0.015s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target land[0m
+[0.103s] [ 40%] Built target px4_visualizer
+[0.103s] [ 40%] Built target auto_fly_test
+[0.108s] [ 60%] Built target trajectory_fly
+[0.109s] [ 80%] Built target tf_node
+[0.112s] [ 90%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[13.090s] [100%] [32m[1mLinking CXX executable land[0m
+[13.798s] [100%] Built target land
+[13.817s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[13.819s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/control
+[13.828s] -- Install configuration: ""
+[13.828s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/tf_node
+[13.828s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+[13.829s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+[13.829s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+[13.829s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/land
+[13.838s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/land" to ""
+[13.838s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[13.838s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[13.838s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+[13.839s] -- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+[13.839s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml
+[13.841s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/control

@@ -1,0 +1,5 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[ 30%] Built target tf_node
+[ 50%] Built target trajectory_fly
+[ 70%] Built target auto_fly_test
+[ 90%] Built target px4_visualizer

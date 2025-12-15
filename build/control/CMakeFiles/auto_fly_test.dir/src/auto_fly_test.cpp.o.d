@@ -629,11 +629,6 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
- /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
- /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
- /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
- /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
- /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
@@ -644,6 +639,20 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \

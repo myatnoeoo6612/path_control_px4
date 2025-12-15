@@ -1,0 +1,9 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/myat/path_control_px4/src/vision/src/aruco_detect.cpp:175:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/ccVkPCa6.s: No space left on device
+  175 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/aruco_detect.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

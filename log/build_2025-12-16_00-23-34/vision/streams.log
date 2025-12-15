@@ -1,0 +1,22 @@
+[0.015s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.106s] [ 62%] Built target camera_recorder
+[0.106s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[0.106s] [ 62%] Built target depth_polygon_mask_node
+[0.120s] [ 87%] Built target pointcloud_node
+[4.651s] [01m[K/home/myat/path_control_px4/src/vision/src/aruco_detect.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetectorNode::publish_all(const Header&, const Vec3d&)[m[K’:
+[4.651s] [01m[K/home/myat/path_control_px4/src/vision/src/aruco_detect.cpp:146:46:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::_pose_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} and ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’})
+[4.651s]   146 |             world_pose.pose = tf2::toMsg(T_wa[01;31m[K)[m[K;
+[4.651s]       |                                              [01;31m[K^[m[K
+[4.651s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:22[m[K,
+[4.652s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+[4.652s]                  from [01m[K/home/myat/path_control_px4/src/vision/src/aruco_detect.cpp:4[m[K:
+[4.652s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:38:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Pose_<std::allocator<void> >& geometry_msgs::msg::Pose_<std::allocator<void> >::operator=(const geometry_msgs::msg::Pose_<std::allocator<void> >&)[m[K’
+[4.652s]    38 | struct [01;36m[KPose_[m[K
+[4.652s]       |        [01;36m[K^~~~~[m[K
+[4.652s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:38:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >&[m[K’
+[4.652s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:38:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Pose_<std::allocator<void> >& geometry_msgs::msg::Pose_<std::allocator<void> >::operator=(geometry_msgs::msg::Pose_<std::allocator<void> >&&)[m[K’
+[4.652s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:38:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >&&[m[K’
+[7.092s] gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+[7.092s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/aruco_detect.dir/all] Error 2
+[7.093s] gmake: *** [Makefile:146: all] Error 2
+[7.096s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

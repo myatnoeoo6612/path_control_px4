@@ -1,0 +1,14 @@
+[0.011s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.071s] [ 40%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[0.071s] [ 50%] Built target auto_fly_test
+[0.071s] [ 50%] Built target tf_node
+[0.074s] [ 80%] Built target trajectory_fly
+[0.074s] [ 90%] Built target px4_visualizer
+[0.302s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:296:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/vehicle_visual_odometry.hpp: No such file or directory
+[0.303s]   296 | #include [01;31m[K<px4_msgs/msg/vehicle_visual_odometry.hpp>[m[K
+[0.303s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.303s] compilation terminated.
+[0.305s] gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+[0.305s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/land.dir/all] Error 2
+[0.306s] gmake: *** [Makefile:146: all] Error 2
+[0.309s] Invoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12

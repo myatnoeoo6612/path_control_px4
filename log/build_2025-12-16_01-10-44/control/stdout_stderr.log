@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 20%] Built target px4_visualizer
+[ 40%] Built target auto_fly_test
+[ 60%] Built target trajectory_fly
+[ 70%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[ 90%] Built target tf_node
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid SimpleLandingController::aruco_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:91:32:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->geometry_msgs::msg::PoseStamped_<std::allocator<void> >::pose.geometry_msgs::msg::Pose_<std::allocator<void> >::position.geometry_msgs::msg::Point_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[KEigen::Matrix<float, 3, 1>::Scalar[m[K’ {aka ‘[01m[Kfloat[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   91 |             [01;35m[Kmsg->pose.position.x[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:92:32:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->geometry_msgs::msg::PoseStamped_<std::allocator<void> >::pose.geometry_msgs::msg::Pose_<std::allocator<void> >::position.geometry_msgs::msg::Point_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[KEigen::Matrix<float, 3, 1>::Scalar[m[K’ {aka ‘[01m[Kfloat[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   92 |             [01;35m[Kmsg->pose.position.y[m[K,
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:93:32:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->geometry_msgs::msg::PoseStamped_<std::allocator<void> >::pose.geometry_msgs::msg::Pose_<std::allocator<void> >::position.geometry_msgs::msg::Point_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[KEigen::Matrix<float, 3, 1>::Scalar[m[K’ {aka ‘[01m[Kfloat[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   93 |             [01;35m[Kmsg->pose.position.z[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~^[m[K
+[100%] [32m[1mLinking CXX executable land[0m
+[100%] Built target land
+-- Install configuration: ""
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/tf_node
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/land
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/land" to ""
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+-- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml

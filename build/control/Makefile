@@ -249,6 +249,19 @@ tf_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf_node.dir/build.make CMakeFiles/tf_node.dir/build
 .PHONY : tf_node/fast
 
+#=============================================================================
+# Target rules for targets named land
+
+# Build rule for target.
+land: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 land
+.PHONY : land
+
+# fast build rule for target.
+land/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/land.dir/build.make CMakeFiles/land.dir/build
+.PHONY : land/fast
+
 src/auto_fly_test.o: src/auto_fly_test.cpp.o
 .PHONY : src/auto_fly_test.o
 
@@ -272,6 +285,30 @@ src/auto_fly_test.s: src/auto_fly_test.cpp.s
 src/auto_fly_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_fly_test.dir/build.make CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.s
 .PHONY : src/auto_fly_test.cpp.s
+
+src/land.o: src/land.cpp.o
+.PHONY : src/land.o
+
+# target to build an object file
+src/land.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/land.dir/build.make CMakeFiles/land.dir/src/land.cpp.o
+.PHONY : src/land.cpp.o
+
+src/land.i: src/land.cpp.i
+.PHONY : src/land.i
+
+# target to preprocess a source file
+src/land.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/land.dir/build.make CMakeFiles/land.dir/src/land.cpp.i
+.PHONY : src/land.cpp.i
+
+src/land.s: src/land.cpp.s
+.PHONY : src/land.s
+
+# target to generate assembly for a file
+src/land.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/land.dir/build.make CMakeFiles/land.dir/src/land.cpp.s
+.PHONY : src/land.cpp.s
 
 src/px4_visualizer.o: src/px4_visualizer.cpp.o
 .PHONY : src/px4_visualizer.o
@@ -361,12 +398,16 @@ help:
 	@echo "... control_uninstall"
 	@echo "... uninstall"
 	@echo "... auto_fly_test"
+	@echo "... land"
 	@echo "... px4_visualizer"
 	@echo "... tf_node"
 	@echo "... trajectory_fly"
 	@echo "... src/auto_fly_test.o"
 	@echo "... src/auto_fly_test.i"
 	@echo "... src/auto_fly_test.s"
+	@echo "... src/land.o"
+	@echo "... src/land.i"
+	@echo "... src/land.s"
 	@echo "... src/px4_visualizer.o"
 	@echo "... src/px4_visualizer.i"
 	@echo "... src/px4_visualizer.s"

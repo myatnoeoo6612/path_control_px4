@@ -1,0 +1,31 @@
+[0.013s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.064s] [ 12%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[0.068s] [ 62%] Built target depth_polygon_mask_node
+[0.068s] [ 62%] Built target camera_recorder
+[0.081s] [ 87%] Built target pointcloud_node
+[4.349s] [100%] [32m[1mLinking CXX executable aruco_detect[0m
+[4.782s] [100%] Built target aruco_detect
+[4.793s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[4.795s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/vision
+[4.802s] -- Install configuration: ""
+[4.803s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/camera_recorder
+[4.804s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/depth_polygon_mask_node
+[4.805s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node
+[4.805s] -- Installing: /home/myat/path_control_px4/install/vision/lib/vision/aruco_detect
+[4.806s] -- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/aruco_detect" to ""
+[4.806s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/package_run_dependencies/vision
+[4.807s] -- Installing: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/parent_prefix_path/vision
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.sh
+[4.807s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.dsv
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.sh
+[4.807s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/environment/path.dsv
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.bash
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.sh
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.zsh
+[4.807s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/local_setup.dsv
+[4.807s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/package.dsv
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/packages/vision
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig.cmake
+[4.807s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig-version.cmake
+[4.808s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/package.xml
+[4.809s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/vision

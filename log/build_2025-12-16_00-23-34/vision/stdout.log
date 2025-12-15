@@ -1,0 +1,4 @@
+[ 62%] Built target camera_recorder
+[ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[ 62%] Built target depth_polygon_mask_node
+[ 87%] Built target pointcloud_node

@@ -1,0 +1,59 @@
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:352:38:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+  352 |     rclcpp::Publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>::SharedPtr visual_odom_pub_;
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:352:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  352 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry[01;31m[K>[m[K::SharedPtr visual_odom_pub_;
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:352:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  352 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::[01;31m[KSharedPtr[m[K visual_odom_pub_;
+      |                                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                                       [32m[K;[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:352:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_odom_pub_[m[K’ does not name a type
+  352 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::SharedPtr [01;31m[Kvisual_odom_pub_[m[K;
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In constructor ‘[01m[KSimpleLandingController::SimpleLandingController()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_odom_pub_[m[K’ was not declared in this scope
+  330 |         [01;31m[Kvisual_odom_pub_[m[K = create_publisher<px4_msgs::msg::VehicleVisualOdometry>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:60:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+  330 |         visual_odom_pub_ = create_publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>(
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                            [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSimpleLandingController::create_publisher<<expression error> >(const char [32], int)[m[K’
+  330 |         visual_odom_pub_ = [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  331 | [01;31m[K            "/fmu/in/vehicle_visual_odometry", 10)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:290[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:82:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  330 |         visual_odom_pub_ = [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  331 | [01;31m[K            "/fmu/in/vehicle_visual_odometry", 10)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid SimpleLandingController::follow_trajectory(const string&)[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:508:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<float, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  508 |         if ([01;35m[Ktraj_idx_ < trajectory_.size()[m[K)
+      |             [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid SimpleLandingController::publish_visual_odometry()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:537:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+  537 |         px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K v{};
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:538:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+  538 |         [01;31m[Kv[m[K.timestamp = clock_.now().nanoseconds()/1000;
+      |         [01;31m[K^[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:540:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisual_odom_pub_[m[K’ was not declared in this scope
+  540 |         [01;31m[Kvisual_odom_pub_[m[K->publish(v);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

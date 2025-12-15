@@ -4,6 +4,7 @@
 /home/myat/path_control_px4/build/control/CMakeFiles/auto_fly_test.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/px4_visualizer.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/tf_node.dir
+/home/myat/path_control_px4/build/control/CMakeFiles/land.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/test.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/edit_cache.dir
 /home/myat/path_control_px4/build/control/CMakeFiles/rebuild_cache.dir

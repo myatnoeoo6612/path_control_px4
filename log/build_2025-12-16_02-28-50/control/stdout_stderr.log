@@ -1,0 +1,12 @@
+[ 40%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[ 50%] Built target auto_fly_test
+[ 50%] Built target tf_node
+[ 80%] Built target trajectory_fly
+[ 90%] Built target px4_visualizer
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:296:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/vehicle_visual_odometry.hpp: No such file or directory
+  296 | #include [01;31m[K<px4_msgs/msg/vehicle_visual_odometry.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
