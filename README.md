@@ -12,7 +12,7 @@ MicroXRCEAgent udp4 -p 8888
 ### 2. Drone Bring-Up
 
 ```bash
-ros2 launch bringup_agi bringup_agi.launch.py
+ros2 launch bringup_drone bringup_launch.launch.py
 ```
 
 #### 3. Fly
