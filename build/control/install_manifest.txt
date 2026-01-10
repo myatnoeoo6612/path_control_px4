@@ -3,6 +3,7 @@
 /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
 /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
 /home/myat/path_control_px4/install/control/lib/control/land
+/home/myat/path_control_px4/install/control/lib/control/adaptive_land
 /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
 /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
 /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh

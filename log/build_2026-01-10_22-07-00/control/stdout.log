@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_fly[0m
+[ 75%] Built target tf_node
+[ 75%] Built target auto_fly_test
+[ 75%] Built target px4_visualizer
+[ 75%] [32m[1mLinking CXX executable trajectory_fly[0m
+[ 75%] Built target adaptive_land
+[ 91%] Built target land

@@ -262,6 +262,43 @@ land/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/land.dir/build.make CMakeFiles/land.dir/build
 .PHONY : land/fast
 
+#=============================================================================
+# Target rules for targets named adaptive_land
+
+# Build rule for target.
+adaptive_land: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 adaptive_land
+.PHONY : adaptive_land
+
+# fast build rule for target.
+adaptive_land/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive_land.dir/build.make CMakeFiles/adaptive_land.dir/build
+.PHONY : adaptive_land/fast
+
+src/adaptive_land.o: src/adaptive_land.cpp.o
+.PHONY : src/adaptive_land.o
+
+# target to build an object file
+src/adaptive_land.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive_land.dir/build.make CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o
+.PHONY : src/adaptive_land.cpp.o
+
+src/adaptive_land.i: src/adaptive_land.cpp.i
+.PHONY : src/adaptive_land.i
+
+# target to preprocess a source file
+src/adaptive_land.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive_land.dir/build.make CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.i
+.PHONY : src/adaptive_land.cpp.i
+
+src/adaptive_land.s: src/adaptive_land.cpp.s
+.PHONY : src/adaptive_land.s
+
+# target to generate assembly for a file
+src/adaptive_land.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive_land.dir/build.make CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.s
+.PHONY : src/adaptive_land.cpp.s
+
 src/auto_fly_test.o: src/auto_fly_test.cpp.o
 .PHONY : src/auto_fly_test.o
 
@@ -397,11 +434,15 @@ help:
 	@echo "... test"
 	@echo "... control_uninstall"
 	@echo "... uninstall"
+	@echo "... adaptive_land"
 	@echo "... auto_fly_test"
 	@echo "... land"
 	@echo "... px4_visualizer"
 	@echo "... tf_node"
 	@echo "... trajectory_fly"
+	@echo "... src/adaptive_land.o"
+	@echo "... src/adaptive_land.i"
+	@echo "... src/adaptive_land.s"
 	@echo "... src/auto_fly_test.o"
 	@echo "... src/auto_fly_test.i"
 	@echo "... src/auto_fly_test.s"

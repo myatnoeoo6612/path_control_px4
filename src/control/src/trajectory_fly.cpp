@@ -41,13 +41,23 @@ public:
 
         timer_ = create_wall_timer(100ms, std::bind(&LinearTrajectoryController::cmdloop_callback, this));
 
-        // =========================== NEW WAYPOINTS (Square flight) ===========================
+        // =========================== NEW WAYPOINTS (pattern flight) ===========================
         square_waypoints_ = {
-            {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
-            {4.0f, 0.0f, -4.0f}, // P1
-            {4.0f, 4.0f, -4.0f}, // P2
-            {0.0f, 4.0f, -4.0f}, // P3
-            {0.0f, 0.0f, -4.0f}  // P4
+            {0.0f, 0.0f, -4.0f}, 
+            {18.0f, 0.0f, -4.0f}, 
+            {18.0f, 11.0f, -4.0f}, 
+            {11.0f, 11.0f, -4.0f},
+            {11.0f, -11.0f, -4.0f}, 
+            {4.0f, -11.0f, -4.0f},
+            {4.0f, 11.0f, -4.0f},
+            {-3.0f, 11.0f, -4.0f},
+            {-3.0f, -11.0f, -4.0f},
+            {-10.0f, -11.0f, -4.0f},
+            {-10.0f, 11.0f, -4.0f},
+            {-17.0f, 11.0f, -4.0f},
+            {-17.0f, -11.0f, -4.0f},
+            {-17.0f, 0.0f, -4.0f},
+            {0.0f, 0.0f, -4.0f},
         };
     }
 
@@ -93,7 +103,7 @@ private:
 
         if (state_ == "INIT")
         {
-            publish_setpoint(0, 0, -0.5, 0);
+            publish_setpoint(0, 0, -1.5, 0);
             state_ = "OFFBOARD";
         }
 
@@ -110,7 +120,7 @@ private:
             publish_setpoint(0, 0, -4, 0);
             if (arm_state_ == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED)
             {
-                // Go to start point P0 and hold 3 seconds
+
                 generate_linear_trajectory(current_position_, square_waypoints_[0]);
                 traj_index_ = 0;
                 state_ = "MOVE_TO_START";
@@ -129,7 +139,7 @@ private:
 
         else if (state_ == "SQUARE_FLY")
         {
-            // When finishing P0, go to P1→P2→P3→P4
+
             if (waypoint_index_ < square_waypoints_.size() - 1)
             {
                 Eigen::Vector3f start = current_position_;
@@ -138,7 +148,7 @@ private:
                 generate_linear_trajectory(start, end);
                 waypoint_index_++;
 
-                // Compute rotation for next segment
+
                 float dx = end.x() - start.x();
                 float dy = end.y() - start.y();
                 current_yaw_ = atan2(dy, dx);

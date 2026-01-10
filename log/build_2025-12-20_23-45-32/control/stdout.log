@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target auto_fly_test[0m
+[ 83%] Built target trajectory_fly
+[ 83%] Built target tf_node
+[ 83%] Built target px4_visualizer
+[ 83%] Built target land
+[ 83%] Built target adaptive_land
+[ 91%] [32mBuilding CXX object CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable auto_fly_test[0m
+[100%] Built target auto_fly_test
+-- Install configuration: ""
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/tf_node
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/auto_fly_test" to ""
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/land
+-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+-- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml

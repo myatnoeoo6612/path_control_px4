@@ -695,6 +695,11 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
@@ -705,20 +710,30 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.hpp \
+  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Core \
   /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -1023,6 +1038,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/eigen3/Eigen/src/Core/Block.h:
 
+/usr/include/eigen3/Eigen/src/Core/Map.h:
+
 /usr/include/eigen3/Eigen/src/Core/StableNorm.h:
 
 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
@@ -1153,13 +1170,17 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/eigen3/Eigen/Dense:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__type_support.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
@@ -1171,11 +1192,7 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Map.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
@@ -1187,9 +1204,13 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp:
 
-/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
 
 /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp:
 
@@ -1314,6 +1335,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
@@ -1469,6 +1492,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
+
 /usr/include/c++/11/numeric:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
@@ -1509,8 +1534,6 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
@@ -1536,6 +1559,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /opt/ros/humble/include/rmw/rmw/security_options.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp:
 
 /usr/include/c++/11/cerrno:
 
@@ -1592,6 +1617,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
 /opt/ros/humble/include/rcl/rcl/graph.h:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -1703,7 +1730,11 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:
+
 /usr/include/c++/11/csignal:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -1783,6 +1814,10 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -1808,6 +1843,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/c++/11/iosfwd:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /usr/include/c++/11/initializer_list:
 
@@ -1859,9 +1896,13 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -2020,6 +2061,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/array:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -2514,6 +2557,8 @@ CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o: /home/myat/path_control_px
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
