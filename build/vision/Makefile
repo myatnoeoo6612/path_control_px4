@@ -249,6 +249,32 @@ aruco_detect/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aruco_detect.dir/build.make CMakeFiles/aruco_detect.dir/build
 .PHONY : aruco_detect/fast
 
+#=============================================================================
+# Target rules for targets named lidar
+
+# Build rule for target.
+lidar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lidar
+.PHONY : lidar
+
+# fast build rule for target.
+lidar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar.dir/build.make CMakeFiles/lidar.dir/build
+.PHONY : lidar/fast
+
+#=============================================================================
+# Target rules for targets named obstacle_node
+
+# Build rule for target.
+obstacle_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacle_node
+.PHONY : obstacle_node
+
+# fast build rule for target.
+obstacle_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/build
+.PHONY : obstacle_node/fast
+
 src/aruco_detect.o: src/aruco_detect.cpp.o
 .PHONY : src/aruco_detect.o
 
@@ -321,6 +347,54 @@ src/depth_polygon_mask_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/depth_polygon_mask_node.dir/build.make CMakeFiles/depth_polygon_mask_node.dir/src/depth_polygon_mask_node.cpp.s
 .PHONY : src/depth_polygon_mask_node.cpp.s
 
+src/lidar.o: src/lidar.cpp.o
+.PHONY : src/lidar.o
+
+# target to build an object file
+src/lidar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar.dir/build.make CMakeFiles/lidar.dir/src/lidar.cpp.o
+.PHONY : src/lidar.cpp.o
+
+src/lidar.i: src/lidar.cpp.i
+.PHONY : src/lidar.i
+
+# target to preprocess a source file
+src/lidar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar.dir/build.make CMakeFiles/lidar.dir/src/lidar.cpp.i
+.PHONY : src/lidar.cpp.i
+
+src/lidar.s: src/lidar.cpp.s
+.PHONY : src/lidar.s
+
+# target to generate assembly for a file
+src/lidar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar.dir/build.make CMakeFiles/lidar.dir/src/lidar.cpp.s
+.PHONY : src/lidar.cpp.s
+
+src/obstacle.o: src/obstacle.cpp.o
+.PHONY : src/obstacle.o
+
+# target to build an object file
+src/obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/src/obstacle.cpp.o
+.PHONY : src/obstacle.cpp.o
+
+src/obstacle.i: src/obstacle.cpp.i
+.PHONY : src/obstacle.i
+
+# target to preprocess a source file
+src/obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/src/obstacle.cpp.i
+.PHONY : src/obstacle.cpp.i
+
+src/obstacle.s: src/obstacle.cpp.s
+.PHONY : src/obstacle.s
+
+# target to generate assembly for a file
+src/obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/src/obstacle.cpp.s
+.PHONY : src/obstacle.cpp.s
+
 src/pointcloud_node.o: src/pointcloud_node.cpp.o
 .PHONY : src/pointcloud_node.o
 
@@ -363,6 +437,8 @@ help:
 	@echo "... aruco_detect"
 	@echo "... camera_recorder"
 	@echo "... depth_polygon_mask_node"
+	@echo "... lidar"
+	@echo "... obstacle_node"
 	@echo "... pointcloud_node"
 	@echo "... src/aruco_detect.o"
 	@echo "... src/aruco_detect.i"
@@ -373,6 +449,12 @@ help:
 	@echo "... src/depth_polygon_mask_node.o"
 	@echo "... src/depth_polygon_mask_node.i"
 	@echo "... src/depth_polygon_mask_node.s"
+	@echo "... src/lidar.o"
+	@echo "... src/lidar.i"
+	@echo "... src/lidar.s"
+	@echo "... src/obstacle.o"
+	@echo "... src/obstacle.i"
+	@echo "... src/obstacle.s"
 	@echo "... src/pointcloud_node.o"
 	@echo "... src/pointcloud_node.i"
 	@echo "... src/pointcloud_node.s"

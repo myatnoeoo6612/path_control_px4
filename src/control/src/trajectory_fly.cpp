@@ -41,24 +41,25 @@ public:
 
         timer_ = create_wall_timer(100ms, std::bind(&LinearTrajectoryController::cmdloop_callback, this));
 
-        // =========================== NEW WAYPOINTS (pattern flight) ===========================
+        // =========================== NEW WAYPOINTS (Square flight) ===========================
+        // square_waypoints_ = {
+        //     {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
+        //     {4.0f, 0.0f, -4.0f}, // P1
+        //     {4.0f, 4.0f, -4.0f}, // P2
+        //     {0.0f, 4.0f, -4.0f}, // P3
+        //     {0.0f, 0.0f, -4.0f}  // P4
+        // };
+
+        // square_waypoints_ = {
+        //     {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
+        //     {4.0f, 0.0f, -4.0f}, // P1
+        // };
+
         square_waypoints_ = {
-            {0.0f, 0.0f, -4.0f}, 
-            {18.0f, 0.0f, -4.0f}, 
-            {18.0f, 11.0f, -4.0f}, 
-            {11.0f, 11.0f, -4.0f},
-            {11.0f, -11.0f, -4.0f}, 
-            {4.0f, -11.0f, -4.0f},
-            {4.0f, 11.0f, -4.0f},
-            {-3.0f, 11.0f, -4.0f},
-            {-3.0f, -11.0f, -4.0f},
-            {-10.0f, -11.0f, -4.0f},
-            {-10.0f, 11.0f, -4.0f},
-            {-17.0f, 11.0f, -4.0f},
-            {-17.0f, -11.0f, -4.0f},
-            {-17.0f, 0.0f, -4.0f},
-            {0.0f, 0.0f, -4.0f},
+            {0.0f, 0.0f, -2.0f}, // P0 (after takeoff)
+            // {4.0f, 0.0f, -4.0f}, // P1
         };
+        
     }
 
 private:
@@ -103,13 +104,13 @@ private:
 
         if (state_ == "INIT")
         {
-            publish_setpoint(0, 0, -1.5, 0);
+            publish_setpoint(0, 0, -0.5, M_PI_2);
             state_ = "OFFBOARD";
         }
 
         else if (state_ == "OFFBOARD")
         {
-            publish_setpoint(0, 0, -4, 0);
+            publish_setpoint(0, 0, -2, M_PI_2);
             set_offboard_mode();
             arm();
             state_ = "TAKEOFF";
@@ -117,10 +118,10 @@ private:
 
         else if (state_ == "TAKEOFF")
         {
-            publish_setpoint(0, 0, -4, 0);
+            publish_setpoint(0, 0, -2, M_PI_2);
             if (arm_state_ == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED)
             {
-
+                // Go to start point P0 and hold 3 seconds
                 generate_linear_trajectory(current_position_, square_waypoints_[0]);
                 traj_index_ = 0;
                 state_ = "MOVE_TO_START";
@@ -139,7 +140,7 @@ private:
 
         else if (state_ == "SQUARE_FLY")
         {
-
+            // When finishing P0, go to P1→P2→P3→P4
             if (waypoint_index_ < square_waypoints_.size() - 1)
             {
                 Eigen::Vector3f start = current_position_;
@@ -148,7 +149,7 @@ private:
                 generate_linear_trajectory(start, end);
                 waypoint_index_++;
 
-
+                // Compute rotation for next segment
                 float dx = end.x() - start.x();
                 float dy = end.y() - start.y();
                 current_yaw_ = atan2(dy, dx);
@@ -221,7 +222,7 @@ private:
     // ========================= LERP TRAJECTORY GENERATION =======================
     void generate_linear_trajectory(const Eigen::Vector3f &start, const Eigen::Vector3f &end)
     {
-        const int N = 160;
+        const int N = 250;
         trajectory_points_.clear();
 
         visualization_msgs::msg::Marker line;

@@ -1,7 +1,8 @@
 CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /home/myat/path_control_px4/src/vision/src/pointcloud_node.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/stdc-predef.h \
+ /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
+ /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,7 +13,52 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/include/c++/11/pstl/pstl_config.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -41,9 +87,6 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -62,7 +105,6 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/c++/11/cwchar /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -79,10 +121,6 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
@@ -94,14 +132,7 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -115,45 +146,21 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/std_abs.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
- /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/cstdint \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/string \
+ /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
@@ -163,54 +170,23 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/string_view.tcc \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
- /usr/include/c++/11/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/11/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
- /usr/include/c++/11/csignal /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
- /usr/include/c++/11/future /usr/include/c++/11/mutex \
- /usr/include/c++/11/system_error \
- /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/c++/11/condition_variable /usr/include/c++/11/atomic \
  /usr/include/c++/11/bits/atomic_futex.h \
@@ -233,7 +209,10 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/cassert \
+ /usr/include/c++/11/functional /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/cassert \
  /usr/include/assert.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/bits/ios_base.h \
@@ -473,6 +452,28 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp \
@@ -617,224 +618,22 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
- /usr/include/opencv4/opencv2/core/core.hpp \
- /usr/include/opencv4/opencv2/core.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/core/version.hpp \
- /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h \
  /usr/include/c++/11/cstddef \
- /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/include/opencv4/opencv2/core/base.hpp \
- /usr/include/opencv4/opencv2/opencv_modules.hpp \
- /usr/include/c++/11/climits \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/opencv4/opencv2/core/cvstd.hpp \
- /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
- /usr/include/opencv4/opencv2/core/neon_utils.hpp \
- /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
- /usr/include/opencv4/opencv2/core/check.hpp \
- /usr/include/opencv4/opencv2/core/traits.hpp \
- /usr/include/opencv4/opencv2/core/matx.hpp \
- /usr/include/opencv4/opencv2/core/saturate.hpp \
- /usr/include/opencv4/opencv2/core/fast_math.hpp \
- /usr/include/opencv4/opencv2/core/types.hpp /usr/include/c++/11/cfloat \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/include/opencv4/opencv2/core/mat.hpp \
- /usr/include/opencv4/opencv2/core/bufferpool.hpp \
- /usr/include/opencv4/opencv2/core/mat.inl.hpp \
- /usr/include/opencv4/opencv2/core/persistence.hpp \
- /usr/include/opencv4/opencv2/core/operations.hpp \
- /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
- /usr/include/c++/11/complex \
- /usr/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/opencv4/opencv2/core/optim.hpp \
- /usr/include/opencv4/opencv2/core/ovx.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /usr/include/opencv4/opencv2/imgproc/types_c.h \
- /usr/include/opencv4/opencv2/core/core_c.h \
- /usr/include/opencv4/opencv2/core/types_c.h \
- /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp \
- /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
- /usr/include/c++/11/math.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
- /opt/ros/humble/include/tf2/tf2/visibility_control.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
- /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp \
- /opt/ros/humble/include/tf2/tf2/time.hpp \
- /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
- /opt/ros/humble/include/tf2/tf2/transform_storage.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
- /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
- /opt/ros/humble/include/tf2/tf2/convert.hpp \
- /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp \
- /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp \
- /usr/include/kdl/frames.hpp /usr/include/kdl/utilities/kdl-config.h \
- /usr/include/kdl/utilities/utility.h \
- /usr/include/kdl/utilities/kdl-config.h /usr/include/kdl/frames.inl \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
- /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
- /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
+ /opt/ros/humble/include/message_filters/message_filters/message_event.h \
+ /opt/ros/humble/include/message_filters/message_filters/message_traits.h \
+ /usr/include/pcl-1.12/pcl/conversions.h \
+ /usr/include/pcl-1.12/pcl/PCLPointField.h \
  /usr/include/pcl-1.12/pcl/memory.h \
  /usr/include/pcl-1.12/pcl/type_traits.h \
  /usr/include/pcl-1.12/pcl/point_struct_traits.h \
@@ -1022,7 +821,21 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/c++/11/complex \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
@@ -1146,79 +959,30 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/include/pcl-1.12/pcl/types.h /usr/include/pcl-1.12/pcl/pcl_config.h \
  /usr/include/pcl-1.12/pcl/pcl_macros.h \
- /usr/include/pcl-1.12/pcl/pcl_config.h \
  /usr/include/boost/preprocessor/comparison/equal.hpp \
  /usr/include/boost/preprocessor/comparison/not_equal.hpp \
  /usr/include/boost/preprocessor/comparison/less.hpp \
  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
  /usr/include/boost/preprocessor/logical/not.hpp \
- /usr/include/pcl-1.12/pcl/PCLPointField.h \
- /usr/include/pcl-1.12/pcl/types.h \
- /usr/include/pcl-1.12/pcl/register_point_struct.h \
- /usr/include/boost/preprocessor/seq/for_each.hpp \
- /usr/include/boost/preprocessor/repetition/for.hpp \
- /usr/include/boost/preprocessor/repetition/detail/for.hpp \
- /usr/include/boost/preprocessor/seq/seq.hpp \
- /usr/include/boost/preprocessor/seq/elem.hpp \
- /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
- /usr/include/boost/preprocessor/seq/transform.hpp \
- /usr/include/boost/preprocessor/seq/fold_left.hpp \
- /usr/include/boost/mpl/and.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
- /usr/include/boost/mpl/contains.hpp \
- /usr/include/boost/mpl/contains_fwd.hpp \
- /usr/include/boost/mpl/sequence_tag.hpp \
- /usr/include/boost/mpl/sequence_tag_fwd.hpp \
- /usr/include/boost/mpl/aux_/has_begin.hpp \
- /usr/include/boost/mpl/aux_/contains_impl.hpp \
- /usr/include/boost/mpl/begin_end.hpp \
- /usr/include/boost/mpl/aux_/begin_end_impl.hpp \
- /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp \
- /usr/include/boost/mpl/find.hpp /usr/include/boost/mpl/find_if.hpp \
- /usr/include/boost/mpl/aux_/find_if_pred.hpp \
- /usr/include/boost/mpl/aux_/iter_apply.hpp \
- /usr/include/boost/mpl/apply.hpp /usr/include/boost/mpl/apply_fwd.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
- /usr/include/boost/mpl/placeholders.hpp /usr/include/boost/mpl/arg.hpp \
- /usr/include/boost/mpl/arg_fwd.hpp \
- /usr/include/boost/mpl/aux_/na_assert.hpp \
- /usr/include/boost/mpl/aux_/arity_spec.hpp \
- /usr/include/boost/mpl/aux_/arg_typedef.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
- /usr/include/boost/mpl/lambda.hpp /usr/include/boost/mpl/bind.hpp \
- /usr/include/boost/mpl/bind_fwd.hpp \
- /usr/include/boost/mpl/aux_/config/bind.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
- /usr/include/boost/mpl/protect.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
- /usr/include/boost/mpl/aux_/full_lambda.hpp \
- /usr/include/boost/mpl/quote.hpp \
- /usr/include/boost/mpl/aux_/has_type.hpp \
- /usr/include/boost/mpl/aux_/config/bcc.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
- /usr/include/boost/mpl/aux_/template_arity.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
- /usr/include/boost/mpl/deref.hpp \
- /usr/include/boost/mpl/aux_/msvc_type.hpp \
- /usr/include/boost/mpl/iter_fold_if.hpp \
- /usr/include/boost/mpl/logical.hpp /usr/include/boost/mpl/or.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
- /usr/include/boost/mpl/always.hpp \
- /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
- /usr/include/boost/mpl/pair.hpp \
- /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp \
- /usr/include/boost/mpl/same_as.hpp \
- /usr/include/boost/mpl/aux_/lambda_spec.hpp \
- /usr/include/boost/mpl/fold.hpp /usr/include/boost/mpl/O1_size.hpp \
- /usr/include/boost/mpl/aux_/O1_size_impl.hpp \
- /usr/include/boost/mpl/aux_/has_size.hpp \
- /usr/include/boost/mpl/aux_/fold_impl.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp \
+ /usr/include/pcl-1.12/pcl/PCLPointCloud2.h \
+ /usr/include/boost/predef/other/endian.h \
+ /usr/include/boost/predef/version_number.h \
+ /usr/include/boost/predef/make.h /usr/include/boost/predef/detail/test.h \
+ /usr/include/boost/predef/library/c/gnu.h \
+ /usr/include/boost/predef/library/c/_prefix.h \
+ /usr/include/boost/predef/detail/_cassert.h \
+ /usr/include/boost/predef/os/macos.h /usr/include/boost/predef/os/ios.h \
+ /usr/include/boost/predef/os/bsd.h \
+ /usr/include/boost/predef/os/bsd/bsdi.h \
+ /usr/include/boost/predef/os/bsd/dragonfly.h \
+ /usr/include/boost/predef/os/bsd/free.h \
+ /usr/include/boost/predef/os/bsd/open.h \
+ /usr/include/boost/predef/os/bsd/net.h \
+ /usr/include/boost/predef/platform/android.h \
+ /usr/include/pcl-1.12/pcl/PCLHeader.h \
+ /usr/include/pcl-1.12/pcl/PCLImage.h \
  /usr/include/pcl-1.12/pcl/point_cloud.h \
  /usr/include/eigen3/Eigen/StdVector /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
@@ -1264,39 +1028,50 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /usr/include/pcl-1.12/pcl/PCLHeader.h \
  /usr/include/pcl-1.12/pcl/exceptions.h \
  /usr/include/boost/current_function.hpp \
  /usr/include/pcl-1.12/pcl/console/print.h \
  /usr/include/pcl-1.12/pcl/pcl_exports.h \
- /usr/include/pcl-1.12/pcl/filters/voxel_grid.h \
- /usr/include/pcl-1.12/pcl/filters/filter.h \
- /usr/include/pcl-1.12/pcl/pcl_base.h \
- /usr/include/pcl-1.12/pcl/PointIndices.h \
- /usr/include/pcl-1.12/pcl/PCLPointCloud2.h \
- /usr/include/boost/predef/other/endian.h \
- /usr/include/boost/predef/version_number.h \
- /usr/include/boost/predef/make.h /usr/include/boost/predef/detail/test.h \
- /usr/include/boost/predef/library/c/gnu.h \
- /usr/include/boost/predef/library/c/_prefix.h \
- /usr/include/boost/predef/detail/_cassert.h \
- /usr/include/boost/predef/os/macos.h /usr/include/boost/predef/os/ios.h \
- /usr/include/boost/predef/os/bsd.h \
- /usr/include/boost/predef/os/bsd/bsdi.h \
- /usr/include/boost/predef/os/bsd/dragonfly.h \
- /usr/include/boost/predef/os/bsd/free.h \
- /usr/include/boost/predef/os/bsd/open.h \
- /usr/include/boost/predef/os/bsd/net.h \
- /usr/include/boost/predef/platform/android.h \
- /usr/include/pcl-1.12/pcl/common/io.h \
- /usr/include/pcl-1.12/pcl/PolygonMesh.h \
- /usr/include/pcl-1.12/pcl/Vertices.h \
- /usr/include/pcl-1.12/pcl/common/impl/io.hpp \
- /usr/include/pcl-1.12/pcl/conversions.h \
- /usr/include/pcl-1.12/pcl/PCLImage.h \
  /usr/include/pcl-1.12/pcl/for_each_type.h \
- /usr/include/boost/mpl/is_sequence.hpp \
- /usr/include/boost/mpl/remove_if.hpp \
+ /usr/include/boost/mpl/is_sequence.hpp /usr/include/boost/mpl/and.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
+ /usr/include/boost/mpl/begin_end.hpp \
+ /usr/include/boost/mpl/aux_/begin_end_impl.hpp \
+ /usr/include/boost/mpl/sequence_tag_fwd.hpp \
+ /usr/include/boost/mpl/aux_/has_begin.hpp \
+ /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp \
+ /usr/include/boost/mpl/sequence_tag.hpp /usr/include/boost/mpl/deref.hpp \
+ /usr/include/boost/mpl/aux_/msvc_type.hpp \
+ /usr/include/boost/mpl/remove_if.hpp /usr/include/boost/mpl/fold.hpp \
+ /usr/include/boost/mpl/O1_size.hpp \
+ /usr/include/boost/mpl/aux_/O1_size_impl.hpp \
+ /usr/include/boost/mpl/aux_/has_size.hpp \
+ /usr/include/boost/mpl/aux_/fold_impl.hpp \
+ /usr/include/boost/mpl/apply.hpp /usr/include/boost/mpl/apply_fwd.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
+ /usr/include/boost/mpl/placeholders.hpp /usr/include/boost/mpl/arg.hpp \
+ /usr/include/boost/mpl/arg_fwd.hpp \
+ /usr/include/boost/mpl/aux_/na_assert.hpp \
+ /usr/include/boost/mpl/aux_/arity_spec.hpp \
+ /usr/include/boost/mpl/aux_/arg_typedef.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
+ /usr/include/boost/mpl/lambda.hpp /usr/include/boost/mpl/bind.hpp \
+ /usr/include/boost/mpl/bind_fwd.hpp \
+ /usr/include/boost/mpl/aux_/config/bind.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
+ /usr/include/boost/mpl/protect.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
+ /usr/include/boost/mpl/aux_/full_lambda.hpp \
+ /usr/include/boost/mpl/quote.hpp \
+ /usr/include/boost/mpl/aux_/has_type.hpp \
+ /usr/include/boost/mpl/aux_/config/bcc.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
+ /usr/include/boost/mpl/aux_/template_arity.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp \
  /usr/include/boost/mpl/reverse_fold.hpp \
  /usr/include/boost/mpl/aux_/reverse_fold_impl.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp \
@@ -1310,6 +1085,21 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/mpl/aux_/push_front_impl.hpp \
  /usr/include/boost/mpl/clear.hpp \
  /usr/include/boost/mpl/aux_/clear_impl.hpp \
+ /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
+ /usr/include/boost/mpl/contains.hpp \
+ /usr/include/boost/mpl/contains_fwd.hpp \
+ /usr/include/boost/mpl/aux_/contains_impl.hpp \
+ /usr/include/boost/mpl/find.hpp /usr/include/boost/mpl/find_if.hpp \
+ /usr/include/boost/mpl/aux_/find_if_pred.hpp \
+ /usr/include/boost/mpl/aux_/iter_apply.hpp \
+ /usr/include/boost/mpl/iter_fold_if.hpp \
+ /usr/include/boost/mpl/logical.hpp /usr/include/boost/mpl/or.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
+ /usr/include/boost/mpl/always.hpp /usr/include/boost/mpl/pair.hpp \
+ /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp \
+ /usr/include/boost/mpl/same_as.hpp \
+ /usr/include/boost/mpl/aux_/lambda_spec.hpp \
  /usr/include/boost/mpl/aux_/unwrap.hpp /usr/include/boost/ref.hpp \
  /usr/include/boost/core/ref.hpp /usr/include/boost/core/addressof.hpp \
  /usr/include/boost/foreach.hpp /usr/include/boost/noncopyable.hpp \
@@ -1381,330 +1171,38 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/type_traits/is_base_and_derived.hpp \
  /usr/include/boost/utility/addressof.hpp \
  /usr/include/boost/foreach_fwd.hpp \
- /usr/include/pcl-1.12/pcl/common/concatenate.h \
- /usr/include/pcl-1.12/pcl/common/copy_point.h \
- /usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp \
- /usr/include/pcl-1.12/pcl/filters/statistical_outlier_removal.h \
- /usr/include/pcl-1.12/pcl/filters/filter_indices.h \
- /usr/include/pcl-1.12/pcl/search/search.h \
- /usr/include/pcl-1.12/pcl/common/pca.h \
- /usr/include/pcl-1.12/pcl/common/impl/pca.hpp \
- /usr/include/eigen3/Eigen/Eigenvalues /usr/include/eigen3/Eigen/Geometry \
- /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /usr/include/pcl-1.12/pcl/common/centroid.h \
- /usr/include/pcl-1.12/pcl/cloud_iterator.h \
- /usr/include/pcl-1.12/pcl/correspondence.h \
- /usr/include/pcl-1.12/pcl/impl/cloud_iterator.hpp \
- /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp \
- /usr/include/boost/mpl/filter_view.hpp \
- /usr/include/boost/mpl/aux_/filter_iter.hpp \
- /usr/include/boost/mpl/iterator_range.hpp \
- /usr/include/boost/fusion/include/mpl.hpp \
- /usr/include/boost/fusion/support/config.hpp \
- /usr/include/boost/fusion/adapted/mpl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/mpl_iterator.hpp \
- /usr/include/boost/fusion/support/detail/mpl_iterator_category.hpp \
- /usr/include/boost/fusion/iterator/iterator_facade.hpp \
- /usr/include/boost/fusion/support/iterator_base.hpp \
- /usr/include/boost/fusion/iterator/detail/advance.hpp \
- /usr/include/boost/fusion/iterator/next.hpp \
- /usr/include/boost/fusion/support/tag_of.hpp \
- /usr/include/boost/utility/enable_if.hpp \
- /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/fusion/support/tag_of_fwd.hpp \
- /usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp \
- /usr/include/boost/fusion/support/detail/is_native_fusion_sequence.hpp \
- /usr/include/boost/fusion/support/sequence_base.hpp \
- /usr/include/boost/config/no_tr1/utility.hpp \
- /usr/include/boost/fusion/iterator/prior.hpp \
- /usr/include/boost/fusion/iterator/detail/distance.hpp \
- /usr/include/boost/fusion/iterator/equal_to.hpp \
- /usr/include/boost/fusion/support/is_iterator.hpp \
- /usr/include/boost/type_traits/is_base_of.hpp \
- /usr/include/boost/fusion/support/category_of.hpp \
- /usr/include/boost/mpl/advance.hpp /usr/include/boost/mpl/less.hpp \
- /usr/include/boost/mpl/aux_/comparison_op.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
- /usr/include/boost/mpl/negate.hpp \
- /usr/include/boost/mpl/aux_/advance_forward.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp \
- /usr/include/boost/mpl/aux_/advance_backward.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp \
- /usr/include/boost/mpl/distance.hpp /usr/include/boost/mpl/iter_fold.hpp \
- /usr/include/boost/mpl/aux_/iter_fold_impl.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp \
- /usr/include/boost/mpl/begin.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp \
- /usr/include/boost/mpl/end.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp \
- /usr/include/boost/mpl/size.hpp \
- /usr/include/boost/mpl/aux_/size_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/value_at_impl.hpp \
- /usr/include/boost/mpl/at.hpp /usr/include/boost/mpl/aux_/at_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/at_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/has_key_impl.hpp \
- /usr/include/boost/mpl/has_key.hpp \
- /usr/include/boost/mpl/has_key_fwd.hpp \
- /usr/include/boost/mpl/aux_/has_key_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/is_view_impl.hpp \
- /usr/include/boost/fusion/adapted/mpl/detail/empty_impl.hpp \
- /usr/include/boost/mpl/empty.hpp \
- /usr/include/boost/mpl/aux_/empty_impl.hpp \
- /usr/include/boost/fusion/mpl.hpp \
- /usr/include/boost/fusion/iterator/mpl.hpp \
- /usr/include/boost/fusion/iterator/mpl/convert_iterator.hpp \
- /usr/include/boost/fusion/iterator/mpl/fusion_iterator.hpp \
- /usr/include/boost/fusion/iterator/value_of.hpp \
- /usr/include/boost/fusion/iterator/advance.hpp \
- /usr/include/boost/fusion/iterator/distance.hpp \
- /usr/include/boost/fusion/mpl/at.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp \
- /usr/include/boost/mpl/empty_base.hpp \
- /usr/include/boost/type_traits/is_empty.hpp \
- /usr/include/boost/fusion/sequence/intrinsic_fwd.hpp \
- /usr/include/boost/fusion/support/is_sequence.hpp \
- /usr/include/boost/fusion/mpl/back.hpp /usr/include/boost/mpl/back.hpp \
- /usr/include/boost/mpl/aux_/back_impl.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/end.hpp \
- /usr/include/boost/fusion/support/is_segmented.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp \
- /usr/include/boost/fusion/container/list/cons_fwd.hpp \
- /usr/include/boost/fusion/iterator/segmented_iterator.hpp \
- /usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp \
- /usr/include/boost/fusion/iterator/deref.hpp \
- /usr/include/boost/fusion/iterator/deref_data.hpp \
- /usr/include/boost/fusion/iterator/key_of.hpp \
- /usr/include/boost/fusion/iterator/value_of_data.hpp \
- /usr/include/boost/fusion/iterator/detail/segmented_equal_to.hpp \
- /usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/begin.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp \
- /usr/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp \
- /usr/include/boost/utility/result_of.hpp \
- /usr/include/boost/preprocessor/iteration/iterate.hpp \
- /usr/include/boost/preprocessor/slot/slot.hpp \
- /usr/include/boost/preprocessor/slot/detail/def.hpp \
- /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
- /usr/include/boost/preprocessor/facilities/intercept.hpp \
- /usr/include/boost/type_traits/conditional.hpp \
- /usr/include/boost/type_traits/type_identity.hpp \
- /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
- /usr/include/boost/preprocessor/slot/detail/shared.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
- /usr/include/boost/utility/detail/result_of_iterate.hpp \
- /usr/include/boost/fusion/support/void.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/segments.hpp \
- /usr/include/boost/fusion/view/iterator_range.hpp \
- /usr/include/boost/fusion/view/iterator_range/iterator_range.hpp \
- /usr/include/boost/fusion/support/detail/access.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/end_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/at_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/size_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/value_at_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/is_segmented_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp \
- /usr/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp \
- /usr/include/boost/fusion/algorithm/transformation/push_back.hpp \
- /usr/include/boost/fusion/support/detail/as_fusion_element.hpp \
- /usr/include/boost/fusion/view/joint_view/joint_view.hpp \
- /usr/include/boost/fusion/view/joint_view/joint_view_fwd.hpp \
- /usr/include/boost/fusion/support/is_view.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/size.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp \
- /usr/include/boost/mpl/size_t.hpp /usr/include/boost/mpl/size_t_fwd.hpp \
- /usr/include/boost/fusion/mpl/begin.hpp \
- /usr/include/boost/fusion/mpl/end.hpp \
- /usr/include/boost/fusion/view/joint_view/joint_view_iterator.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/deref_impl.hpp \
- /usr/include/boost/fusion/iterator/detail/adapt_deref_traits.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/next_impl.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/value_of_impl.hpp \
- /usr/include/boost/fusion/iterator/detail/adapt_value_traits.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/deref_data_impl.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/key_of_impl.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/begin_impl.hpp \
- /usr/include/boost/fusion/view/joint_view/detail/end_impl.hpp \
- /usr/include/boost/mpl/inherit.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/inherit.hpp \
- /usr/include/boost/fusion/view/single_view/single_view.hpp \
- /usr/include/boost/fusion/view/single_view/single_view_iterator.hpp \
- /usr/include/boost/fusion/view/single_view/detail/deref_impl.hpp \
- /usr/include/boost/mpl/equal_to.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp \
- /usr/include/boost/fusion/view/single_view/detail/next_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/prior_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/advance_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/distance_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/equal_to_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/value_of_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/at_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/begin_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/end_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/size_impl.hpp \
- /usr/include/boost/fusion/view/single_view/detail/value_at_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/push_front.hpp \
- /usr/include/boost/fusion/container/list/detail/reverse_cons.hpp \
- /usr/include/boost/fusion/iterator/detail/segment_sequence.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/empty.hpp \
- /usr/include/boost/fusion/container/list/cons.hpp \
- /usr/include/boost/fusion/support/detail/enabler.hpp \
- /usr/include/boost/fusion/container/list/nil.hpp \
- /usr/include/boost/fusion/container/list/cons_iterator.hpp \
- /usr/include/boost/fusion/container/list/detail/deref_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/next_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/value_of_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/equal_to_impl.hpp \
- /usr/include/boost/fusion/container/list/list_fwd.hpp \
- /usr/include/boost/fusion/container/list/detail/begin_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/end_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/at_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/value_at_impl.hpp \
- /usr/include/boost/fusion/container/list/detail/empty_impl.hpp \
- /usr/include/boost/fusion/mpl/clear.hpp \
- /usr/include/boost/fusion/mpl/detail/clear.hpp \
- /usr/include/boost/fusion/container/vector/vector_fwd.hpp \
- /usr/include/boost/fusion/container/vector/detail/config.hpp \
- /usr/include/boost/fusion/container/map/map_fwd.hpp \
- /usr/include/boost/fusion/container/set/set_fwd.hpp \
- /usr/include/boost/fusion/container/deque/deque_fwd.hpp \
- /usr/include/boost/fusion/mpl/empty.hpp \
- /usr/include/boost/fusion/mpl/erase.hpp /usr/include/boost/mpl/erase.hpp \
- /usr/include/boost/mpl/erase_fwd.hpp \
- /usr/include/boost/mpl/aux_/erase_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/erase.hpp \
- /usr/include/boost/fusion/sequence/convert.hpp \
- /usr/include/boost/fusion/mpl/erase_key.hpp \
- /usr/include/boost/mpl/erase_key.hpp \
- /usr/include/boost/mpl/erase_key_fwd.hpp \
- /usr/include/boost/mpl/aux_/erase_key_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/erase_key.hpp \
- /usr/include/boost/fusion/algorithm/query/find.hpp \
- /usr/include/boost/fusion/algorithm/query/find_if_fwd.hpp \
- /usr/include/boost/fusion/algorithm/query/detail/find_if.hpp \
- /usr/include/boost/fusion/algorithm/query/detail/segmented_find.hpp \
- /usr/include/boost/fusion/algorithm/query/find_fwd.hpp \
- /usr/include/boost/fusion/support/segmented_fold_until.hpp \
- /usr/include/boost/fusion/mpl/front.hpp /usr/include/boost/mpl/front.hpp \
- /usr/include/boost/mpl/aux_/front_impl.hpp \
- /usr/include/boost/fusion/mpl/has_key.hpp \
- /usr/include/boost/fusion/sequence/intrinsic/has_key.hpp \
- /usr/include/boost/fusion/mpl/insert.hpp \
- /usr/include/boost/mpl/insert.hpp /usr/include/boost/mpl/insert_fwd.hpp \
- /usr/include/boost/mpl/aux_/insert_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/insert.hpp \
- /usr/include/boost/fusion/mpl/insert_range.hpp \
- /usr/include/boost/mpl/insert_range.hpp \
- /usr/include/boost/mpl/insert_range_fwd.hpp \
- /usr/include/boost/mpl/aux_/insert_range_impl.hpp \
- /usr/include/boost/mpl/joint_view.hpp \
- /usr/include/boost/mpl/aux_/joint_iter.hpp \
- /usr/include/boost/mpl/aux_/iter_push_front.hpp \
- /usr/include/boost/type_traits/same_traits.hpp \
- /usr/include/boost/fusion/algorithm/transformation/insert_range.hpp \
- /usr/include/boost/fusion/mpl/pop_back.hpp \
- /usr/include/boost/mpl/pop_back.hpp \
- /usr/include/boost/mpl/aux_/pop_back_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/pop_back.hpp \
- /usr/include/boost/fusion/iterator/iterator_adapter.hpp \
- /usr/include/boost/fusion/mpl/pop_front.hpp \
- /usr/include/boost/mpl/pop_front.hpp \
- /usr/include/boost/mpl/aux_/pop_front_impl.hpp \
- /usr/include/boost/fusion/algorithm/transformation/pop_front.hpp \
- /usr/include/boost/fusion/mpl/push_back.hpp \
- /usr/include/boost/fusion/mpl/push_front.hpp \
- /usr/include/boost/fusion/mpl/size.hpp \
- /usr/include/boost/fusion/include/for_each.hpp \
- /usr/include/boost/fusion/algorithm/iteration/for_each.hpp \
- /usr/include/boost/fusion/algorithm/iteration/detail/for_each.hpp \
- /usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp \
- /usr/include/boost/fusion/algorithm/iteration/for_each_fwd.hpp \
- /usr/include/boost/fusion/include/as_vector.hpp \
- /usr/include/boost/fusion/container/vector/convert.hpp \
- /usr/include/boost/fusion/container/vector/detail/as_vector.hpp \
- /usr/include/boost/fusion/support/detail/index_sequence.hpp \
- /usr/include/boost/fusion/container/vector/vector.hpp \
- /usr/include/boost/fusion/support/detail/and.hpp \
- /usr/include/boost/fusion/container/vector/detail/at_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/value_at_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/begin_impl.hpp \
- /usr/include/boost/fusion/container/vector/vector_iterator.hpp \
- /usr/include/boost/fusion/container/vector/detail/deref_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/value_of_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/next_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/prior_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/equal_to_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/distance_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/advance_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/end_impl.hpp \
- /usr/include/boost/fusion/container/vector/detail/convert_impl.hpp \
- /usr/include/boost/fusion/include/filter_if.hpp \
- /usr/include/boost/fusion/algorithm/transformation/filter_if.hpp \
- /usr/include/boost/fusion/view/filter_view/filter_view.hpp \
- /usr/include/boost/fusion/view/filter_view/filter_view_iterator.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/deref_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/next_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/equal_to_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/key_of_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/begin_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/end_impl.hpp \
- /usr/include/boost/fusion/view/filter_view/detail/size_impl.hpp \
- /usr/include/pcl-1.12/pcl/common/impl/centroid.hpp \
- /usr/include/pcl-1.12/pcl/common/point_tests.h \
- /usr/include/pcl-1.12/pcl/common/eigen.h \
- /usr/include/pcl-1.12/pcl/ModelCoefficients.h \
- /usr/include/eigen3/Eigen/LU \
- /usr/include/pcl-1.12/pcl/common/impl/eigen.hpp \
- /usr/include/pcl-1.12/pcl/common/transforms.h \
- /usr/include/pcl-1.12/pcl/common/impl/transforms.hpp \
- /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h \
- /opt/ros/humble/include/message_filters/message_filters/message_event.h \
- /opt/ros/humble/include/message_filters/message_filters/message_traits.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
+ /usr/include/pcl-1.12/pcl/PointIndices.h \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__struct.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__builder.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /usr/include/pcl-1.12/pcl/ModelCoefficients.h \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__struct.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__builder.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp \
+ /usr/include/pcl-1.12/pcl/Vertices.h \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/vertices.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__builder.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__traits.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp \
+ /usr/include/pcl-1.12/pcl/PolygonMesh.h \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/polygon_mesh.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp \
  /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp \
@@ -1718,6 +1216,9 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/numeric/conversion/conversion_traits.hpp \
  /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp \
  /usr/include/boost/numeric/conversion/detail/meta.hpp \
+ /usr/include/boost/mpl/equal_to.hpp \
+ /usr/include/boost/mpl/aux_/comparison_op.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp \
  /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
  /usr/include/boost/limits.hpp \
  /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
@@ -1728,6 +1229,8 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/numeric/conversion/detail/is_subranged.hpp \
  /usr/include/boost/mpl/multiplies.hpp /usr/include/boost/mpl/times.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp \
+ /usr/include/boost/mpl/less.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
  /usr/include/boost/numeric/conversion/converter_policies.hpp \
  /usr/include/boost/config/no_tr1/cmath.hpp \
  /usr/include/boost/throw_exception.hpp \
@@ -1750,16 +1253,24 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/range/size.hpp /usr/include/boost/range/size_type.hpp \
  /usr/include/boost/range/difference_type.hpp \
  /usr/include/boost/range/has_range_iterator.hpp \
+ /usr/include/boost/utility/enable_if.hpp \
+ /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/range/concepts.hpp \
  /usr/include/boost/concept_check.hpp \
  /usr/include/boost/concept/assert.hpp \
  /usr/include/boost/concept/detail/general.hpp \
  /usr/include/boost/concept/detail/backward_compatibility.hpp \
  /usr/include/boost/concept/detail/has_constraints.hpp \
+ /usr/include/boost/type_traits/conditional.hpp \
  /usr/include/boost/type_traits/conversion_traits.hpp \
  /usr/include/boost/concept/usage.hpp \
  /usr/include/boost/concept/detail/concept_def.hpp \
  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
+ /usr/include/boost/preprocessor/repetition/for.hpp \
+ /usr/include/boost/preprocessor/repetition/detail/for.hpp \
+ /usr/include/boost/preprocessor/seq/seq.hpp \
+ /usr/include/boost/preprocessor/seq/elem.hpp \
+ /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
  /usr/include/boost/concept/detail/concept_undef.hpp \
  /usr/include/boost/iterator/iterator_concepts.hpp \
  /usr/include/boost/range/value_type.hpp \
@@ -1771,10 +1282,13 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/range/detail/has_member_size.hpp \
  /usr/include/boost/utility.hpp \
  /usr/include/boost/utility/base_from_member.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
  /usr/include/boost/utility/binary.hpp \
  /usr/include/boost/preprocessor/control/deduce_d.hpp \
  /usr/include/boost/preprocessor/seq/cat.hpp \
+ /usr/include/boost/preprocessor/seq/fold_left.hpp \
+ /usr/include/boost/preprocessor/seq/transform.hpp \
  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
  /usr/include/boost/utility/identity_type.hpp \
@@ -1889,6 +1403,7 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/boost/date_time/gregorian/greg_calendar.hpp \
  /usr/include/boost/date_time/gregorian/greg_weekday.hpp \
  /usr/include/boost/date_time/constrained_value.hpp \
+ /usr/include/boost/type_traits/is_base_of.hpp \
  /usr/include/boost/date_time/date_defs.hpp \
  /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp \
  /usr/include/boost/date_time/gregorian_calendar.hpp \
@@ -1926,6 +1441,15 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/pcl-1.12/pcl/common/io.h \
+ /usr/include/pcl-1.12/pcl/common/impl/io.hpp \
+ /usr/include/pcl-1.12/pcl/common/concatenate.h \
+ /usr/include/pcl-1.12/pcl/common/copy_point.h \
+ /usr/include/pcl-1.12/pcl/common/impl/copy_point.hpp \
+ /usr/include/pcl-1.12/pcl/point_types.h /usr/include/c++/11/bitset \
+ /usr/include/pcl-1.12/pcl/impl/point_types.hpp \
+ /usr/include/pcl-1.12/pcl/register_point_struct.h \
+ /usr/include/boost/preprocessor/seq/for_each.hpp \
  /usr/include/pcl-1.12/pcl/io/low_level_io.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
@@ -1933,5 +1457,8 @@ CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
  /usr/include/x86_64-linux-gnu/sys/fcntl.h \
- /usr/include/pcl-1.12/pcl/io/lzf.h /usr/include/eigen3/Eigen/Dense \
- /usr/include/eigen3/Eigen/Eigenvalues
+ /usr/include/pcl-1.12/pcl/io/lzf.h \
+ /usr/include/pcl-1.12/pcl/filters/voxel_grid.h \
+ /usr/include/pcl-1.12/pcl/filters/filter.h \
+ /usr/include/pcl-1.12/pcl/pcl_base.h /usr/include/c++/11/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h

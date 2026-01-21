@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000177] (-) JobUnselected: {'identifier': 'bringup_drone'}
+[0.000255] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000270] (-) JobUnselected: {'identifier': 'vision'}
+[0.000283] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.000610] (control) JobStarted: {'identifier': 'control'}
+[0.017654] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.020582] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.020691] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/control', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/control', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '3889'), ('SYSTEMD_EXEC_PID', '4165'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8326'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:25492'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/4138,unix/myat:/tmp/.ICE-unix/4138'), ('INVOCATION_ID', 'a8c6eb58b0464f19b341fe02a37031fb'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:6685a065-0844-48e1-996a-513d17da65df'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[0.099812] (-) TimerEvent: {}
+[0.121153] (control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tf_node\x1b[0m\n'}
+[0.138274] (control) StdoutLine: {'line': b'[ 75%] Built target adaptive_land\n'}
+[0.138474] (control) StdoutLine: {'line': b'[ 75%] Built target auto_fly_test\n'}
+[0.138548] (control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o\x1b[0m\n'}
+[0.138608] (control) StdoutLine: {'line': b'[ 75%] Built target px4_visualizer\n'}
+[0.138664] (control) StdoutLine: {'line': b'[ 75%] Built target land\n'}
+[0.148530] (control) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o\x1b[0m\n'}
+[0.199926] (-) TimerEvent: {}
+[0.300231] (-) TimerEvent: {}
+[0.400506] (-) TimerEvent: {}
+[0.501037] (-) TimerEvent: {}
+[0.601495] (-) TimerEvent: {}
+[0.701846] (-) TimerEvent: {}
+[0.802399] (-) TimerEvent: {}
+[0.902796] (-) TimerEvent: {}
+[1.003112] (-) TimerEvent: {}
+[1.103480] (-) TimerEvent: {}
+[1.203811] (-) TimerEvent: {}
+[1.304178] (-) TimerEvent: {}
+[1.404711] (-) TimerEvent: {}
+[1.505125] (-) TimerEvent: {}
+[1.605713] (-) TimerEvent: {}
+[1.706176] (-) TimerEvent: {}
+[1.806518] (-) TimerEvent: {}
+[1.906887] (-) TimerEvent: {}
+[2.007204] (-) TimerEvent: {}
+[2.107483] (-) TimerEvent: {}
+[2.207761] (-) TimerEvent: {}
+[2.308372] (-) TimerEvent: {}
+[2.408738] (-) TimerEvent: {}
+[2.509043] (-) TimerEvent: {}
+[2.609293] (-) TimerEvent: {}
+[2.709577] (-) TimerEvent: {}
+[2.809887] (-) TimerEvent: {}
+[2.910187] (-) TimerEvent: {}
+[3.010472] (-) TimerEvent: {}
+[3.110763] (-) TimerEvent: {}
+[3.211100] (-) TimerEvent: {}
+[3.311432] (-) TimerEvent: {}
+[3.411847] (-) TimerEvent: {}
+[3.512156] (-) TimerEvent: {}
+[3.612483] (-) TimerEvent: {}
+[3.712798] (-) TimerEvent: {}
+[3.813359] (-) TimerEvent: {}
+[3.913710] (-) TimerEvent: {}
+[4.014120] (-) TimerEvent: {}
+[4.114505] (-) TimerEvent: {}
+[4.214850] (-) TimerEvent: {}
+[4.315169] (-) TimerEvent: {}
+[4.415460] (-) TimerEvent: {}
+[4.515791] (-) TimerEvent: {}
+[4.616174] (-) TimerEvent: {}
+[4.716658] (-) TimerEvent: {}
+[4.816974] (-) TimerEvent: {}
+[4.917284] (-) TimerEvent: {}
+[5.017764] (-) TimerEvent: {}
+[5.118171] (-) TimerEvent: {}
+[5.137964] (control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:164\x1b[m\x1b[K,\n'}
+[5.138383] (control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[5.138562] (control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:15\x1b[m\x1b[K:\n'}
+[5.138651] (control) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Func = Eigen::internal::assign_op<double, float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.138723] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:858:27:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Func = Eigen::internal::assign_op<double, float>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.138793] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:836:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.138842] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:779:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KDerived& Eigen::PlainObjectBase<Derived>::_set(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Derived = Eigen::Matrix<double, -1, 1>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.138904] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:225:24:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.138955] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:183:50:\x1b[m\x1b[K   required from here\n'}
+[5.139011] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY\n'}
+[5.139069] (control) StderrLine: {'line': b'  888 |   \x1b[01;31m\x1b[KEIGEN_CHECK_BINARY_COMPATIBILIY\x1b[m\x1b[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);\n'}
+[5.139116] (control) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.139172] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<double, float, Eigen::internal::assign_op<double, float> > >::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[5.218280] (-) TimerEvent: {}
+[5.318657] (-) TimerEvent: {}
+[5.418978] (-) TimerEvent: {}
+[5.519470] (-) TimerEvent: {}
+[5.619952] (-) TimerEvent: {}
+[5.720255] (-) TimerEvent: {}
+[5.820688] (-) TimerEvent: {}
+[5.921081] (-) TimerEvent: {}
+[6.021450] (-) TimerEvent: {}
+[6.121753] (-) TimerEvent: {}
+[6.222036] (-) TimerEvent: {}
+[6.322322] (-) TimerEvent: {}
+[6.422591] (-) TimerEvent: {}
+[6.522873] (-) TimerEvent: {}
+[6.623162] (-) TimerEvent: {}
+[6.723491] (-) TimerEvent: {}
+[6.823761] (-) TimerEvent: {}
+[6.924108] (-) TimerEvent: {}
+[7.024353] (-) TimerEvent: {}
+[7.124648] (-) TimerEvent: {}
+[7.224878] (-) TimerEvent: {}
+[7.325137] (-) TimerEvent: {}
+[7.425402] (-) TimerEvent: {}
+[7.525680] (-) TimerEvent: {}
+[7.626131] (-) TimerEvent: {}
+[7.726491] (-) TimerEvent: {}
+[7.826917] (-) TimerEvent: {}
+[7.927646] (-) TimerEvent: {}
+[8.028099] (-) TimerEvent: {}
+[8.128530] (-) TimerEvent: {}
+[8.229043] (-) TimerEvent: {}
+[8.329374] (-) TimerEvent: {}
+[8.429628] (-) TimerEvent: {}
+[8.529895] (-) TimerEvent: {}
+[8.630238] (-) TimerEvent: {}
+[8.730508] (-) TimerEvent: {}
+[8.830835] (-) TimerEvent: {}
+[8.931181] (-) TimerEvent: {}
+[9.031565] (-) TimerEvent: {}
+[9.131840] (-) TimerEvent: {}
+[9.232093] (-) TimerEvent: {}
+[9.332355] (-) TimerEvent: {}
+[9.432678] (-) TimerEvent: {}
+[9.533010] (-) TimerEvent: {}
+[9.633316] (-) TimerEvent: {}
+[9.716174] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:343:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kerror closing /tmp/cc266toI.s: No space left on device\n'}
+[9.716987] (control) StderrLine: {'line': b'  343 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[9.717270] (control) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.717580] (control) StderrLine: {'line': b'compilation terminated.\n'}
+[9.733467] (-) TimerEvent: {}
+[9.790265] (control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:76: CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o] Error 1\n'}
+[9.790710] (control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/trajectory_fly.dir/all] Error 2\n'}
+[9.793368] (control) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[9.833496] (-) TimerEvent: {}
+[9.934739] (-) TimerEvent: {}
+[10.035449] (-) TimerEvent: {}
+[10.136315] (-) TimerEvent: {}
+[10.236826] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:151:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kerror writing to /tmp/cclFHWlV.s: No space left on device\n'}
+[10.237837] (-) TimerEvent: {}
+[10.238233] (control) StderrLine: {'line': b'  151 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[10.238997] (control) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.240113] (control) StderrLine: {'line': b'compilation terminated.\n'}
+[10.296784] (control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1\n'}
+[10.296988] (control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Error 2\n'}
+[10.297233] (control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.299495] (control) CommandEnded: {'returncode': 2}
+[10.314440] (control) JobEnded: {'identifier': 'control', 'rc': 2}
+[10.325010] (-) EventReactorShutdown: {}

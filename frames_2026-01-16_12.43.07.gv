@@ -1,0 +1,9 @@
+digraph G {
+"map" -> "world"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "x500_depth_0/realsense/base_link/realsense_d435"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 82.268\nBuffer length: 5.02\nMost recent transform: 1768542187.241669\nOldest transform: 1768542182.221501\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1768542187.2492301"[ shape=plaintext ] ;
+}->"map";
+}

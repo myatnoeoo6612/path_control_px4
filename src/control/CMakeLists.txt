@@ -17,6 +17,9 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(PCL REQUIRED COMPONENTS common io filters segmentation features search)
+find_package(pcl_conversions REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 add_executable(trajectory_fly src/trajectory_fly.cpp)
 ament_target_dependencies(trajectory_fly
@@ -28,6 +31,7 @@ ament_target_dependencies(trajectory_fly
   tf2_ros 
   tf2_geometry_msgs
   visualization_msgs
+  pcl_conversions
 )
 
 add_executable(auto_fly_test src/auto_fly_test.cpp)
@@ -62,6 +66,7 @@ ament_target_dependencies(tf_node
   geometry_msgs
   tf2
   tf2_ros
+  sensor_msgs
   tf2_geometry_msgs
 )
 
@@ -98,9 +103,19 @@ install(TARGETS
   adaptive_land
   DESTINATION lib/${PROJECT_NAME}
 )
-
+target_link_libraries(
+  trajectory_fly
+  ${OpenCV_LIBS}
+  ${PCL_LIBRARIES}
+)
+target_link_libraries(
+  tf_node
+  ${OpenCV_LIBS}
+  ${PCL_LIBRARIES}
+)
 include_directories(
   ${EIGEN3_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS}
   ${rclcpp_INCLUDE_DIRS}
   ${std_msgs_INCLUDE_DIRS}
   ${geometry_msgs_INCLUDE_DIRS}

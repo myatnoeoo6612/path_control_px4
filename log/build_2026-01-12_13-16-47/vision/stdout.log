@@ -1,0 +1,6 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[ 50%] Built target depth_polygon_mask_node
+[ 50%] Built target aruco_detect
+[ 70%] Built target camera_recorder
+[ 90%] Built target pointcloud_node
+[100%] [32m[1mLinking CXX executable lidar[0m

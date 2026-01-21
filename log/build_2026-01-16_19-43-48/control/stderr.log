@@ -1,0 +1,27 @@
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:15[m[K:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Func = Eigen::internal::assign_op<double, float>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:858:27:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Func = Eigen::internal::assign_op<double, float>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:836:18:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Matrix<double, -1, 1>; Src = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:779:32:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; Derived = Eigen::Matrix<double, -1, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:225:24:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Solve<Eigen::ColPivHouseholderQR<Eigen::Matrix<float, 8, 8> >, Eigen::Matrix<float, 8, 1, 0, 8, 1> >; _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:183:50:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY
+  888 |   [01;31m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<double, float, Eigen::internal::assign_op<double, float> > >::value[m[K’ evaluates to false
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:343:1:[m[K [01;31m[Kfatal error: [m[Kerror closing /tmp/cc266toI.s: No space left on device
+  343 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:76: CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/trajectory_fly.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:151:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/cclFHWlV.s: No space left on device
+  151 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

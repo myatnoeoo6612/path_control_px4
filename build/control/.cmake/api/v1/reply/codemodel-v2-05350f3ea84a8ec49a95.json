@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7592cafeccdb8bb018cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "adaptive_land::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-adaptive_land-75c50556e9a319b525ec.json",
+					"name" : "adaptive_land",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "auto_fly_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_fly_test-ccd02591acf6cc90f537.json",
+					"name" : "auto_fly_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control_uninstall-7358f25eaa9b7bcd1226.json",
+					"name" : "control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "land::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-land-eafef9cf35379f4eaa12.json",
+					"name" : "land",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_visualizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_visualizer-1f52279c7b9e21a371f0.json",
+					"name" : "px4_visualizer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tf_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tf_node-d92e3d1d8abc481b2cfa.json",
+					"name" : "tf_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_fly::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_fly-52f0b10a6065c4ba3637.json",
+					"name" : "trajectory_fly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4672fedbee3bbdd7bbbb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/myat/path_control_px4/build/control",
+		"source" : "/home/myat/path_control_px4/src/control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

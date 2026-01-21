@@ -1,0 +1,37 @@
+[0.020s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.157s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_node[0m
+[0.157s] [35m[1mConsolidate compiler generated dependencies of target obstacle_node[0m
+[0.171s] [ 16%] Built target camera_recorder
+[0.171s] [ 33%] Built target depth_polygon_mask_node
+[0.173s] [ 50%] Built target aruco_detect
+[0.176s] [ 66%] Built target lidar
+[0.204s] [ 83%] Built target obstacle_node
+[0.204s] [ 91%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m
+[15.748s] [100%] [32m[1mLinking CXX executable pointcloud_node[0m
+[17.769s] [100%] Built target pointcloud_node
+[17.788s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[17.804s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/vision
+[17.816s] -- Install configuration: ""
+[17.817s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/camera_recorder
+[17.818s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/depth_polygon_mask_node
+[17.819s] -- Installing: /home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node
+[17.826s] -- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node" to ""
+[17.827s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/aruco_detect
+[17.828s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/lidar
+[17.829s] -- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/obstacle_node
+[17.829s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/package_run_dependencies/vision
+[17.829s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/parent_prefix_path/vision
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.sh
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.dsv
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.sh
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.dsv
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.bash
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.sh
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.zsh
+[17.830s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.dsv
+[17.830s] -- Installing: /home/myat/path_control_px4/install/vision/share/vision/package.dsv
+[17.831s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/packages/vision
+[17.831s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig.cmake
+[17.831s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig-version.cmake
+[17.831s] -- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/package.xml
+[17.836s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/vision

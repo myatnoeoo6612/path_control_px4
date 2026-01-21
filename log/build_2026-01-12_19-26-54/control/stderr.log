@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:76: CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/trajectory_fly.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

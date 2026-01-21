@@ -39,8 +39,7 @@ public:
     dictionary_ = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_5X5_100);
 
     image_sub_ = image_transport::create_subscription(this,
-                                                      "/world/default/model/x500_depth_0/link/realsense/base_link/"
-                                                      "sensor/realsense_d435/image",
+                                                      "camera/camera/color/image_raw",
                                                       std::bind(&ArucoDetectorNode::image_callback, this, _1), "raw");
 
     image_pub_ = image_transport::create_publisher(this, "/aruco/image");

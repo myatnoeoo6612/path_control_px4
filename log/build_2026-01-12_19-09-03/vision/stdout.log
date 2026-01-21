@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle[0m
+[  8%] [32mBuilding CXX object CMakeFiles/obstacle.dir/src/obstacle.cpp.o[0m
+[ 25%] Built target aruco_detect
+[ 75%] Built target camera_recorder
+[ 75%] Built target depth_polygon_mask_node
+[ 75%] Built target lidar
+[ 91%] Built target pointcloud_node
+[100%] [32m[1mLinking CXX executable obstacle[0m

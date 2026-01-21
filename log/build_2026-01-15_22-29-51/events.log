@@ -1,0 +1,503 @@
+[0.000000] (-) TimerEvent: {}
+[0.000600] (-) JobUnselected: {'identifier': 'bringup_drone'}
+[0.000961] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000986] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.001008] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.001028] (vision) JobStarted: {'identifier': 'vision'}
+[0.010002] (control) JobStarted: {'identifier': 'control'}
+[0.021824] (vision) JobProgress: {'identifier': 'vision', 'progress': 'cmake'}
+[0.024954] (vision) JobProgress: {'identifier': 'vision', 'progress': 'build'}
+[0.026090] (vision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/vision', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/vision', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '4286'), ('SYSTEMD_EXEC_PID', '4470'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8341'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:30832'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/4437,unix/myat:/tmp/.ICE-unix/4437'), ('INVOCATION_ID', '3840254fc0b3419f889b57b8839330cf'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4ET9I3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:ef1cc000-069a-4e60-9f40-3901ddc7d111'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/vision'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[0.030913] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.031658] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.032780] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/control', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/control', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '4286'), ('SYSTEMD_EXEC_PID', '4470'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8341'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:30832'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/4437,unix/myat:/tmp/.ICE-unix/4437'), ('INVOCATION_ID', '3840254fc0b3419f889b57b8839330cf'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4ET9I3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:ef1cc000-069a-4e60-9f40-3901ddc7d111'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[0.099305] (-) TimerEvent: {}
+[0.117657] (control) StdoutLine: {'line': b'[ 16%] Built target trajectory_fly\n'}
+[0.124155] (vision) StdoutLine: {'line': b'[  8%] \x1b[32m\x1b[1mLinking CXX executable camera_recorder\x1b[0m\n'}
+[0.147355] (control) StdoutLine: {'line': b'[ 33%] Built target adaptive_land\n'}
+[0.187378] (control) StdoutLine: {'line': b'[ 50%] Built target land\n'}
+[0.199432] (-) TimerEvent: {}
+[0.231949] (control) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o\x1b[0m\n'}
+[0.299718] (-) TimerEvent: {}
+[0.400169] (-) TimerEvent: {}
+[0.500834] (-) TimerEvent: {}
+[0.601693] (-) TimerEvent: {}
+[0.702635] (-) TimerEvent: {}
+[0.803314] (-) TimerEvent: {}
+[0.903972] (-) TimerEvent: {}
+[1.004670] (-) TimerEvent: {}
+[1.105196] (-) TimerEvent: {}
+[1.205946] (-) TimerEvent: {}
+[1.306989] (-) TimerEvent: {}
+[1.407734] (-) TimerEvent: {}
+[1.508374] (-) TimerEvent: {}
+[1.609533] (-) TimerEvent: {}
+[1.710329] (-) TimerEvent: {}
+[1.811225] (-) TimerEvent: {}
+[1.911754] (-) TimerEvent: {}
+[2.012273] (-) TimerEvent: {}
+[2.112975] (-) TimerEvent: {}
+[2.213433] (-) TimerEvent: {}
+[2.313871] (-) TimerEvent: {}
+[2.414422] (-) TimerEvent: {}
+[2.514970] (-) TimerEvent: {}
+[2.615631] (-) TimerEvent: {}
+[2.716125] (-) TimerEvent: {}
+[2.816743] (-) TimerEvent: {}
+[2.830201] (vision) StdoutLine: {'line': b'[ 16%] Built target camera_recorder\n'}
+[2.916190] (vision) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle.cpp.o\x1b[0m\n'}
+[2.916749] (-) TimerEvent: {}
+[3.017316] (-) TimerEvent: {}
+[3.118198] (-) TimerEvent: {}
+[3.218813] (-) TimerEvent: {}
+[3.320054] (-) TimerEvent: {}
+[3.420568] (-) TimerEvent: {}
+[3.521038] (-) TimerEvent: {}
+[3.621820] (-) TimerEvent: {}
+[3.722655] (-) TimerEvent: {}
+[3.823156] (-) TimerEvent: {}
+[3.923678] (-) TimerEvent: {}
+[4.024466] (-) TimerEvent: {}
+[4.125100] (-) TimerEvent: {}
+[4.225701] (-) TimerEvent: {}
+[4.326515] (-) TimerEvent: {}
+[4.427265] (-) TimerEvent: {}
+[4.527789] (-) TimerEvent: {}
+[4.628379] (-) TimerEvent: {}
+[4.728972] (-) TimerEvent: {}
+[4.829721] (-) TimerEvent: {}
+[4.930281] (-) TimerEvent: {}
+[5.031286] (-) TimerEvent: {}
+[5.131945] (-) TimerEvent: {}
+[5.233080] (-) TimerEvent: {}
+[5.333840] (-) TimerEvent: {}
+[5.435399] (-) TimerEvent: {}
+[5.536119] (-) TimerEvent: {}
+[5.636636] (-) TimerEvent: {}
+[5.737044] (-) TimerEvent: {}
+[5.837467] (-) TimerEvent: {}
+[5.937998] (-) TimerEvent: {}
+[6.039149] (-) TimerEvent: {}
+[6.139882] (-) TimerEvent: {}
+[6.240449] (-) TimerEvent: {}
+[6.341225] (-) TimerEvent: {}
+[6.441721] (-) TimerEvent: {}
+[6.542318] (-) TimerEvent: {}
+[6.642841] (-) TimerEvent: {}
+[6.744747] (-) TimerEvent: {}
+[6.845523] (-) TimerEvent: {}
+[6.945991] (-) TimerEvent: {}
+[7.046400] (-) TimerEvent: {}
+[7.147057] (-) TimerEvent: {}
+[7.247651] (-) TimerEvent: {}
+[7.349233] (-) TimerEvent: {}
+[7.449713] (-) TimerEvent: {}
+[7.550137] (-) TimerEvent: {}
+[7.650779] (-) TimerEvent: {}
+[7.751304] (-) TimerEvent: {}
+[7.851830] (-) TimerEvent: {}
+[7.952691] (-) TimerEvent: {}
+[8.053261] (-) TimerEvent: {}
+[8.153685] (-) TimerEvent: {}
+[8.254263] (-) TimerEvent: {}
+[8.354826] (-) TimerEvent: {}
+[8.455370] (-) TimerEvent: {}
+[8.555999] (-) TimerEvent: {}
+[8.656812] (-) TimerEvent: {}
+[8.757450] (-) TimerEvent: {}
+[8.858096] (-) TimerEvent: {}
+[8.958841] (-) TimerEvent: {}
+[9.059519] (-) TimerEvent: {}
+[9.160165] (-) TimerEvent: {}
+[9.260726] (-) TimerEvent: {}
+[9.361471] (-) TimerEvent: {}
+[9.462598] (-) TimerEvent: {}
+[9.563150] (-) TimerEvent: {}
+[9.663858] (-) TimerEvent: {}
+[9.764589] (-) TimerEvent: {}
+[9.865833] (-) TimerEvent: {}
+[9.966489] (-) TimerEvent: {}
+[10.067195] (-) TimerEvent: {}
+[10.167606] (-) TimerEvent: {}
+[10.268082] (-) TimerEvent: {}
+[10.368636] (-) TimerEvent: {}
+[10.469155] (-) TimerEvent: {}
+[10.569645] (-) TimerEvent: {}
+[10.670325] (-) TimerEvent: {}
+[10.770881] (-) TimerEvent: {}
+[10.871441] (-) TimerEvent: {}
+[10.972018] (-) TimerEvent: {}
+[11.072819] (-) TimerEvent: {}
+[11.173426] (-) TimerEvent: {}
+[11.274052] (-) TimerEvent: {}
+[11.374670] (-) TimerEvent: {}
+[11.475618] (-) TimerEvent: {}
+[11.576628] (-) TimerEvent: {}
+[11.677153] (-) TimerEvent: {}
+[11.778039] (-) TimerEvent: {}
+[11.878599] (-) TimerEvent: {}
+[11.979513] (-) TimerEvent: {}
+[12.080007] (-) TimerEvent: {}
+[12.180419] (-) TimerEvent: {}
+[12.281369] (-) TimerEvent: {}
+[12.382069] (-) TimerEvent: {}
+[12.482599] (-) TimerEvent: {}
+[12.584130] (-) TimerEvent: {}
+[12.684558] (-) TimerEvent: {}
+[12.785166] (-) TimerEvent: {}
+[12.885718] (-) TimerEvent: {}
+[12.986316] (-) TimerEvent: {}
+[13.086932] (-) TimerEvent: {}
+[13.187549] (-) TimerEvent: {}
+[13.288245] (-) TimerEvent: {}
+[13.388874] (-) TimerEvent: {}
+[13.489465] (-) TimerEvent: {}
+[13.590354] (-) TimerEvent: {}
+[13.690997] (-) TimerEvent: {}
+[13.791558] (-) TimerEvent: {}
+[13.892384] (-) TimerEvent: {}
+[13.967803] (control) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable tf_node\x1b[0m\n'}
+[13.992534] (-) TimerEvent: {}
+[14.093081] (-) TimerEvent: {}
+[14.193547] (-) TimerEvent: {}
+[14.293987] (-) TimerEvent: {}
+[14.394585] (-) TimerEvent: {}
+[14.495215] (-) TimerEvent: {}
+[14.595703] (-) TimerEvent: {}
+[14.696339] (-) TimerEvent: {}
+[14.796946] (-) TimerEvent: {}
+[14.897811] (-) TimerEvent: {}
+[14.989017] (control) StdoutLine: {'line': b'[ 66%] Built target tf_node\n'}
+[14.998015] (-) TimerEvent: {}
+[15.039006] (control) StdoutLine: {'line': b'[100%] Built target px4_visualizer\n'}
+[15.039326] (control) StdoutLine: {'line': b'[100%] Built target auto_fly_test\n'}
+[15.064235] (control) CommandEnded: {'returncode': 0}
+[15.065640] (control) JobProgress: {'identifier': 'control', 'progress': 'install'}
+[15.084400] (control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/myat/path_control_px4/build/control'], 'cwd': '/home/myat/path_control_px4/build/control', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '4286'), ('SYSTEMD_EXEC_PID', '4470'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8341'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:30832'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/4437,unix/myat:/tmp/.ICE-unix/4437'), ('INVOCATION_ID', '3840254fc0b3419f889b57b8839330cf'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4ET9I3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:ef1cc000-069a-4e60-9f40-3901ddc7d111'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[15.098222] (-) TimerEvent: {}
+[15.103344] (control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.104707] (control) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node\n'}
+[15.111974] (control) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""\n'}
+[15.114049] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly\n'}
+[15.114951] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer\n'}
+[15.116771] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test\n'}
+[15.118381] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/land\n'}
+[15.119881] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/adaptive_land\n'}
+[15.120243] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control\n'}
+[15.120981] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control\n'}
+[15.121184] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh\n'}
+[15.121301] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv\n'}
+[15.121454] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh\n'}
+[15.121553] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv\n'}
+[15.121630] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash\n'}
+[15.121696] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh\n'}
+[15.121749] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh\n'}
+[15.121792] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv\n'}
+[15.121836] (control) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv\n'}
+[15.121923] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control\n'}
+[15.122025] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake\n'}
+[15.122115] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake\n'}
+[15.122244] (control) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml\n'}
+[15.126120] (control) CommandEnded: {'returncode': 0}
+[15.156557] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[15.198328] (-) TimerEvent: {}
+[15.298824] (-) TimerEvent: {}
+[15.399617] (-) TimerEvent: {}
+[15.500184] (-) TimerEvent: {}
+[15.600865] (-) TimerEvent: {}
+[15.701839] (-) TimerEvent: {}
+[15.802502] (-) TimerEvent: {}
+[15.903038] (-) TimerEvent: {}
+[16.003567] (-) TimerEvent: {}
+[16.103993] (-) TimerEvent: {}
+[16.204450] (-) TimerEvent: {}
+[16.304955] (-) TimerEvent: {}
+[16.405641] (-) TimerEvent: {}
+[16.506159] (-) TimerEvent: {}
+[16.606732] (-) TimerEvent: {}
+[16.707462] (-) TimerEvent: {}
+[16.808001] (-) TimerEvent: {}
+[16.909156] (-) TimerEvent: {}
+[17.009688] (-) TimerEvent: {}
+[17.110483] (-) TimerEvent: {}
+[17.210875] (-) TimerEvent: {}
+[17.311282] (-) TimerEvent: {}
+[17.411853] (-) TimerEvent: {}
+[17.512783] (-) TimerEvent: {}
+[17.613234] (-) TimerEvent: {}
+[17.713759] (-) TimerEvent: {}
+[17.814288] (-) TimerEvent: {}
+[17.914904] (-) TimerEvent: {}
+[18.015624] (-) TimerEvent: {}
+[18.116186] (-) TimerEvent: {}
+[18.216568] (-) TimerEvent: {}
+[18.317204] (-) TimerEvent: {}
+[18.417648] (-) TimerEvent: {}
+[18.518055] (-) TimerEvent: {}
+[18.618523] (-) TimerEvent: {}
+[18.719339] (-) TimerEvent: {}
+[18.819839] (-) TimerEvent: {}
+[18.920389] (-) TimerEvent: {}
+[19.020892] (-) TimerEvent: {}
+[19.121690] (-) TimerEvent: {}
+[19.222348] (-) TimerEvent: {}
+[19.322746] (-) TimerEvent: {}
+[19.423227] (-) TimerEvent: {}
+[19.523703] (-) TimerEvent: {}
+[19.624157] (-) TimerEvent: {}
+[19.724503] (-) TimerEvent: {}
+[19.824902] (-) TimerEvent: {}
+[19.926019] (-) TimerEvent: {}
+[20.026451] (-) TimerEvent: {}
+[20.126883] (-) TimerEvent: {}
+[20.227281] (-) TimerEvent: {}
+[20.327692] (-) TimerEvent: {}
+[20.428130] (-) TimerEvent: {}
+[20.528631] (-) TimerEvent: {}
+[20.629015] (-) TimerEvent: {}
+[20.729442] (-) TimerEvent: {}
+[20.824868] (vision) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable obstacle_node\x1b[0m\n'}
+[20.829547] (-) TimerEvent: {}
+[20.929880] (-) TimerEvent: {}
+[21.030177] (-) TimerEvent: {}
+[21.130833] (-) TimerEvent: {}
+[21.231819] (-) TimerEvent: {}
+[21.332505] (-) TimerEvent: {}
+[21.433244] (-) TimerEvent: {}
+[21.533778] (-) TimerEvent: {}
+[21.634708] (-) TimerEvent: {}
+[21.735204] (-) TimerEvent: {}
+[21.835633] (-) TimerEvent: {}
+[21.936431] (-) TimerEvent: {}
+[22.036829] (-) TimerEvent: {}
+[22.137356] (-) TimerEvent: {}
+[22.237996] (-) TimerEvent: {}
+[22.338590] (-) TimerEvent: {}
+[22.439405] (-) TimerEvent: {}
+[22.540148] (-) TimerEvent: {}
+[22.640997] (-) TimerEvent: {}
+[22.720452] (vision) StdoutLine: {'line': b'[ 33%] Built target obstacle_node\n'}
+[22.741158] (-) TimerEvent: {}
+[22.764355] (vision) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable aruco_detect\x1b[0m\n'}
+[22.764569] (vision) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable depth_polygon_mask_node\x1b[0m\n'}
+[22.764645] (vision) StdoutLine: {'line': b'[ 66%] Built target lidar\n'}
+[22.774641] (vision) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o\x1b[0m\n'}
+[22.841302] (-) TimerEvent: {}
+[22.941827] (-) TimerEvent: {}
+[23.042361] (-) TimerEvent: {}
+[23.142879] (-) TimerEvent: {}
+[23.243453] (-) TimerEvent: {}
+[23.344245] (-) TimerEvent: {}
+[23.445097] (-) TimerEvent: {}
+[23.546044] (-) TimerEvent: {}
+[23.646887] (-) TimerEvent: {}
+[23.747489] (-) TimerEvent: {}
+[23.848198] (-) TimerEvent: {}
+[23.852817] (vision) StdoutLine: {'line': b'[ 83%] Built target aruco_detect\n'}
+[23.948296] (-) TimerEvent: {}
+[24.048883] (-) TimerEvent: {}
+[24.149774] (-) TimerEvent: {}
+[24.250183] (-) TimerEvent: {}
+[24.353524] (-) TimerEvent: {}
+[24.454221] (-) TimerEvent: {}
+[24.554675] (-) TimerEvent: {}
+[24.655317] (-) TimerEvent: {}
+[24.756851] (-) TimerEvent: {}
+[24.857664] (-) TimerEvent: {}
+[24.958295] (-) TimerEvent: {}
+[24.960276] (vision) StdoutLine: {'line': b'[ 91%] Built target depth_polygon_mask_node\n'}
+[25.058382] (-) TimerEvent: {}
+[25.158973] (-) TimerEvent: {}
+[25.259467] (-) TimerEvent: {}
+[25.359937] (-) TimerEvent: {}
+[25.460522] (-) TimerEvent: {}
+[25.561195] (-) TimerEvent: {}
+[25.661992] (-) TimerEvent: {}
+[25.762643] (-) TimerEvent: {}
+[25.863447] (-) TimerEvent: {}
+[25.963931] (-) TimerEvent: {}
+[26.064568] (-) TimerEvent: {}
+[26.165135] (-) TimerEvent: {}
+[26.265755] (-) TimerEvent: {}
+[26.366699] (-) TimerEvent: {}
+[26.467565] (-) TimerEvent: {}
+[26.568201] (-) TimerEvent: {}
+[26.668631] (-) TimerEvent: {}
+[26.769272] (-) TimerEvent: {}
+[26.869871] (-) TimerEvent: {}
+[26.970473] (-) TimerEvent: {}
+[27.071060] (-) TimerEvent: {}
+[27.171704] (-) TimerEvent: {}
+[27.272086] (-) TimerEvent: {}
+[27.372500] (-) TimerEvent: {}
+[27.472964] (-) TimerEvent: {}
+[27.573297] (-) TimerEvent: {}
+[27.673647] (-) TimerEvent: {}
+[27.774019] (-) TimerEvent: {}
+[27.874445] (-) TimerEvent: {}
+[27.974800] (-) TimerEvent: {}
+[28.075192] (-) TimerEvent: {}
+[28.175884] (-) TimerEvent: {}
+[28.276501] (-) TimerEvent: {}
+[28.377035] (-) TimerEvent: {}
+[28.477504] (-) TimerEvent: {}
+[28.578101] (-) TimerEvent: {}
+[28.678550] (-) TimerEvent: {}
+[28.779157] (-) TimerEvent: {}
+[28.879740] (-) TimerEvent: {}
+[28.980183] (-) TimerEvent: {}
+[29.080610] (-) TimerEvent: {}
+[29.181055] (-) TimerEvent: {}
+[29.281526] (-) TimerEvent: {}
+[29.382112] (-) TimerEvent: {}
+[29.482695] (-) TimerEvent: {}
+[29.583365] (-) TimerEvent: {}
+[29.683887] (-) TimerEvent: {}
+[29.784474] (-) TimerEvent: {}
+[29.885176] (-) TimerEvent: {}
+[29.985774] (-) TimerEvent: {}
+[30.086202] (-) TimerEvent: {}
+[30.186713] (-) TimerEvent: {}
+[30.287163] (-) TimerEvent: {}
+[30.387639] (-) TimerEvent: {}
+[30.488165] (-) TimerEvent: {}
+[30.588851] (-) TimerEvent: {}
+[30.689314] (-) TimerEvent: {}
+[30.789942] (-) TimerEvent: {}
+[30.890449] (-) TimerEvent: {}
+[30.991139] (-) TimerEvent: {}
+[31.091531] (-) TimerEvent: {}
+[31.191995] (-) TimerEvent: {}
+[31.292421] (-) TimerEvent: {}
+[31.392892] (-) TimerEvent: {}
+[31.493560] (-) TimerEvent: {}
+[31.593952] (-) TimerEvent: {}
+[31.694436] (-) TimerEvent: {}
+[31.794947] (-) TimerEvent: {}
+[31.895515] (-) TimerEvent: {}
+[31.996090] (-) TimerEvent: {}
+[32.096450] (-) TimerEvent: {}
+[32.197136] (-) TimerEvent: {}
+[32.297647] (-) TimerEvent: {}
+[32.398674] (-) TimerEvent: {}
+[32.499151] (-) TimerEvent: {}
+[32.599618] (-) TimerEvent: {}
+[32.700413] (-) TimerEvent: {}
+[32.800798] (-) TimerEvent: {}
+[32.901375] (-) TimerEvent: {}
+[33.002034] (-) TimerEvent: {}
+[33.102502] (-) TimerEvent: {}
+[33.202876] (-) TimerEvent: {}
+[33.303257] (-) TimerEvent: {}
+[33.403684] (-) TimerEvent: {}
+[33.504258] (-) TimerEvent: {}
+[33.604680] (-) TimerEvent: {}
+[33.705165] (-) TimerEvent: {}
+[33.805764] (-) TimerEvent: {}
+[33.906127] (-) TimerEvent: {}
+[34.006636] (-) TimerEvent: {}
+[34.107163] (-) TimerEvent: {}
+[34.207617] (-) TimerEvent: {}
+[34.308079] (-) TimerEvent: {}
+[34.409219] (-) TimerEvent: {}
+[34.509784] (-) TimerEvent: {}
+[34.610379] (-) TimerEvent: {}
+[34.710763] (-) TimerEvent: {}
+[34.811560] (-) TimerEvent: {}
+[34.912037] (-) TimerEvent: {}
+[35.012734] (-) TimerEvent: {}
+[35.113443] (-) TimerEvent: {}
+[35.213833] (-) TimerEvent: {}
+[35.314269] (-) TimerEvent: {}
+[35.414959] (-) TimerEvent: {}
+[35.515349] (-) TimerEvent: {}
+[35.615897] (-) TimerEvent: {}
+[35.716646] (-) TimerEvent: {}
+[35.817215] (-) TimerEvent: {}
+[35.917882] (-) TimerEvent: {}
+[36.018527] (-) TimerEvent: {}
+[36.118996] (-) TimerEvent: {}
+[36.219428] (-) TimerEvent: {}
+[36.319801] (-) TimerEvent: {}
+[36.420290] (-) TimerEvent: {}
+[36.520923] (-) TimerEvent: {}
+[36.621324] (-) TimerEvent: {}
+[36.721814] (-) TimerEvent: {}
+[36.822291] (-) TimerEvent: {}
+[36.922867] (-) TimerEvent: {}
+[37.023305] (-) TimerEvent: {}
+[37.123698] (-) TimerEvent: {}
+[37.224086] (-) TimerEvent: {}
+[37.324548] (-) TimerEvent: {}
+[37.425116] (-) TimerEvent: {}
+[37.525698] (-) TimerEvent: {}
+[37.626207] (-) TimerEvent: {}
+[37.726729] (-) TimerEvent: {}
+[37.827149] (-) TimerEvent: {}
+[37.927571] (-) TimerEvent: {}
+[38.028116] (-) TimerEvent: {}
+[38.128421] (-) TimerEvent: {}
+[38.228773] (-) TimerEvent: {}
+[38.329287] (-) TimerEvent: {}
+[38.429910] (-) TimerEvent: {}
+[38.530460] (-) TimerEvent: {}
+[38.630901] (-) TimerEvent: {}
+[38.731476] (-) TimerEvent: {}
+[38.797896] (vision) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointcloud_node\x1b[0m\n'}
+[38.831628] (-) TimerEvent: {}
+[38.932198] (-) TimerEvent: {}
+[39.032898] (-) TimerEvent: {}
+[39.133410] (-) TimerEvent: {}
+[39.234194] (-) TimerEvent: {}
+[39.334945] (-) TimerEvent: {}
+[39.435720] (-) TimerEvent: {}
+[39.536371] (-) TimerEvent: {}
+[39.636974] (-) TimerEvent: {}
+[39.737544] (-) TimerEvent: {}
+[39.838184] (-) TimerEvent: {}
+[39.938761] (-) TimerEvent: {}
+[40.039496] (-) TimerEvent: {}
+[40.140032] (-) TimerEvent: {}
+[40.240987] (-) TimerEvent: {}
+[40.341603] (-) TimerEvent: {}
+[40.442327] (-) TimerEvent: {}
+[40.543003] (-) TimerEvent: {}
+[40.643768] (-) TimerEvent: {}
+[40.744438] (-) TimerEvent: {}
+[40.845113] (-) TimerEvent: {}
+[40.942908] (vision) StdoutLine: {'line': b'[100%] Built target pointcloud_node\n'}
+[40.945209] (-) TimerEvent: {}
+[40.964947] (vision) CommandEnded: {'returncode': 0}
+[40.966521] (vision) JobProgress: {'identifier': 'vision', 'progress': 'install'}
+[40.966879] (vision) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/myat/path_control_px4/build/vision'], 'cwd': '/home/myat/path_control_px4/build/vision', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '4286'), ('SYSTEMD_EXEC_PID', '4470'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8341'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:30832'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/4437,unix/myat:/tmp/.ICE-unix/4437'), ('INVOCATION_ID', '3840254fc0b3419f889b57b8839330cf'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4ET9I3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:ef1cc000-069a-4e60-9f40-3901ddc7d111'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/vision'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[40.982076] (vision) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.983360] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/camera_recorder\n'}
+[40.992474] (vision) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/camera_recorder" to ""\n'}
+[40.993826] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/depth_polygon_mask_node\n'}
+[41.005166] (vision) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/depth_polygon_mask_node" to ""\n'}
+[41.006404] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node\n'}
+[41.013627] (vision) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node" to ""\n'}
+[41.014632] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/aruco_detect\n'}
+[41.017436] (vision) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/aruco_detect" to ""\n'}
+[41.018622] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/lidar\n'}
+[41.019525] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/obstacle_node\n'}
+[41.024964] (vision) StdoutLine: {'line': b'-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/obstacle_node" to ""\n'}
+[41.025242] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/package_run_dependencies/vision\n'}
+[41.025418] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/parent_prefix_path/vision\n'}
+[41.025577] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.sh\n'}
+[41.025654] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.dsv\n'}
+[41.025787] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.sh\n'}
+[41.025870] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.dsv\n'}
+[41.025937] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.bash\n'}
+[41.026008] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.sh\n'}
+[41.026151] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.zsh\n'}
+[41.026232] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.dsv\n'}
+[41.026298] (vision) StdoutLine: {'line': b'-- Installing: /home/myat/path_control_px4/install/vision/share/vision/package.dsv\n'}
+[41.027028] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/packages/vision\n'}
+[41.027157] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig.cmake\n'}
+[41.027235] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig-version.cmake\n'}
+[41.027306] (vision) StdoutLine: {'line': b'-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/package.xml\n'}
+[41.031040] (vision) CommandEnded: {'returncode': 0}
+[41.045550] (-) TimerEvent: {}
+[41.046329] (vision) JobEnded: {'identifier': 'vision', 'rc': 0}
+[41.048035] (-) EventReactorShutdown: {}

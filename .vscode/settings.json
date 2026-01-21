@@ -22,5 +22,6 @@
         "/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }

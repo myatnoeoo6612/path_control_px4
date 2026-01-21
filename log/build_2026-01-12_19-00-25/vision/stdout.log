@@ -1,0 +1,6 @@
+[  8%] [32mBuilding CXX object CMakeFiles/obstacle.dir/src/obstacle.cpp.o[0m
+[ 58%] Built target depth_polygon_mask_node
+[ 58%] Built target camera_recorder
+[ 66%] Built target lidar
+[ 75%] Built target aruco_detect
+[ 91%] Built target pointcloud_node

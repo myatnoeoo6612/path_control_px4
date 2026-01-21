@@ -20,37 +20,47 @@ def generate_launch_description():
             arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'map', 'world'],
             output='screen'
         ),
-        # Node(
-        #     package='ros_gz_bridge',
-        #     executable='parameter_bridge',
-        #     name='image_bridge',
-        #     arguments=[
-        #         '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/image@sensor_msgs/msg/Image@gz.msgs.Image'
-        #     ],
-        #     output='screen'
-        # ),
+        Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            name='image_bridge',
+            arguments=[
+                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/image@sensor_msgs/msg/Image@gz.msgs.Image'
+            ],
+            output='screen'
+        ),
 
-        # # depth bridge
-        # Node(
-        #     package='ros_gz_bridge',
-        #     executable='parameter_bridge',
-        #     name='depth_bridge',
-        #     arguments=[
-        #         '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
-        #     ],
-        #     output='screen'
-        # ),
+        # depth bridge
+        Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            name='depth_bridge',
+            arguments=[
+                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
+            ],
+            output='screen'
+        ),
         
-        # # CameraInfo bridge
-        # Node(
-        #     package='ros_gz_bridge',
-        #     executable='parameter_bridge',
-        #     name='depth_camera_bridge',
-        #     arguments=[
-        #         '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
-        #     ],
-        #     output='screen'
-        # ),       
+        # CameraInfo bridge
+        Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            name='depth_camera_bridge',
+            arguments=[
+                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
+            ],
+            output='screen'
+        ),       
+
+        Node(
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            name='lidar',
+            arguments=[
+                '/world/default/model/x500_depth_0/link/link/sensor/lidar_2d_v2/scan/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'
+            ],
+            output='screen'
+        ),    
 
 
         Node(

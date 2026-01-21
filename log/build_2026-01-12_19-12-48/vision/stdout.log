@@ -1,0 +1,6 @@
+[  8%] [32m[1mLinking CXX executable obstacle[0m
+[ 75%] Built target depth_polygon_mask_node
+[ 75%] Built target lidar
+[ 75%] Built target aruco_detect
+[ 75%] Built target camera_recorder
+[ 91%] Built target pointcloud_node

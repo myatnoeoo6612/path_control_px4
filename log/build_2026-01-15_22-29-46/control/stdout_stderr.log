@@ -1,0 +1,9 @@
+[ 33%] Built target trajectory_fly
+[ 33%] Built target auto_fly_test
+[ 66%] Built target land
+[ 66%] Built target adaptive_land
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

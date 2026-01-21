@@ -1,0 +1,14 @@
+[0.327s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.418s] [ 10%] [32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o[0m
+[0.428s] [ 50%] Built target depth_polygon_mask_node
+[0.428s] [ 50%] Built target aruco_detect
+[0.431s] [ 70%] Built target camera_recorder
+[0.436s] [ 90%] Built target pointcloud_node
+[0.472s] [100%] [32m[1mLinking CXX executable lidar[0m
+[30.453s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[30.454s] (.text+0x1b): undefined reference to `main'
+[30.459s] collect2: error: ld returned 1 exit status
+[30.461s] gmake[2]: *** [CMakeFiles/lidar.dir/build.make:370: lidar] Error 1
+[30.462s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/lidar.dir/all] Error 2
+[30.462s] gmake: *** [Makefile:146: all] Error 2
+[30.464s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

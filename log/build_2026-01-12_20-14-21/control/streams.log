@@ -1,0 +1,16 @@
+[0.019s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.143s] [35m[1mConsolidate compiler generated dependencies of target trajectory_fly[0m
+[0.158s] [ 83%] Built target tf_node
+[0.158s] [ 83%] Built target adaptive_land
+[0.158s] [ 83%] Built target auto_fly_test
+[0.158s] [ 83%] Built target px4_visualizer
+[0.158s] [ 83%] Built target land
+[0.165s] [ 91%] [32mBuilding CXX object CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o[0m
+[0.545s] [01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kpcl_conversions/pcl_conversions.h: No such file or directory
+[0.545s]    11 | #include [01;31m[K<pcl_conversions/pcl_conversions.h>[m[K
+[0.545s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.545s] compilation terminated.
+[0.550s] gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:76: CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o] Error 1
+[0.551s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/trajectory_fly.dir/all] Error 2
+[0.551s] gmake: *** [Makefile:146: all] Error 2
+[0.553s] Invoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12

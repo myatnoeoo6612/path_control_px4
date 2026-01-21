@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 
 # ================= CONFIG =================
-bag_path = Path("/home/myat/path_control_px4/rosbag2_7")  # CHANGE ME
+bag_path = Path("/home/myat/path_control_px4/rosbag2_a")  # CHANGE ME
 px4_msg_path = Path("/home/myat/path_control_px4/src/px4_msgs/msg")
 
 # ================= LOAD TYPESTORE =================

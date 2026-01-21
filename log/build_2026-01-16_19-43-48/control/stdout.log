@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 75%] Built target adaptive_land
+[ 75%] Built target auto_fly_test
+[ 75%] [32mBuilding CXX object CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o[0m
+[ 75%] Built target px4_visualizer
+[ 75%] Built target land
+[ 83%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
