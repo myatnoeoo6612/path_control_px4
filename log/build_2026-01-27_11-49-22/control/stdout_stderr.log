@@ -1,0 +1,36 @@
+[  8%] [32mBuilding CXX object CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o[0m
+[ 25%] Built target tf_node
+[ 75%] Built target adaptive_land
+[ 75%] Built target auto_fly_test
+[ 75%] Built target land
+[ 91%] Built target trajectory_fly
+[100%] [32m[1mLinking CXX executable px4_visualizer[0m
+[100%] Built target px4_visualizer
+-- Install configuration: ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/trajectory_fly" to ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/px4_visualizer" to ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/auto_fly_test" to ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/land
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/land" to ""
+-- Installing: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+-- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/adaptive_land" to ""
+-- Installing: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+-- Installing: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+-- Installing: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+-- Installing: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+-- Installing: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+-- Installing: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+-- Installing: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+-- Installing: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+-- Installing: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+-- Installing: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.dsv
+-- Installing: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+-- Installing: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+-- Installing: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+-- Installing: /home/myat/path_control_px4/install/control/share/control/package.xml

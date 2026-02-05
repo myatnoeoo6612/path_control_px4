@@ -1,0 +1,4 @@
+Invoking command in '/home/myat/path_control_px4/build/px4_msgs': /usr/bin/cmake --build /home/myat/path_control_px4/build/px4_msgs -- -j12 -l12
+Invoked command in '/home/myat/path_control_px4/build/px4_msgs' returned '0': /usr/bin/cmake --build /home/myat/path_control_px4/build/px4_msgs -- -j12 -l12
+Invoking command in '/home/myat/path_control_px4/build/px4_msgs': /usr/bin/cmake --install /home/myat/path_control_px4/build/px4_msgs
+Invoked command in '/home/myat/path_control_px4/build/px4_msgs' returned '0': /usr/bin/cmake --install /home/myat/path_control_px4/build/px4_msgs

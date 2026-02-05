@@ -1,0 +1,6 @@
+Built target depth_polygon_mask_node
+Built target camera_recorder
+Built target lidar
+Built target aruco_detect
+[32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m
+Built target obstacle_node

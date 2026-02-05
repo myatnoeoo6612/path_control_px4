@@ -1,0 +1,4 @@
+Invoking command in '/home/myat/path_control_px4/build/vision': /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+Invoking command in '/home/myat/path_control_px4/build/vision': /usr/bin/cmake --install /home/myat/path_control_px4/build/vision
+Invoked command in '/home/myat/path_control_px4/build/vision' returned '0': /usr/bin/cmake --install /home/myat/path_control_px4/build/vision

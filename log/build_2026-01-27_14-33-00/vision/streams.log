@@ -1,0 +1,12 @@
+[0.019s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_node[0m
+[0.114s] [ 50%] Built target aruco_detect
+[0.114s] [ 50%] Built target camera_recorder
+[0.114s] [ 50%] Built target depth_polygon_mask_node
+[0.116s] [ 66%] Built target lidar
+[0.124s] [ 83%] Built target obstacle_node
+[0.139s] [ 91%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m
+[17.275s] gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Error 1
+[17.275s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/pointcloud_node.dir/all] Error 2
+[17.276s] gmake: *** [Makefile:146: all] Error 2
+[17.278s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

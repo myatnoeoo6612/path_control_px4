@@ -9,6 +9,7 @@
 #include <visualization_msgs/msg/marker.hpp>
 
 #include <Eigen/Dense>
+#include <Eigen/Geometry>
 #include <chrono>
 
 using namespace std::chrono_literals;
@@ -19,6 +20,20 @@ public:
     PX4Visualizer() : Node("px4_visualizer")
     {
         auto qos = rclcpp::QoS(10).best_effort();
+
+        // ================= WORLD FRAME =================
+        // ROS ENU → PX4 NED
+        Eigen::Matrix3f R_enu_ned;
+        R_enu_ned << 0, 1, 0,
+                     1, 0, 0,
+                     0, 0, -1;
+        q_enu_to_ned_ = Eigen::Quaternionf(R_enu_ned);
+
+        // ================= BODY FRAME =================
+        // PX4 FRD → ROS FLU (180° about X)
+        q_frd_to_flu_ = Eigen::Quaternionf(
+            Eigen::AngleAxisf(M_PI, Eigen::Vector3f::UnitX())
+        );
 
         vehicle_attitude_sub_ = create_subscription<px4_msgs::msg::VehicleAttitude>(
             "/fmu/out/vehicle_attitude", qos,
@@ -33,28 +48,28 @@ public:
             std::bind(&PX4Visualizer::setpointCallback, this, std::placeholders::_1));
 
         pose_pub_ = create_publisher<geometry_msgs::msg::PoseStamped>(
-            "/px4_visualizer/vehicle_pose", 10);
+            "/px4_visualizer/vehicle_pose", 100);
 
         vehicle_path_pub_ = create_publisher<nav_msgs::msg::Path>(
-            "/px4_visualizer/vehicle_path", 10);
+            "/px4_visualizer/vehicle_path", 100);
 
         setpoint_path_pub_ = create_publisher<nav_msgs::msg::Path>(
-            "/px4_visualizer/setpoint_path", 10);
+            "/px4_visualizer/setpoint_path", 100);
 
         velocity_marker_pub_ = create_publisher<visualization_msgs::msg::Marker>(
-            "/px4_visualizer/velocity_arrow", 10);
+            "/px4_visualizer/velocity_arrow", 100);
 
-        timer_ = create_wall_timer(50ms,
-            std::bind(&PX4Visualizer::timerCallback, this));
+        timer_ = create_wall_timer(
+            50ms, std::bind(&PX4Visualizer::timerCallback, this));
     }
 
 private:
-    // Subscribers
+    // ================= ROS =================
+
     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr vehicle_attitude_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_sub_;
     rclcpp::Subscription<px4_msgs::msg::TrajectorySetpoint>::SharedPtr setpoint_sub_;
 
-    // Publishers
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr vehicle_path_pub_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr setpoint_path_pub_;
@@ -62,24 +77,33 @@ private:
 
     rclcpp::TimerBase::SharedPtr timer_;
 
-    // State
-    Eigen::Vector3f position_world_{0, 0, 0};
-    Eigen::Vector3f velocity_world_{0, 0, 0};
-    Eigen::Quaternionf q_world_body_{1, 0, 0, 0};
+    // ================= STATE =================
+
+    Eigen::Vector3f position_world_{0, 0, 0};     // ENU
+    Eigen::Vector3f velocity_world_{0, 0, 0};     // ENU
+
+    Eigen::Quaternionf q_world_body_{1, 0, 0, 0}; // ROS ENU → FLU
+    Eigen::Quaternionf q_enu_to_ned_;
+    Eigen::Quaternionf q_frd_to_flu_;
+
     Eigen::Vector3f setpoint_world_{0, 0, 0};
 
     nav_msgs::msg::Path vehicle_path_;
     nav_msgs::msg::Path setpoint_path_;
 
-    constexpr static size_t TRAIL_SIZE = 1000;
+    constexpr static size_t TRAIL_SIZE = 500;
 
     // ================= CALLBACKS =================
 
     void attitudeCallback(const px4_msgs::msg::VehicleAttitude::SharedPtr msg)
     {
-        // PX4 provides q = [w, x, y, z]
-        q_world_body_ = Eigen::Quaternionf(
+        // PX4 quaternion: NED → FRD
+        Eigen::Quaternionf q_px4(
             msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
+
+        // ROS quaternion: ENU → FLU
+        q_world_body_ = q_enu_to_ned_ * q_px4 * q_frd_to_flu_;
+        q_world_body_.normalize();
     }
 
     void positionCallback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg)
@@ -118,7 +142,7 @@ private:
         const Eigen::Vector3f &v_world,
         const Eigen::Quaternionf &q_world_body)
     {
-        // Rotate velocity into body frame
+        // ENU → FLU
         return q_world_body.inverse() * v_world;
     }
 
@@ -142,7 +166,7 @@ private:
         pose_pub_->publish(pose_msg);
         pushPath(vehicle_path_, pose_msg, vehicle_path_pub_);
 
-        // Setpoint path
+        // Setpoint
         auto sp_pose = makePose(setpoint_world_, q_world_body_);
         pushPath(setpoint_path_, sp_pose, setpoint_path_pub_);
 
@@ -152,7 +176,7 @@ private:
 
         visualization_msgs::msg::Marker arrow;
         arrow.header.stamp = now();
-        arrow.header.frame_id = "base_link";   // CORRECT
+        arrow.header.frame_id = "base_link";   // FLU
         arrow.ns = "velocity";
         arrow.id = 0;
         arrow.type = visualization_msgs::msg::Marker::ARROW;
@@ -172,10 +196,10 @@ private:
         p0.y = 0.0;
         p0.z = 0.0;
 
-        // Forward = X (RED axis)
-        p1.x = 0.4 * vel_body.x();
-        p1.y = 0.4 * vel_body.y();
-        p1.z = 0.4 * vel_body.z();
+        // X = forward (RED)
+        p1.x = vel_body.x();
+        p1.y = vel_body.y();
+        p1.z = vel_body.z();
 
         arrow.points = {p0, p1};
         velocity_marker_pub_->publish(arrow);

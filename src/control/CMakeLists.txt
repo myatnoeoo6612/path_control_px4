@@ -55,8 +55,18 @@ ament_target_dependencies(px4_visualizer
   nav_msgs
   geometry_msgs
   visualization_msgs
-  nav_msgs
 )
+
+add_executable(static_tf src/static_tf.cpp)
+
+ament_target_dependencies(
+  static_tf
+  rclcpp
+  tf2
+  tf2_ros
+  geometry_msgs
+)
+
 
 add_executable(tf_node src/tf_node.cpp)
 ament_target_dependencies(tf_node
@@ -96,6 +106,7 @@ ament_target_dependencies(adaptive_land
 
 install(TARGETS
   tf_node
+  static_tf
   trajectory_fly
   px4_visualizer
   auto_fly_test
@@ -113,6 +124,11 @@ target_link_libraries(
   ${OpenCV_LIBS}
   ${PCL_LIBRARIES}
 )
+target_link_libraries(px4_visualizer
+  Eigen3::Eigen
+)
+
+
 include_directories(
   ${EIGEN3_INCLUDE_DIRS}
   ${PCL_INCLUDE_DIRS}

@@ -1,4 +1,5 @@
 /home/myat/path_control_px4/install/control/lib/control/tf_node
+/home/myat/path_control_px4/install/control/lib/control/static_tf
 /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
 /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
 /home/myat/path_control_px4/install/control/lib/control/auto_fly_test

@@ -1,0 +1,36 @@
+[0.019s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[0.110s] [ 66%] Built target land
+[0.110s] [ 66%] Built target adaptive_land
+[0.111s] [ 66%] Built target trajectory_fly
+[0.111s] [ 66%] Built target px4_visualizer
+[0.114s] [ 83%] Built target auto_fly_test
+[0.118s] [ 91%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[9.375s] [100%] [32m[1mLinking CXX executable tf_node[0m
+[10.267s] [100%] Built target tf_node
+[10.282s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[10.285s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/myat/path_control_px4/build/control
+[10.294s] -- Install configuration: ""
+[10.295s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node
+[10.301s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""
+[10.301s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+[10.301s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/land
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[10.302s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+[10.303s] -- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+[10.303s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml
+[10.307s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/myat/path_control_px4/build/control

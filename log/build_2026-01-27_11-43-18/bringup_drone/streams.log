@@ -1,0 +1,34 @@
+[0.689s] Invoking command in '/home/myat/path_control_px4/src/bringup_drone': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data
+[0.927s] running egg_info
+[0.927s] creating ../../build/bringup_drone/bringup_drone.egg-info
+[0.927s] writing ../../build/bringup_drone/bringup_drone.egg-info/PKG-INFO
+[0.928s] writing dependency_links to ../../build/bringup_drone/bringup_drone.egg-info/dependency_links.txt
+[0.928s] writing entry points to ../../build/bringup_drone/bringup_drone.egg-info/entry_points.txt
+[0.928s] writing requirements to ../../build/bringup_drone/bringup_drone.egg-info/requires.txt
+[0.928s] writing top-level names to ../../build/bringup_drone/bringup_drone.egg-info/top_level.txt
+[0.928s] writing manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'
+[0.929s] reading manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'
+[0.930s] writing manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'
+[0.930s] running build
+[0.930s] running build_py
+[0.930s] creating /home/myat/path_control_px4/build/bringup_drone/build
+[0.930s] creating /home/myat/path_control_px4/build/bringup_drone/build/lib
+[0.930s] creating /home/myat/path_control_px4/build/bringup_drone/build/lib/bringup_drone
+[0.930s] copying bringup_drone/__init__.py -> /home/myat/path_control_px4/build/bringup_drone/build/lib/bringup_drone
+[0.930s] running install
+[0.930s] running install_lib
+[0.931s] creating /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone
+[0.931s] copying /home/myat/path_control_px4/build/bringup_drone/build/lib/bringup_drone/__init__.py -> /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone
+[0.931s] byte-compiling /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone/__init__.py to __init__.cpython-310.pyc
+[0.931s] running install_data
+[0.931s] creating /home/myat/path_control_px4/install/bringup_drone/share/ament_index
+[0.931s] creating /home/myat/path_control_px4/install/bringup_drone/share/ament_index/resource_index
+[0.931s] creating /home/myat/path_control_px4/install/bringup_drone/share/ament_index/resource_index/packages
+[0.931s] copying resource/bringup_drone -> /home/myat/path_control_px4/install/bringup_drone/share/ament_index/resource_index/packages
+[0.931s] copying package.xml -> /home/myat/path_control_px4/install/bringup_drone/share/bringup_drone
+[0.932s] copying launch/bringup_launch.launch.py -> /home/myat/path_control_px4/install/bringup_drone/share/bringup_drone
+[0.932s] running install_egg_info
+[0.933s] Copying ../../build/bringup_drone/bringup_drone.egg-info to /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone-0.0.0-py3.10.egg-info
+[0.934s] running install_scripts
+[0.948s] writing list of installed files to '/home/myat/path_control_px4/build/bringup_drone/install.log'
+[0.972s] Invoked command in '/home/myat/path_control_px4/src/bringup_drone' returned '0': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data

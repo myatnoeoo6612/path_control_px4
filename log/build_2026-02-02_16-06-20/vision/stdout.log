@@ -1,0 +1,31 @@
+[ 16%] Built target camera_recorder
+[ 50%] Built target lidar
+[ 50%] Built target depth_polygon_mask_node
+[ 58%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[ 75%] Built target pointcloud_node
+[ 91%] Built target obstacle_node
+[100%] [32m[1mLinking CXX executable aruco_detect[0m
+[100%] Built target aruco_detect
+-- Install configuration: ""
+-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/camera_recorder
+-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/depth_polygon_mask_node
+-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/pointcloud_node
+-- Installing: /home/myat/path_control_px4/install/vision/lib/vision/aruco_detect
+-- Set runtime path of "/home/myat/path_control_px4/install/vision/lib/vision/aruco_detect" to ""
+-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/lidar
+-- Up-to-date: /home/myat/path_control_px4/install/vision/lib/vision/obstacle_node
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/package_run_dependencies/vision
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/parent_prefix_path/vision
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.sh
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/environment/path.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.bash
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.sh
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.zsh
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/local_setup.dsv
+-- Installing: /home/myat/path_control_px4/install/vision/share/vision/package.dsv
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/packages/vision
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/cmake/visionConfig-version.cmake
+-- Up-to-date: /home/myat/path_control_px4/install/vision/share/vision/package.xml

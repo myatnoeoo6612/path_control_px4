@@ -1,0 +1,34 @@
+[ 33%] Built target auto_fly_test
+[ 33%] Built target trajectory_fly
+[ 50%] Built target adaptive_land
+[ 66%] Built target land
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:[m[K In constructor ‘[01m[KPx4TfBroadcaster::Px4TfBroadcaster()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:21:38:[m[K [01;31m[Kerror: [m[K‘[01m[Koptions[m[K’ was not declared in this scope; did you mean ‘[01m[Koptind[m[K’?
+   21 |         : Node("px4_tf_broadcaster", [01;31m[Koptions[m[K)
+      |                                      [01;31m[K^~~~~~~[m[K
+      |                                      [32m[Koptind[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Px4TfBroadcaster; _Args = {rclcpp::NodeOptions&}; _Tp = Px4TfBroadcaster][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Px4TfBroadcaster; _Args = {rclcpp::NodeOptions&}; _Tp = Px4TfBroadcaster; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Px4TfBroadcaster>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {rclcpp::NodeOptions&}; _Tp = Px4TfBroadcaster; _Alloc = std::allocator<Px4TfBroadcaster>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Px4TfBroadcaster; _Alloc = std::allocator<Px4TfBroadcaster>; _Args = {rclcpp::NodeOptions&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Px4TfBroadcaster>; _Args = {rclcpp::NodeOptions&}; _Tp = Px4TfBroadcaster; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Px4TfBroadcaster>; _Args = {rclcpp::NodeOptions&}; _Tp = Px4TfBroadcaster][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Px4TfBroadcaster; _Alloc = std::allocator<Px4TfBroadcaster>; _Args = {rclcpp::NodeOptions&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Px4TfBroadcaster; _Args = {rclcpp::NodeOptions&}][m[K’
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:130:52:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPx4TfBroadcaster::Px4TfBroadcaster(rclcpp::NodeOptions&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:20:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KPx4TfBroadcaster::Px4TfBroadcaster()[m[K’
+   20 |     [01;36m[KPx4TfBroadcaster[m[K()
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/tf_node.cpp:20:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

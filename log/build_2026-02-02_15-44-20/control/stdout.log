@@ -1,0 +1,6 @@
+[  8%] [32mBuilding CXX object CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o[0m
+[ 25%] Built target land
+[ 41%] Built target tf_node
+[ 58%] Built target adaptive_land
+[ 75%] Built target auto_fly_test
+[ 91%] Built target px4_visualizer

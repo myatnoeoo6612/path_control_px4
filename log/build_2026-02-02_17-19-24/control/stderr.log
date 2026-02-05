@@ -1,0 +1,10 @@
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid SimpleLandingController::control_loop()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:462:29:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::Vector3f landing_target[m[K’
+  462 |             Eigen::Vector3f [01;31m[Klanding_target[m[K = aruco_pos_;
+      |                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:461:29:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector3f landing_target[m[K’ previously declared here
+  461 |             Eigen::Vector3f [01;36m[Klanding_target[m[K = aruco_pos_ + landing_offset_;
+      |                             [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

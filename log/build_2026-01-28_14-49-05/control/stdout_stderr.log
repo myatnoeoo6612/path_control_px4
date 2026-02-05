@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 16%] Built target px4_visualizer
+[ 33%] Built target auto_fly_test
+[ 50%] Built target trajectory_fly
+[ 66%] Built target land
+[ 75%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[ 91%] Built target adaptive_land
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,8 @@
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid SimpleLandingController::control_loop()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:461:59:[m[K [01;31m[Kerror: [m[K‘[01m[Klanding_offset_[m[K’ was not declared in this scope; did you mean ‘[01m[Klanding_target[m[K’?
+  461 |             Eigen::Vector3f landing_target = aruco_pos_ + [01;31m[Klanding_offset_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                           [32m[Klanding_target[m[K
+gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

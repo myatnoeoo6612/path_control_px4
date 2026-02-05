@@ -695,6 +695,11 @@ CMakeFiles/land.dir/src/land.cpp.o: /home/myat/path_control_px4/src/control/src/
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
   /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
@@ -1184,6 +1189,12 @@ CMakeFiles/land.dir/src/land.cpp.o: /home/myat/path_control_px4/src/control/src/
 /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp:
 
 /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp:
 
 /home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
 
@@ -1781,6 +1792,8 @@ CMakeFiles/land.dir/src/land.cpp.o: /home/myat/path_control_px4/src/control/src/
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -2020,6 +2033,8 @@ CMakeFiles/land.dir/src/land.cpp.o: /home/myat/path_control_px4/src/control/src/
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/array:
+
+/home/myat/path_control_px4/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 

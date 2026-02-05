@@ -291,7 +291,7 @@ private:
             }
             else
             {
-                land();
+                precision_land();
                 state_ = "END";
             }
         }
@@ -323,6 +323,10 @@ private:
     void arm()
     {
         send_cmd(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1);
+    }
+    void precision_land()
+    {
+        send_cmd(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_PRECLAND);
     }
 
     void land()

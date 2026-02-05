@@ -1,7 +1,0 @@
-[01m[K/home/myat/path_control_px4/src/vision/src/lidar.cpp:42:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/ccevnYLm.s: No space left on device
-   42 | [01;31m[K}[m[K
-      | [01;31m[K^[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/lidar.dir/build.make:76: CMakeFiles/lidar.dir/src/lidar.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/lidar.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

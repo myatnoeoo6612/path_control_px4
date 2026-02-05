@@ -1,0 +1,21 @@
+[1.081s] Invoking command in '/home/myat/path_control_px4/src/bringup_drone': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data
+[1.446s] running egg_info
+[1.447s] writing ../../build/bringup_drone/bringup_drone.egg-info/PKG-INFO
+[1.448s] writing dependency_links to ../../build/bringup_drone/bringup_drone.egg-info/dependency_links.txt
+[1.448s] writing entry points to ../../build/bringup_drone/bringup_drone.egg-info/entry_points.txt
+[1.448s] writing requirements to ../../build/bringup_drone/bringup_drone.egg-info/requires.txt
+[1.448s] writing top-level names to ../../build/bringup_drone/bringup_drone.egg-info/top_level.txt
+[1.451s] reading manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'
+[1.452s] writing manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'
+[1.452s] running build
+[1.452s] running build_py
+[1.453s] running install
+[1.453s] running install_lib
+[1.454s] running install_data
+[1.454s] copying launch/bringup_launch.launch.py -> /home/myat/path_control_px4/install/bringup_drone/share/bringup_drone
+[1.455s] running install_egg_info
+[1.457s] removing '/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone-0.0.0-py3.10.egg-info' (and everything under it)
+[1.458s] Copying ../../build/bringup_drone/bringup_drone.egg-info to /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone-0.0.0-py3.10.egg-info
+[1.459s] running install_scripts
+[1.481s] writing list of installed files to '/home/myat/path_control_px4/build/bringup_drone/install.log'
+[1.559s] Invoked command in '/home/myat/path_control_px4/src/bringup_drone' returned '0': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data

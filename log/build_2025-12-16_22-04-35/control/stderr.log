@@ -1,4 +1,0 @@
-[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:[m[K In member function ‘[01m[Kvoid AdaptiveLanding::track_target()[m[K’:
-[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:277:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kservo_yaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  277 |         float [01;35m[Kservo_yaw[m[K = std::atan2(
-      |               [01;35m[K^~~~~~~~~[m[K

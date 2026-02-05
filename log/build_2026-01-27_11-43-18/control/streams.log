@@ -1,0 +1,153 @@
+[0.010s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/myat/path_control_px4/src/control -DCMAKE_INSTALL_PREFIX=/home/myat/path_control_px4/install/control
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.176s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.247s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.253s] -- Detecting CXX compile features - done
+[0.257s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.416s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.508s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.559s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.566s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.575s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.587s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.603s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.649s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.652s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.746s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.780s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.828s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.839s] -- Looking for pthread.h
+[0.904s] -- Looking for pthread.h - found
+[0.905s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.972s] -- Found Threads: TRUE  
+[1.015s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.023s] -- Found px4_msgs: 2.0.1 (/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/cmake)
+[1.034s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.047s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.124s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.144s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.145s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.145s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.150s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.179s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.204s] -- Checking for module 'eigen3'
+[1.217s] --   Found eigen3, version 3.4.0
+[1.254s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.254s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.281s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.348s] -- Checking for module 'libusb-1.0'
+[1.362s] --   Found libusb-1.0, version 1.0.25
+[1.400s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.401s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[1.401s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.459s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[1.460s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.460s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.460s] [0m** WARNING ** io features related to png will be disabled[0m
+[1.484s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.490s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.616s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.616s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.618s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.627s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.643s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.652s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.746s] -- Found X11: /usr/include   
+[1.746s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.812s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.812s] -- Looking for gethostbyname
+[1.876s] -- Looking for gethostbyname - found
+[1.876s] -- Looking for connect
+[1.941s] -- Looking for connect - found
+[1.941s] -- Looking for remove
+[2.005s] -- Looking for remove - found
+[2.006s] -- Looking for shmat
+[2.070s] -- Looking for shmat - found
+[2.071s] -- Looking for IceConnectionNumber in ICE
+[2.134s] -- Looking for IceConnectionNumber in ICE - found
+[2.213s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.214s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.215s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.217s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.230s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[2.235s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.238s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.241s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.266s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.286s] -- Checking for module 'flann'
+[2.301s] --   Found flann, version 1.9.1
+[2.347s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.347s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.572s] -- looking for PCL_COMMON
+[2.572s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.573s] -- looking for PCL_OCTREE
+[2.573s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.573s] -- looking for PCL_IO
+[2.574s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.574s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.575s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.575s] -- looking for PCL_KDTREE
+[2.575s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.576s] -- looking for PCL_FILTERS
+[2.576s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.576s] -- looking for PCL_GEOMETRY
+[2.576s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.577s] -- looking for PCL_ML
+[2.577s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.577s] -- looking for PCL_SEGMENTATION
+[2.578s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.578s] -- looking for PCL_2D
+[2.578s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.578s] -- looking for PCL_FEATURES
+[2.579s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.579s] -- looking for PCL_SEARCH
+[2.580s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.580s] -- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_sample_consensus;pcl_kdtree;pcl_filters;pcl_ml;pcl_segmentation;pcl_features;pcl_search;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN  
+[2.583s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.626s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.714s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.718s] -- Configured cppcheck include dirs: 
+[2.718s] -- Configured cppcheck exclude dirs and/or files: 
+[2.718s] -- Added test 'lint_cmake' to check CMake code style
+[2.719s] -- Added test 'uncrustify' to check C / C++ code style
+[2.719s] -- Configured uncrustify additional arguments: 
+[2.720s] -- Added test 'xmllint' to check XML markup files
+[2.721s] -- Configuring done
+[2.766s] -- Generating done
+[2.779s] -- Build files have been written to: /home/myat/path_control_px4/build/control
+[2.797s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/myat/path_control_px4/src/control -DCMAKE_INSTALL_PREFIX=/home/myat/path_control_px4/install/control
+[2.798s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[2.851s] [ 25%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[2.851s] [ 25%] [32mBuilding CXX object CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o[0m
+[2.851s] [ 25%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[2.851s] [ 33%] [32mBuilding CXX object CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o[0m
+[2.851s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o[0m
+[2.852s] [ 50%] [32mBuilding CXX object CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o[0m
+[2.869s] [ 58%] [32m[1mLinking CXX executable px4_visualizer[0m
+[2.954s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[2.954s] (.text+0x1b): undefined reference to `main'
+[2.956s] collect2: error: ld returned 1 exit status
+[2.958s] gmake[2]: *** [CMakeFiles/px4_visualizer.dir/build.make:199: px4_visualizer] Error 1
+[2.958s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/px4_visualizer.dir/all] Error 2
+[2.958s] gmake[1]: *** Waiting for unfinished jobs....
+[9.790s] [ 66%] [32m[1mLinking CXX executable tf_node[0m
+[10.358s] [ 66%] Built target tf_node
+[13.749s] [ 75%] [32m[1mLinking CXX executable land[0m
+[14.016s] [ 83%] [32m[1mLinking CXX executable trajectory_fly[0m
+[14.263s] [ 91%] [32m[1mLinking CXX executable auto_fly_test[0m
+[14.345s] [ 91%] Built target land
+[14.838s] [ 91%] Built target auto_fly_test
+[14.846s] [ 91%] Built target trajectory_fly
+[15.153s] [100%] [32m[1mLinking CXX executable adaptive_land[0m
+[15.658s] [100%] Built target adaptive_land
+[15.659s] gmake: *** [Makefile:146: all] Error 2
+[15.661s] Invoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12

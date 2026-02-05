@@ -1,7 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o[0m
-[ 87%] Built target px4_visualizer
-[ 87%] Built target tf_node
-[ 87%] Built target trajectory_fly
-gmake[2]: *** [CMakeFiles/auto_fly_test.dir/build.make:76: CMakeFiles/auto_fly_test.dir/src/auto_fly_test.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/auto_fly_test.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

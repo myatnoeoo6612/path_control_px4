@@ -1,0 +1,9 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/myat/path_control_px4/src/control/src/static_tf.cpp:98:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/cciphUz1.s: No space left on device
+   98 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/static_tf.dir/build.make:76: CMakeFiles/static_tf.dir/src/static_tf.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/static_tf.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

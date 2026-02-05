@@ -1,0 +1,1 @@
+Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

@@ -5,27 +5,71 @@ def generate_launch_description():
     return LaunchDescription([
         # # PX4 node: my_frame
 
+        # Node(
+        #     package='control',
+        #     executable='tf_node',
+        #     name='tf',
+        #     parameters=[{'use_sim_time': True}],
+        #     output='screen'
+        # ),
+
+
         Node(
             package='control',
             executable='tf_node',
-            name='tf_node',
+            name='tf',
+            output='screen'
+        ),
+        Node(
+            package='control',
+            executable='static_tf',
+            name='tf_static',
             output='screen'
         ),
 
         # # Static transform from map -> world
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='static_tf_map_world',
+        #     arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'map', 'world'],
+        #     output='screen'
+        # ),
+
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='static_tf_map_world',
+        #     arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'camera_link', 'yinbot_0/realsense/base_link/realsense_d435'],
+        #     output='screen'
+        # ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='static_tf_base_to_camera',
+        #     arguments=[
+        #         '0.066', '0.0', '-0.053',
+        #         '0', '1.570796', '0',
+        #         'base_link', 'camera_link'
+        #     ],
+        # ),
+
         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_tf_map_world',
-            arguments=['0', '0', '0', '0.0', '0.0', '0.0', 'map', 'world'],
+            package='ros_gz_bridge',
+            executable='parameter_bridge',
+            name='clock',
+            arguments=[
+                '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
+            ],
             output='screen'
         ),
+
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
             name='image_bridge',
             arguments=[
-                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/image@sensor_msgs/msg/Image@gz.msgs.Image'
+                '/depth_camera/image@sensor_msgs/msg/Image@gz.msgs.Image'
             ],
             output='screen'
         ),
@@ -36,7 +80,7 @@ def generate_launch_description():
             executable='parameter_bridge',
             name='depth_bridge',
             arguments=[
-                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
+                '/depth_camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
             ],
             output='screen'
         ),
@@ -47,20 +91,23 @@ def generate_launch_description():
             executable='parameter_bridge',
             name='depth_camera_bridge',
             arguments=[
-                '/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
+                '/depth_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
             ],
             output='screen'
-        ),       
+        ),
 
         Node(
             package='ros_gz_bridge',
             executable='parameter_bridge',
-            name='lidar',
+            name='depth_camera_bridge',
             arguments=[
-                '/world/default/model/x500_depth_0/link/link/sensor/lidar_2d_v2/scan/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'
+                '/depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'
             ],
+            parameters=[{
+                'frame_name': 'camera_depth_frame'
+            }],
             output='screen'
-        ),    
+        ),
 
 
         Node(
@@ -69,7 +116,6 @@ def generate_launch_description():
             name='visualizer',
             output='screen'
         ),
-
         # RViz2
         Node(
             package='rviz2',

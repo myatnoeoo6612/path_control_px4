@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000420] (bringup_drone) JobQueued: {'identifier': 'bringup_drone', 'dependencies': OrderedDict()}
+[0.000451] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000479] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.000503] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.000522] (px4_offboard) JobQueued: {'identifier': 'px4_offboard', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.000537] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.009333] (bringup_drone) JobStarted: {'identifier': 'bringup_drone'}
+[0.016317] (vision) JobStarted: {'identifier': 'vision'}
+[0.023909] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.024931] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.025750] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/px4_msgs', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/px4_msgs', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2006'), ('SYSTEMD_EXEC_PID', '2282'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11842'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:21870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/2255,unix/myat:/tmp/.ICE-unix/2255'), ('INVOCATION_ID', '3e2a84b5df144f66936a2256ab507211'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '69'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/myat/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:01d5ffde-f1d9-4025-b47c-ede08203878b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/myat/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/my_ws/install/ros2sysmon/local/lib/python3.10/dist-packages:/home/myat/hex_ws/install/hexapod_description/lib/python3.10/site-packages:/home/myat/hex_ws/install/hexapod_control/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/hex_ws/install/hexapod_description:/home/myat/hex_ws/install/hexapod_control:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble')]), 'shell': False}
+[0.099802] (-) TimerEvent: {}
+[0.200140] (-) TimerEvent: {}
+[0.300431] (-) TimerEvent: {}
+[0.400764] (-) TimerEvent: {}
+[0.410231] (vision) JobProgress: {'identifier': 'vision', 'progress': 'cmake'}
+[0.411146] (vision) JobProgress: {'identifier': 'vision', 'progress': 'build'}
+[0.411855] (vision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/vision', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/vision', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', ':/home/myat/my_ws/install/gz_ros2_control/lib'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/my_ws/install/gz_ros2_control/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2006'), ('SYSTEMD_EXEC_PID', '2282'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11842'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/my_ws/install:/home/myat/my_uav/install:/home/myat/hex_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:21870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/myat/.local/bin:/usr/local/cuda-12.4/bin:/home/myat/anaconda3/condabin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/2255,unix/myat:/tmp/.ICE-unix/2255'), ('INVOCATION_ID', '3e2a84b5df144f66936a2256ab507211'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41[0.419755] (bringup_drone) JobEnded: {'identifier': 'bringup_drone', 'rc': 1}
+[0.493626] (vision) StdoutLine: {'line': b'Built target depth_polygon_mask_node\n'}
+[0.494780] (vision) StdoutLine: {'line': b'Built target camera_recorder\n'}
+[0.495177] (vision) StdoutLine: {'line': b'Built target lidar\n'}
+[0.497326] (vision) StdoutLine: {'line': b'Built target aruco_detect\n'}
+[0.498374] (vision) StdoutLine: {'line': b'\x1b[32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o\x1b[0m\n'}
+[0.501744] (-) TimerEvent: {}
+[0.504940] (vision) StdoutLine: {'line': b'Built target obstacle_node\n'}
+[0.588703] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__cpp\n'}
+[0.601903] (-) TimerEvent: {}
+[0.647498] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_generator_c\n'}
+[0.647739] (px4_msgs) StdoutLine: {'line': b'Built target ament_cmake_python_copy_px4_msgs\n'}
+[0.702335] (-) TimerEvent: {}
+[0.744517] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_c\n'}
+[0.745339] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[0.763772] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[0.766620] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.766867] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.802719] (-) TimerEvent: {}
+[0.819609] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.857071] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs\n'}
+[0.900994] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__py\n'}
+[0.902791] (-) TimerEvent: {}
+[1.003190] (-) TimerEvent: {}
+[1.013848] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_generator_py\n'}
+[1.038367] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.039753] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[1.039937] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[1.040968] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[1.049603] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[1.054409] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.054991] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[1.056006] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.056144] (px4_msgs) StdoutLine: {'line': b'Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.103350] (-) TimerEvent: {}
+[1.119155] (px4_msgs) StdoutLine: {'line': b'Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[1.134834] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[1.203456] (-) TimerEvent: {}
+[1.303829] (-) TimerEvent: {}
+[1.404223] (-) TimerEvent: {}
+[1.504644] (-) TimerEvent: {}
+[1.604969] (-) TimerEvent: {}
+[1.705286] (-) TimerEvent: {}
+[1.805662] (-) TimerEvent: {}
+[1.906042] (-) TimerEvent: {}
+[2.006391] (-) TimerEvent: {}
+[2.106791] (-) TimerEvent: {}
+[2.207175] (-) TimerEvent: {}
+[2.307564] (-) TimerEvent: {}
+[2.408239] (-) TimerEvent: {}
+[2.509029] (-) TimerEvent: {}
+[2.609530] (-) TimerEvent: {}
+[2.709924] (-) TimerEvent: {}
+[2.810347] (-) TimerEvent: {}
+[2.910744] (-) TimerEvent: {}
+[3.011054] (-) TimerEvent: {}
+[3.111381] (-) TimerEvent: {}
+[3.211848] (-) TimerEvent: {}
+[3.312324] (-) TimerEvent: {}
+[3.412709] (-) TimerEvent: {}
+[3.513084] (-) TimerEvent: {}
+[3.613549] (-) TimerEvent: {}
+[3.714125] (-) TimerEvent: {}
+[3.814591] (-) TimerEvent: {}
+[3.914974] (-) TimerEvent: {}
+[4.015322] (-) TimerEvent: {}
+[4.115674] (-) TimerEvent: {}
+[4.216212] (-) TimerEvent: {}
+[4.316652] (-) TimerEvent: {}
+[4.417075] (-) TimerEvent: {}
+[4.517550] (-) TimerEvent: {}
+[4.617879] (-) TimerEvent: {}
+[4.718315] (-) TimerEvent: {}
+[4.818749] (-) TimerEvent: {}
+[4.919206] (-) TimerEvent: {}
+[5.019559] (-) TimerEvent: {}
+[5.119904] (-) TimerEvent: {}
+[5.220277] (-) TimerEvent: {}
+[5.320765] (-) TimerEvent: {}
+[5.421173] (-) TimerEvent: {}
+[5.521679] (-) TimerEvent: {}
+[5.622163] (-) TimerEvent: {}
+[5.722629] (-) TimerEvent: {}
+[5.823062] (-) TimerEvent: {}
+[5.923502] (-) TimerEvent: {}
+[6.023895] (-) TimerEvent: {}
+[6.124428] (-) TimerEvent: {}
+[6.224833] (-) TimerEvent: {}
+[6.325156] (-) TimerEvent: {}
+[6.425415] (-) TimerEvent: {}
+[6.525840] (-) TimerEvent: {}
+[6.626239] (-) TimerEvent: {}
+[6.726579] (-) TimerEvent: {}
+[6.827166] (-) TimerEvent: {}
+[6.927557] (-) TimerEvent: {}
+[7.028008] (-) TimerEvent: {}
+[7.128653] (-) TimerEvent: {}
+[7.229044] (-) TimerEvent: {}
+[7.329444] (-) TimerEvent: {}
+[7.429975] (-) TimerEvent: {}
+[7.530408] (-) TimerEvent: {}
+[7.631070] (-) TimerEvent: {}
+[7.731402] (-) TimerEvent: {}
+[7.831763] (-) TimerEvent: {}
+[7.932212] (-) TimerEvent: {}
+[8.032627] (-) TimerEvent: {}
+[8.132999] (-) TimerEvent: {}
+[8.233323] (-) TimerEvent: {}
+[8.333665] (-) TimerEvent: {}
+[8.434182] (-) TimerEvent: {}
+[8.534519] (-) TimerEvent: {}
+[8.634833] (-) TimerEvent: {}
+[8.735324] (-) TimerEvent: {}
+[8.835805] (-) TimerEvent: {}
+[8.936210] (-) TimerEvent: {}
+[9.036559] (-) TimerEvent: {}
+[9.137081] (-) TimerEvent: {}
+[9.237678] (-) TimerEvent: {}
+[9.338023] (-) TimerEvent: {}
+[9.438350] (-) TimerEvent: {}
+[9.538887] (-) TimerEvent: {}
+[9.639405] (-) TimerEvent: {}
+[9.651372] (vision) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Interrupt\n'}
+[9.651635] (vision) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/pointcloud_node.dir/all] Interrupt\n'}
+[9.651857] (vision) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[9.735596] (vision) JobEnded: {'identifier': 'vision', 'rc': 'SIGINT'}
+[9.739456] (-) TimerEvent: {}
+[9.746709] (control) JobSkipped: {'identifier': 'control'}
+[9.746808] (px4_offboard) JobSkipped: {'identifier': 'px4_offboard'}
+[9.746834] (-) EventReactorShutdown: {}

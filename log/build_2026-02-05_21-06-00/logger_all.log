@@ -1,0 +1,565 @@
+[0.407s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.408s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7bd742aca710>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7bd742c77100>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7bd742c77100>>, mixin_verb=('build',))[0m
+[1.099s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[1.100s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/myat/path_control_px4'
+[1.100s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[1.101s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.144s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.145s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'ignore'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'ignore_ament_install'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['colcon_pkg']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'colcon_pkg'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['colcon_meta']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'colcon_meta'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['ros']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'ros'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['cmake', 'python']
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'cmake'
+[1.146s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'python'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extensions ['python_setup_py']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_1) by extension 'python_setup_py'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['ignore', 'ignore_ament_install']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'ignore'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'ignore_ament_install'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['colcon_pkg']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'colcon_pkg'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['colcon_meta']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'colcon_meta'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['ros']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'ros'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['cmake', 'python']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'cmake'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'python'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extensions ['python_setup_py']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2) by extension 'python_setup_py'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['ignore', 'ignore_ament_install']
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'ignore'
+[1.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'ignore_ament_install'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['colcon_pkg']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'colcon_pkg'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['colcon_meta']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'colcon_meta'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['ros']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'ros'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['cmake', 'python']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'cmake'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'python'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extensions ['python_setup_py']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_29_10) by extension 'python_setup_py'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['ignore', 'ignore_ament_install']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'ignore'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'ignore_ament_install'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['colcon_pkg']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'colcon_pkg'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['colcon_meta']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'colcon_meta'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['ros']
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'ros'
+[1.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['cmake', 'python']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'cmake'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'python'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extensions ['python_setup_py']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_43_07) by extension 'python_setup_py'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['ignore', 'ignore_ament_install']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'ignore'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'ignore_ament_install'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['colcon_pkg']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'colcon_pkg'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['colcon_meta']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'colcon_meta'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['ros']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'ros'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['cmake', 'python']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'cmake'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'python'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extensions ['python_setup_py']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-00_49_25) by extension 'python_setup_py'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['ignore', 'ignore_ament_install']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'ignore'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'ignore_ament_install'
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['colcon_pkg']
+[1.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'colcon_pkg'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['colcon_meta']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'colcon_meta'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['ros']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'ros'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['cmake', 'python']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'cmake'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'python'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extensions ['python_setup_py']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_04_02) by extension 'python_setup_py'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['ignore', 'ignore_ament_install']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'ignore'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'ignore_ament_install'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['colcon_pkg']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'colcon_pkg'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['colcon_meta']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'colcon_meta'
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['ros']
+[1.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'ros'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['cmake', 'python']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'cmake'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'python'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extensions ['python_setup_py']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_08_58) by extension 'python_setup_py'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['ignore', 'ignore_ament_install']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'ignore'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'ignore_ament_install'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['colcon_pkg']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'colcon_pkg'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['colcon_meta']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'colcon_meta'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['ros']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'ros'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['cmake', 'python']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'cmake'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'python'
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extensions ['python_setup_py']
+[1.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_2025_12_21-01_20_59) by extension 'python_setup_py'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['ignore', 'ignore_ament_install']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'ignore'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'ignore_ament_install'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['colcon_pkg']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'colcon_pkg'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['colcon_meta']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'colcon_meta'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['ros']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'ros'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['cmake', 'python']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'cmake'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'python'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extensions ['python_setup_py']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_3) by extension 'python_setup_py'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['ignore', 'ignore_ament_install']
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'ignore'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'ignore_ament_install'
+[1.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['colcon_pkg']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'colcon_pkg'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['colcon_meta']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'colcon_meta'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['ros']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'ros'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['cmake', 'python']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'cmake'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'python'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extensions ['python_setup_py']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_4) by extension 'python_setup_py'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['ignore', 'ignore_ament_install']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'ignore'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'ignore_ament_install'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['colcon_pkg']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'colcon_pkg'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['colcon_meta']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'colcon_meta'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['ros']
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'ros'
+[1.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['cmake', 'python']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'cmake'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'python'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extensions ['python_setup_py']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_5) by extension 'python_setup_py'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['ignore', 'ignore_ament_install']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'ignore'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'ignore_ament_install'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['colcon_pkg']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'colcon_pkg'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['colcon_meta']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'colcon_meta'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['ros']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'ros'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['cmake', 'python']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'cmake'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'python'
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extensions ['python_setup_py']
+[1.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_7) by extension 'python_setup_py'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['ignore', 'ignore_ament_install']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'ignore'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'ignore_ament_install'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['colcon_pkg']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'colcon_pkg'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['colcon_meta']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'colcon_meta'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['ros']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'ros'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['cmake', 'python']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'cmake'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'python'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extensions ['python_setup_py']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(rosbag2_a) by extension 'python_setup_py'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[1.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['ignore', 'ignore_ament_install']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'ignore'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'ignore_ament_install'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['colcon_pkg']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'colcon_pkg'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['colcon_meta']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'colcon_meta'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['ros']
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'ros'
+[1.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['cmake', 'python']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'cmake'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'python'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extensions ['python_setup_py']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example) by extension 'python_setup_py'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['ignore', 'ignore_ament_install']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ignore'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ignore_ament_install'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['colcon_pkg']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'colcon_pkg'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['colcon_meta']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'colcon_meta'
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['ros']
+[1.157s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ros'
+[1.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ROS2_PX4_Offboard_Example/px4_offboard' with type 'ros.ament_python' and name 'px4_offboard'[0m
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extension 'ignore'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extension 'ignore_ament_install'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extensions ['colcon_pkg']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extension 'colcon_pkg'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extensions ['colcon_meta']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extension 'colcon_meta'
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extensions ['ros']
+[1.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/bringup_drone) by extension 'ros'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/bringup_drone' with type 'ros.ament_python' and name 'bringup_drone'[0m
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extension 'ignore'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extension 'ignore_ament_install'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extensions ['colcon_pkg']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extension 'colcon_pkg'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extensions ['colcon_meta']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extension 'colcon_meta'
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extensions ['ros']
+[1.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control) by extension 'ros'
+[1.167s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/control' with type 'ros.ament_cmake' and name 'control'[0m
+[1.167s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extension 'ignore'
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extension 'ignore_ament_install'
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extensions ['colcon_pkg']
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extension 'colcon_pkg'
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extensions ['colcon_meta']
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extension 'colcon_meta'
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extensions ['ros']
+[1.168s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/px4_msgs) by extension 'ros'
+[1.169s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'[0m
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extension 'ignore'
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extension 'ignore_ament_install'
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extensions ['colcon_pkg']
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extension 'colcon_pkg'
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extensions ['colcon_meta']
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extension 'colcon_meta'
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extensions ['ros']
+[1.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision) by extension 'ros'
+[1.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vision' with type 'ros.ament_cmake' and name 'vision'[0m
+[1.176s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.176s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.176s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.176s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.177s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[1.210s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[1.210s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[1.215s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 5 installed packages in /home/myat/path_control_px4/install[0m
+[1.216s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 23 installed packages in /home/myat/ros2_ws/install[0m
+[1.217s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 5 installed packages in /home/myat/my_uav/install[0m
+[1.218s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 4 installed packages in /home/myat/Documents/path_control_px4/install[0m
+[1.221s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 310 installed packages in /opt/ros/humble[0m
+[1.223s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[1.345s] [34mcolcon.colcon_core.package_selection[0m [1;30mWARNING[0m [33mSome selected packages are already built in one or more underlay workspaces:
+	'px4_msgs' is in: /home/myat/path_control_px4/install/px4_msgs, /home/myat/my_uav/install/px4_msgs, /home/myat/Documents/path_control_px4/install/px4_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding px4_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.[0m
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_args' from command line to 'None'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_target' from command line to 'None'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_clean_cache' from command line to 'False'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_clean_first' from command line to 'False'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'cmake_force_configure' from command line to 'False'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'ament_cmake_args' from command line to 'None'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'catkin_cmake_args' from command line to 'None'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'bringup_drone' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.348s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'bringup_drone' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/myat/path_control_px4/build/bringup_drone', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/myat/path_control_px4/install/bringup_drone', 'merge_install': False, 'path': '/home/myat/path_control_px4/src/bringup_drone', 'symlink_install': False, 'test_result_base': None}[0m
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.349s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/myat/path_control_px4/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/myat/path_control_px4/install/px4_msgs', 'merge_install': False, 'path': '/home/myat/path_control_px4/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}[0m
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_args' from command line to 'None'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_target' from command line to 'None'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_clean_cache' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_clean_first' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'cmake_force_configure' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'ament_cmake_args' from command line to 'None'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'catkin_cmake_args' from command line to 'None'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.350s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/myat/path_control_px4/build/vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/myat/path_control_px4/install/vision', 'merge_install': False, 'path': '/home/myat/path_control_px4/src/vision', 'symlink_install': False, 'test_result_base': None}[0m
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_args' from command line to 'None'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_target' from command line to 'None'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.351s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/myat/path_control_px4/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/myat/path_control_px4/install/control', 'merge_install': False, 'path': '/home/myat/path_control_px4/src/control', 'symlink_install': False, 'test_result_base': None}[0m
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_args' from command line to 'None'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_target' from command line to 'None'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_clean_cache' from command line to 'False'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_clean_first' from command line to 'False'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'cmake_force_configure' from command line to 'False'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'ament_cmake_args' from command line to 'None'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'catkin_cmake_args' from command line to 'None'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'px4_offboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.352s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'px4_offboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/myat/path_control_px4/build/px4_offboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/myat/path_control_px4/install/px4_offboard', 'merge_install': False, 'path': '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard', 'symlink_install': False, 'test_result_base': None}[0m
+[1.352s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.354s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.355s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/myat/path_control_px4/src/px4_msgs' with build type 'ament_cmake'
+[1.355s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/myat/path_control_px4/src/px4_msgs'
+[1.361s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.362s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.362s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.372s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/myat/path_control_px4/src/bringup_drone' with build type 'ament_python'
+[1.372s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('bringup_drone', 'ament_prefix_path')
+[1.373s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/ament_prefix_path.ps1'
+[1.373s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/ament_prefix_path.dsv'
+[1.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/ament_prefix_path.sh'
+[1.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.375s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.385s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/myat/path_control_px4/src/vision' with build type 'ament_cmake'
+[1.385s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/myat/path_control_px4/src/vision'
+[1.386s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.386s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.399s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/build/px4_msgs': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/px4_msgs -- -j12 -l12[0m
+[1.877s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/myat/path_control_px4/src/bringup_drone'
+[1.877s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.877s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.892s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12[0m
+[2.264s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12[0m
+[2.283s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/vision[0m
+[2.304s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vision)
+[2.305s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/build/vision' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/vision[0m
+[2.312s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision' for CMake module files
+[2.313s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision' for CMake config files
+[2.313s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vision', 'cmake_prefix_path')
+[2.314s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.ps1'
+[2.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.dsv'
+[2.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.sh'
+[2.316s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib'
+[2.316s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/bin'
+[2.316s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib/pkgconfig/vision.pc'
+[2.317s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib/python3.10/site-packages'
+[2.317s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/bin'
+[2.318s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.ps1'
+[2.319s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/vision/share/vision/package.dsv'
+[2.320s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.sh'
+[2.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.bash'
+[2.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.zsh'
+[2.322s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/vision/share/colcon-core/packages/vision)
+[2.323s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vision)
+[2.323s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision' for CMake module files
+[2.323s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision' for CMake config files
+[2.324s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vision', 'cmake_prefix_path')
+[2.324s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.ps1'
+[2.324s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.dsv'
+[2.325s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/vision/share/vision/hook/cmake_prefix_path.sh'
+[2.325s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib'
+[2.325s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/bin'
+[2.326s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib/pkgconfig/vision.pc'
+[2.326s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/lib/python3.10/site-packages'
+[2.326s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/vision/bin'
+[2.326s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.ps1'
+[2.327s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/vision/share/vision/package.dsv'
+[2.328s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.sh'
+[2.328s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.bash'
+[2.328s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/vision/share/vision/package.zsh'
+[2.329s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/vision/share/colcon-core/packages/vision)
+[2.738s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/src/bringup_drone': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data[0m
+[3.271s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone' for CMake module files
+[3.271s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/src/bringup_drone' returned '0': PYTHONPATH=/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bringup_drone build --build-base /home/myat/path_control_px4/build/bringup_drone/build install --record /home/myat/path_control_px4/build/bringup_drone/install.log --single-version-externally-managed install_data[0m
+[3.272s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone' for CMake config files
+[3.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone/lib'
+[3.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone/bin'
+[3.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone/lib/pkgconfig/bringup_drone.pc'
+[3.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages'
+[3.273s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('bringup_drone', 'pythonpath')
+[3.274s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/pythonpath.ps1'
+[3.274s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/pythonpath.dsv'
+[3.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/hook/pythonpath.sh'
+[3.275s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/bringup_drone/bin'
+[3.276s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(bringup_drone)
+[3.276s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/package.ps1'
+[3.277s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/package.dsv'
+[3.277s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/package.sh'
+[3.278s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/package.bash'
+[3.278s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/bringup_drone/share/bringup_drone/package.zsh'
+[3.278s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/bringup_drone/share/colcon-core/packages/bringup_drone)
+[4.021s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/px4_msgs -- -j12 -l12[0m
+[4.023s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/build/px4_msgs': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/px4_msgs[0m
+[4.495s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(px4_msgs)
+[4.496s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs' for CMake module files
+[4.496s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs' for CMake config files
+[4.499s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/px4_msgs[0m
+[4.503s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[4.503s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[4.504s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[4.505s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[4.505s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib'
+[4.506s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[4.506s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[4.507s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[4.507s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[4.507s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/bin'
+[4.507s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[4.508s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib/python3.10/site-packages'
+[4.508s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/bin'
+[4.509s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.ps1'
+[4.509s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.dsv'
+[4.510s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.sh'
+[4.511s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.bash'
+[4.511s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.zsh'
+[4.511s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[4.513s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(px4_msgs)
+[4.513s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs' for CMake module files
+[4.514s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs' for CMake config files
+[4.519s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[4.520s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[4.521s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[4.521s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[4.522s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib'
+[4.522s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[4.523s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[4.523s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[4.524s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[4.524s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/bin'
+[4.525s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[4.525s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/lib/python3.10/site-packages'
+[4.525s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_msgs/bin'
+[4.526s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.ps1'
+[4.526s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.dsv'
+[4.527s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.sh'
+[4.527s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.bash'
+[4.528s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/package.zsh'
+[4.528s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[4.529s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/myat/path_control_px4/src/control' with build type 'ament_cmake'
+[4.529s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/myat/path_control_px4/src/control'
+[4.530s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.530s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.538s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard' with build type 'ament_python'
+[4.538s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_offboard', 'ament_prefix_path')
+[4.539s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.ps1'
+[4.540s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.dsv'
+[4.540s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.sh'
+[4.541s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.541s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.555s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12[0m
+[4.986s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard'
+[4.986s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.986s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[5.529s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs PYTHONPATH=/home/myat/path_control_px4/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/myat/path_control_px4/build/px4_offboard/build install --record /home/myat/path_control_px4/build/px4_offboard/install.log --single-version-externally-managed install_data[0m
+[5.890s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard' for CMake module files
+[5.890s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs PYTHONPATH=/home/myat/path_control_px4/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/myat/path_control_px4/build/px4_offboard/build install --record /home/myat/path_control_px4/build/px4_offboard/install.log --single-version-externally-managed install_data[0m
+[5.891s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard' for CMake config files
+[5.891s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard/lib'
+[5.891s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard/bin'
+[5.891s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard/lib/pkgconfig/px4_offboard.pc'
+[5.892s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages'
+[5.892s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('px4_offboard', 'pythonpath')
+[5.892s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/pythonpath.ps1'
+[5.892s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/pythonpath.dsv'
+[5.893s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/hook/pythonpath.sh'
+[5.893s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/px4_offboard/bin'
+[5.893s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(px4_offboard)
+[5.894s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/package.ps1'
+[5.894s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/package.dsv'
+[5.894s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/package.sh'
+[5.895s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/package.bash'
+[5.895s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/px4_offboard/share/px4_offboard/package.zsh'
+[5.895s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/px4_offboard/share/colcon-core/packages/px4_offboard)
+[12.086s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12[0m
+[12.087s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(control)
+[12.087s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control' for CMake module files
+[12.087s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control' for CMake config files
+[12.088s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('control', 'cmake_prefix_path')
+[12.088s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/control/share/control/hook/cmake_prefix_path.ps1'
+[12.089s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/myat/path_control_px4/install/control/share/control/hook/cmake_prefix_path.dsv'
+[12.089s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/myat/path_control_px4/install/control/share/control/hook/cmake_prefix_path.sh'
+[12.090s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control/lib'
+[12.090s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control/bin'
+[12.090s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control/lib/pkgconfig/control.pc'
+[12.090s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control/lib/python3.10/site-packages'
+[12.090s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/myat/path_control_px4/install/control/bin'
+[12.091s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/control/share/control/package.ps1'
+[12.091s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/myat/path_control_px4/install/control/share/control/package.dsv'
+[12.092s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/control/share/control/package.sh'
+[12.092s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/control/share/control/package.bash'
+[12.092s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/myat/path_control_px4/install/control/share/control/package.zsh'
+[12.093s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/myat/path_control_px4/install/control/share/colcon-core/packages/control)
+[12.103s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[12.104s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[12.104s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '2'[0m
+[12.104s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[12.109s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.109s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.109s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[12.119s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[12.120s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/myat/path_control_px4/install/local_setup.ps1'
+[12.121s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/myat/path_control_px4/install/_local_setup_util_ps1.py'
+[12.122s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/myat/path_control_px4/install/setup.ps1'
+[12.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/myat/path_control_px4/install/local_setup.sh'
+[12.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/myat/path_control_px4/install/_local_setup_util_sh.py'
+[12.124s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/myat/path_control_px4/install/setup.sh'
+[12.126s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/myat/path_control_px4/install/local_setup.bash'
+[12.126s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/myat/path_control_px4/install/setup.bash'
+[12.128s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/myat/path_control_px4/install/local_setup.zsh'
+[12.128s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/myat/path_control_px4/install/setup.zsh'

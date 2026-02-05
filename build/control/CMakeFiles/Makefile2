@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/myat/path_control_px4/build/control
 all: CMakeFiles/trajectory_fly.dir/all
 all: CMakeFiles/auto_fly_test.dir/all
 all: CMakeFiles/px4_visualizer.dir/all
+all: CMakeFiles/static_tf.dir/all
 all: CMakeFiles/tf_node.dir/all
 all: CMakeFiles/land.dir/all
 all: CMakeFiles/adaptive_land.dir/all
@@ -81,6 +82,7 @@ clean: CMakeFiles/control_uninstall.dir/clean
 clean: CMakeFiles/trajectory_fly.dir/clean
 clean: CMakeFiles/auto_fly_test.dir/clean
 clean: CMakeFiles/px4_visualizer.dir/clean
+clean: CMakeFiles/static_tf.dir/clean
 clean: CMakeFiles/tf_node.dir/clean
 clean: CMakeFiles/land.dir/clean
 clean: CMakeFiles/adaptive_land.dir/clean
@@ -145,7 +147,7 @@ CMakeFiles/control_uninstall.dir/clean:
 CMakeFiles/trajectory_fly.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_fly.dir/build.make CMakeFiles/trajectory_fly.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_fly.dir/build.make CMakeFiles/trajectory_fly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/control/CMakeFiles --progress-num=11,12 "Built target trajectory_fly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/control/CMakeFiles --progress-num=13,14 "Built target trajectory_fly"
 .PHONY : CMakeFiles/trajectory_fly.dir/all
 
 # Build rule for subdir invocation for target.
@@ -217,13 +219,39 @@ CMakeFiles/px4_visualizer.dir/clean:
 .PHONY : CMakeFiles/px4_visualizer.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/static_tf.dir
+
+# All Build rule for target.
+CMakeFiles/static_tf.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/control/CMakeFiles --progress-num=9,10 "Built target static_tf"
+.PHONY : CMakeFiles/static_tf.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static_tf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/myat/path_control_px4/build/control/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static_tf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/myat/path_control_px4/build/control/CMakeFiles 0
+.PHONY : CMakeFiles/static_tf.dir/rule
+
+# Convenience name for target.
+static_tf: CMakeFiles/static_tf.dir/rule
+.PHONY : static_tf
+
+# clean rule for target.
+CMakeFiles/static_tf.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/clean
+.PHONY : CMakeFiles/static_tf.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tf_node.dir
 
 # All Build rule for target.
 CMakeFiles/tf_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf_node.dir/build.make CMakeFiles/tf_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf_node.dir/build.make CMakeFiles/tf_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/control/CMakeFiles --progress-num=9,10 "Built target tf_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/control/CMakeFiles --progress-num=11,12 "Built target tf_node"
 .PHONY : CMakeFiles/tf_node.dir/all
 
 # Build rule for subdir invocation for target.

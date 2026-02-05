@@ -1,0 +1,26 @@
+[1.230s] Invoking command in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs PYTHONPATH=/home/myat/path_control_px4/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/myat/path_control_px4/build/px4_offboard/build install --record /home/myat/path_control_px4/build/px4_offboard/install.log --single-version-externally-managed install_data
+[1.580s] running egg_info
+[1.581s] writing ../../../build/px4_offboard/px4_offboard.egg-info/PKG-INFO
+[1.582s] writing dependency_links to ../../../build/px4_offboard/px4_offboard.egg-info/dependency_links.txt
+[1.583s] writing entry points to ../../../build/px4_offboard/px4_offboard.egg-info/entry_points.txt
+[1.583s] writing requirements to ../../../build/px4_offboard/px4_offboard.egg-info/requires.txt
+[1.583s] writing top-level names to ../../../build/px4_offboard/px4_offboard.egg-info/top_level.txt
+[1.587s] reading manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[1.587s] adding license file 'LICENSE'
+[1.587s] writing manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[1.587s] running build
+[1.588s] running build_py
+[1.588s] running install
+[1.588s] running install_lib
+[1.590s] running install_data
+[1.591s] running install_egg_info
+[1.593s] removing '/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info' (and everything under it)
+[1.594s] Copying ../../../build/px4_offboard/px4_offboard.egg-info to /home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info
+[1.595s] running install_scripts
+[1.621s] Installing control script to /home/myat/path_control_px4/install/px4_offboard/lib/px4_offboard
+[1.622s] Installing offboard_control script to /home/myat/path_control_px4/install/px4_offboard/lib/px4_offboard
+[1.622s] Installing processes script to /home/myat/path_control_px4/install/px4_offboard/lib/px4_offboard
+[1.622s] Installing velocity_control script to /home/myat/path_control_px4/install/px4_offboard/lib/px4_offboard
+[1.622s] Installing visualizer script to /home/myat/path_control_px4/install/px4_offboard/lib/px4_offboard
+[1.622s] writing list of installed files to '/home/myat/path_control_px4/build/px4_offboard/install.log'
+[1.683s] Invoked command in '/home/myat/path_control_px4/src/ROS2_PX4_Offboard_Example/px4_offboard' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/my_ws/install/ros2sysmon:/home/myat/my_ws/install/ros2_controllers:/home/myat/my_ws/install/ign_ros2_control_demos:/home/myat/my_ws/install/ign_ros2_control:/home/myat/my_ws/install/gz_ros2_control_tests:/home/myat/my_ws/install/gz_ros2_control_demos:/home/myat/my_ws/install/gz_ros2_control:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs PYTHONPATH=/home/myat/path_control_px4/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/myat/path_control_px4/build/px4_offboard/build install --record /home/myat/path_control_px4/build/px4_offboard/install.log --single-version-externally-managed install_data

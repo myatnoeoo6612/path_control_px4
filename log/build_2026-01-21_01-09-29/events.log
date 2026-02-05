@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000292] (-) JobUnselected: {'identifier': 'bringup_drone'}
-[0.000314] (-) JobUnselected: {'identifier': 'control'}
-[0.000328] (-) JobUnselected: {'identifier': 'px4_msgs'}
-[0.000339] (-) JobUnselected: {'identifier': 'vision'}
-[0.000667] (-) EventReactorShutdown: {}

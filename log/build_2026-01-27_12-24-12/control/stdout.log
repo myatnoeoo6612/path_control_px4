@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target px4_visualizer[0m
+[ 33%] Built target auto_fly_test
+[ 33%] Built target trajectory_fly
+[ 50%] Built target land
+[ 66%] Built target tf_node
+[ 83%] Built target adaptive_land
+[ 91%] [32mBuilding CXX object CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o[0m

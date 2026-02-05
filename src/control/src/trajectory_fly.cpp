@@ -1,10 +1,13 @@
 #include <rclcpp/rclcpp.hpp>
+
 #include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/trajectory_setpoint.hpp>
 #include <px4_msgs/msg/vehicle_status.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
 #include <px4_msgs/msg/vehicle_odometry.hpp>
+
 #include <visualization_msgs/msg/marker.hpp>
+
 #include <Eigen/Dense>
 #include <vector>
 #include <chrono>
@@ -15,7 +18,9 @@ using namespace std::chrono_literals;
 class LinearTrajectoryController : public rclcpp::Node
 {
 public:
-    LinearTrajectoryController() : Node("linear_landing_controller"), clock_(RCL_STEADY_TIME)
+    LinearTrajectoryController()
+        : Node("linear_landing_controller"),
+          clock_(RCL_STEADY_TIME)
     {
         auto qos = rclcpp::SensorDataQoS();
 
@@ -28,50 +33,74 @@ public:
             std::bind(&LinearTrajectoryController::odometry_callback, this, std::placeholders::_1));
 
         offboard_control_mode_pub_ =
-            create_publisher<px4_msgs::msg::OffboardControlMode>("/fmu/in/offboard_control_mode", 100);
+            create_publisher<px4_msgs::msg::OffboardControlMode>(
+                "/fmu/in/offboard_control_mode", 100);
 
         trajectory_setpoint_pub_ =
-            create_publisher<px4_msgs::msg::TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 100);
+            create_publisher<px4_msgs::msg::TrajectorySetpoint>(
+                "/fmu/in/trajectory_setpoint", 100);
 
         vehicle_command_pub_ =
-            create_publisher<px4_msgs::msg::VehicleCommand>("/fmu/in/vehicle_command", 100);
+            create_publisher<px4_msgs::msg::VehicleCommand>(
+                "/fmu/in/vehicle_command", 100);
 
         traj_marker_pub_ =
-            create_publisher<visualization_msgs::msg::Marker>("trajectory_marker", 100);
+            create_publisher<visualization_msgs::msg::Marker>(
+                "trajectory_marker", 100);
 
-        timer_ = create_wall_timer(100ms, std::bind(&LinearTrajectoryController::cmdloop_callback, this));
+        timer_ = create_wall_timer(
+            100ms, std::bind(&LinearTrajectoryController::cmdloop_callback, this));
 
-        // =========================== NEW WAYPOINTS (Square flight) ===========================
         // square_waypoints_ = {
         //     {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
         //     {4.0f, 0.0f, -4.0f}, // P1
-        //     {4.0f, 4.0f, -4.0f}, // P2
-        //     {0.0f, 4.0f, -4.0f}, // P3
+        //     {4.0f, 5.0f, -4.0f}, // P2
+        //     {0.0f, 5.0f, -4.0f}, // P3
         //     {0.0f, 0.0f, -4.0f}  // P4
         // };
-
         // square_waypoints_ = {
         //     {0.0f, 0.0f, -4.0f}, // P0 (after takeoff)
-        //     {4.0f, 0.0f, -4.0f}, // P1
+        //     {-1.8f, -1.8f, -4.0f}, // P1
+        //     // {4.0f, 5.0f, -4.0f}, // P2
+        //     // {0.0f, 5.0f, -4.0f}, // P3
+        //     // {0.0f, 0.0f, -4.0f}  // P4
         // };
-
         square_waypoints_ = {
-            {0.0f, 0.0f, -2.0f}, // P0 (after takeoff)
-            // {4.0f, 0.0f, -4.0f}, // P1
+            {0.0f, 0.0f, -4.0f}, 
+            {18.0f, 0.0f, -4.0f}, 
+            {18.0f, 11.0f, -4.0f}, 
+            {11.0f, 11.0f, -4.0f},
+            {11.0f, -11.0f, -4.0f}, 
+            {4.0f, -11.0f, -4.0f},
+            {4.0f, 11.0f, -4.0f},
+            {-3.0f, 11.0f, -4.0f},
+            {-3.0f, -11.0f, -4.0f},
+            {-10.0f, -11.0f, -4.0f},
+            {-10.0f, 11.0f, -4.0f},
+            {-17.0f, 11.0f, -4.0f},
+            {-17.0f, -11.0f, -4.0f},
+            {-17.0f, 0.0f, -4.0f},
+            {0.0f, 0.0f, -4.0f},
         };
-        
+
+        RCLCPP_INFO(get_logger(), "LinearTrajectoryController initialized");
+        set_state("INIT");
     }
 
 private:
+    // ================= ROS =================
     rclcpp::Clock clock_;
     rclcpp::TimerBase::SharedPtr timer_;
+
     rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_pub_;
     rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_pub_;
     rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_pub_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr traj_marker_pub_;
+
     rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr vehicle_odometry_sub_;
 
+    // ================= STATE =================
     Eigen::Vector3f current_position_ = Eigen::Vector3f::Zero();
     std::vector<Eigen::Vector3f> square_waypoints_;
     std::vector<Eigen::Vector3f> trajectory_points_;
@@ -84,12 +113,27 @@ private:
     uint8_t arm_state_ = 0;
     rclcpp::Time hold_start_time_;
     bool holding_ = false;
-    float current_yaw_ = 0.0;
+    float current_yaw_ = 0.0f;
 
-    // ========================== PX4 ODOM CALLBACK ==========================
+    // ================= STATE LOGGER =================
+    void set_state(const std::string &new_state)
+    {
+        if (state_ != new_state)
+        {
+            RCLCPP_INFO(
+                get_logger(),
+                "STATE CHANGE: %s -> %s",
+                state_.c_str(),
+                new_state.c_str());
+            state_ = new_state;
+        }
+    }
+
+    // ================= CALLBACKS =================
     void odometry_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg)
     {
-        current_position_ = Eigen::Vector3f(msg->position[0], msg->position[1], msg->position[2]);
+        current_position_ =
+            Eigen::Vector3f(msg->position[0], msg->position[1], msg->position[2]);
     }
 
     void vehicle_status_callback(const px4_msgs::msg::VehicleStatus::SharedPtr msg)
@@ -97,40 +141,47 @@ private:
         arm_state_ = msg->arming_state;
     }
 
-    // ============================= MAIN STATE MACHINE ============================
+    // ================= MAIN LOOP =================
     void cmdloop_callback()
     {
         publish_offboard_control_mode();
 
+        RCLCPP_DEBUG(
+            get_logger(),
+            "[%s] Pos = (%.2f, %.2f, %.2f)",
+            state_.c_str(),
+            current_position_.x(),
+            current_position_.y(),
+            current_position_.z());
+
         if (state_ == "INIT")
         {
-            publish_setpoint(0, 0, -0.5, M_PI_2);
-            state_ = "OFFBOARD";
+            publish_setpoint(0, 0, -0.8f, 1.5708);
+            set_state("OFFBOARD");
         }
 
         else if (state_ == "OFFBOARD")
         {
-            publish_setpoint(0, 0, -2, M_PI_2);
+            publish_setpoint(0, 0, -3.0f, 1.5708);
             set_offboard_mode();
             arm();
-            state_ = "TAKEOFF";
+            set_state("TAKEOFF");
         }
 
         else if (state_ == "TAKEOFF")
         {
-            publish_setpoint(0, 0, -2, M_PI_2);
+            publish_setpoint(0, 0, -3.0f, 1.5708);
             if (arm_state_ == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED)
             {
-                // Go to start point P0 and hold 3 seconds
                 generate_linear_trajectory(current_position_, square_waypoints_[0]);
                 traj_index_ = 0;
-                state_ = "MOVE_TO_START";
+                set_state("MOVE_TO_START");
             }
         }
 
         else if (state_ == "MOVE_TO_START")
         {
-            execute_trajectory("START_HOLD", 0);
+            execute_trajectory("START_HOLD", 1.5708f);
         }
 
         else if (state_ == "START_HOLD")
@@ -140,7 +191,6 @@ private:
 
         else if (state_ == "SQUARE_FLY")
         {
-            // When finishing P0, go to P1→P2→P3→P4
             if (waypoint_index_ < square_waypoints_.size() - 1)
             {
                 Eigen::Vector3f start = current_position_;
@@ -149,17 +199,16 @@ private:
                 generate_linear_trajectory(start, end);
                 waypoint_index_++;
 
-                // Compute rotation for next segment
                 float dx = end.x() - start.x();
                 float dy = end.y() - start.y();
-                current_yaw_ = atan2(dy, dx);
+                current_yaw_ = std::atan2(dy, dx);
 
                 traj_index_ = 0;
-                state_ = "FLY_SEGMENT";
+                set_state("FLY_SEGMENT");
             }
             else
             {
-                state_ = "RETURN_HOME";
+                set_state("RETURN_HOME");
             }
         }
 
@@ -175,32 +224,31 @@ private:
 
         else if (state_ == "RETURN_HOME")
         {
-            execute_trajectory("LAND", 0.0);
+            execute_trajectory("LAND", 0.0f);
         }
 
         else if (state_ == "LAND")
         {
-            land();
+            //land();
         }
     }
 
-    // =========================== TRAJECTORY EXECUTION ===========================
+    // ================= TRAJECTORY =================
     void execute_trajectory(const std::string &next_state, float yaw)
     {
         if (traj_index_ < trajectory_points_.size())
         {
-            auto pt = trajectory_points_[traj_index_++];
-            publish_setpoint(pt.x(), pt.y(), pt.z(), yaw);
+            auto &p = trajectory_points_[traj_index_++];
+            publish_setpoint(p.x(), p.y(), p.z(), yaw);
         }
         else
         {
             holding_ = false;
             hold_start_time_ = clock_.now();
-            state_ = next_state;
+            set_state(next_state);
         }
     }
 
-    // ============================= 3-SECOND HOLD ================================
     void run_hold_state(const std::string &next_state)
     {
         if (!holding_)
@@ -209,31 +257,34 @@ private:
             hold_start_time_ = clock_.now();
         }
 
-        float elapsed = (clock_.now() - hold_start_time_).seconds();
-        publish_setpoint(current_position_.x(), current_position_.y(), current_position_.z(), current_yaw_);
+        publish_setpoint(
+            current_position_.x(),
+            current_position_.y(),
+            current_position_.z(),
+            current_yaw_);
 
-        if (elapsed >= 3.0)
+        if ((clock_.now() - hold_start_time_).seconds() >= 3.0)
         {
             holding_ = false;
-            state_ = next_state;
+            set_state(next_state);
         }
     }
 
-    // ========================= LERP TRAJECTORY GENERATION =======================
-    void generate_linear_trajectory(const Eigen::Vector3f &start, const Eigen::Vector3f &end)
+    void generate_linear_trajectory(const Eigen::Vector3f &start,
+                                    const Eigen::Vector3f &end)
     {
-        const int N = 250;
+        const int N = 250; // 250 <= 0.4 
         trajectory_points_.clear();
 
         visualization_msgs::msg::Marker line;
         line.header.frame_id = "world";
-        line.header.stamp = this->get_clock()->now();
-        line.ns = "square";
-        line.id = 1;
+        line.header.stamp = get_clock()->now();
+        line.ns = "trajectory";
+        line.id = 0;
         line.type = visualization_msgs::msg::Marker::LINE_STRIP;
-        line.scale.x = 0.05;
-        line.color.r = 1.0;
-        line.color.a = 1.0;
+        line.scale.x = 0.05f;
+        line.color.r = 1.0f;
+        line.color.a = 1.0f;
 
         for (int i = 0; i <= N; i++)
         {
@@ -251,15 +302,12 @@ private:
         traj_marker_pub_->publish(line);
     }
 
-    // =========================== PX4 COMMAND HELPERS ============================
+    // ================= PX4 HELPERS =================
     void publish_offboard_control_mode()
     {
         px4_msgs::msg::OffboardControlMode msg;
         msg.timestamp = clock_.now().nanoseconds() / 1000;
         msg.position = true;
-        msg.velocity = false;
-        msg.attitude = false;
-        msg.body_rate = false;
         offboard_control_mode_pub_->publish(msg);
     }
 
@@ -274,26 +322,29 @@ private:
 
     void set_offboard_mode()
     {
-        publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
+        publish_vehicle_command(
+            px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
     }
 
     void arm()
     {
-        publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1);
+        publish_vehicle_command(
+            px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1);
     }
 
     void land()
     {
-        publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_LAND);
+        publish_vehicle_command(
+            px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_LAND);
     }
 
     void publish_vehicle_command(uint16_t cmd, float p1 = 0, float p2 = 0)
     {
         px4_msgs::msg::VehicleCommand msg;
         msg.timestamp = clock_.now().nanoseconds() / 1000;
+        msg.command = cmd;
         msg.param1 = p1;
         msg.param2 = p2;
-        msg.command = cmd;
         msg.target_system = 1;
         msg.target_component = 1;
         msg.source_system = 1;
@@ -303,7 +354,7 @@ private:
     }
 };
 
-// =============================== MAIN =====================================
+// ================= MAIN =================
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);

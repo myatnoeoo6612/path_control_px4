@@ -1,0 +1,8 @@
+digraph G {
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 85.923\nBuffer length: 5.016\nMost recent transform: 1769585952.772555\nOldest transform: 1769585947.756433\n"];
+"base_link" -> "x500_depth_0/realsense/base_link/realsense_d435"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1769585952.7812846"[ shape=plaintext ] ;
+}->"odom";
+}

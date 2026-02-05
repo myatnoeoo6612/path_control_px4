@@ -1,0 +1,8 @@
+[0.502s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.668s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_node[0m
+[0.729s] [ 16%] Built target camera_recorder
+[0.730s] [ 41%] Built target aruco_detect
+[0.730s] [ 50%] Built target lidar
+[0.735s] [ 66%] Built target depth_polygon_mask_node
+[0.742s] [ 83%] Built target obstacle_node
+[0.744s] [ 91%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m

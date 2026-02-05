@@ -1,6 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target land[0m
-[ 60%] Built target trajectory_fly
-[ 60%] Built target auto_fly_test
-[ 60%] Built target tf_node
-[ 80%] Built target px4_visualizer
-[ 90%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m

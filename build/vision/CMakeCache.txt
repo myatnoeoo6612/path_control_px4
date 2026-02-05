@@ -92,32 +92,6 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
-
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
-
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
-
-//Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=
-
-//Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-g
-
-//Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
-
-//Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
-
-//Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
@@ -360,33 +334,6 @@ MPIEXEC_POSTFLAGS:STRING=
 //These flags will be directly before the executable that is being
 // run by mpiexec.
 MPIEXEC_PREFLAGS:STRING=
-
-//MPI C additional include directories
-MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
-
-//MPI compiler for C
-MPI_C_COMPILER:FILEPATH=/usr/bin/mpicc
-
-//MPI C compiler wrapper include directories
-MPI_C_COMPILER_INCLUDE_DIRS:STRING=/usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
-
-//MPI C compilation definitions
-MPI_C_COMPILE_DEFINITIONS:STRING=
-
-//MPI C compilation options
-MPI_C_COMPILE_OPTIONS:STRING=
-
-//Path to a file.
-MPI_C_HEADER_DIR:PATH=/usr/lib/x86_64-linux-gnu/openmpi/include
-
-//MPI C libraries to link against
-MPI_C_LIB_NAMES:STRING=mpi
-
-//MPI C linker flags
-MPI_C_LINK_FLAGS:STRING=-L/usr/lib/x86_64-linux-gnu/openmpi/lib
-
-//Location of the mpi library for MPI
-MPI_mpi_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmpi.so
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
@@ -851,7 +798,7 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 
 //Path to a library.
-_lib:FILEPATH=/home/myat/path_control_px4/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/myat/my_uav/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -1082,7 +1029,7 @@ pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for px4_msgs.
-px4_msgs_DIR:PATH=/home/myat/path_control_px4/install/px4_msgs/share/px4_msgs/cmake
+px4_msgs_DIR:PATH=/home/myat/my_uav/install/px4_msgs/share/px4_msgs/cmake
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
@@ -1277,22 +1224,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER_AR
-CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
-CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_FLAGS
-CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
-CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
-CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
-CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
-CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Executable file format
@@ -1430,10 +1361,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_JsonCpp:INTERNAL=[/usr/lib/x86_64-linux-gnu/libjson
 FIND_PACKAGE_MESSAGE_DETAILS_LZ4:INTERNAL=[/usr/lib/x86_64-linux-gnu/liblz4.so][/usr/include][v1.9.3()]
 //Details about finding LZMA
 FIND_PACKAGE_MESSAGE_DETAILS_LZMA:INTERNAL=[/usr/lib/x86_64-linux-gnu/liblzma.so][/usr/include][v5.2.5()]
-//Details about finding MPI
-FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][cfound components: C ][v3.1()]
-//Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpi.so][mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4()]
 //Details about finding OpenGL
@@ -1528,26 +1455,6 @@ MPIEXEC_NUMPROC_FLAG-ADVANCED:INTERNAL=1
 MPIEXEC_POSTFLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_PREFLAGS
 MPIEXEC_PREFLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_ADDITIONAL_INCLUDE_DIRS
-MPI_C_ADDITIONAL_INCLUDE_DIRS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_COMPILER
-MPI_C_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_COMPILER_INCLUDE_DIRS
-MPI_C_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_COMPILE_DEFINITIONS
-MPI_C_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_COMPILE_OPTIONS
-MPI_C_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_HEADER_DIR
-MPI_C_HEADER_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_LIB_NAMES
-MPI_C_LIB_NAMES-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MPI_C_LINK_FLAGS
-MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
-//Result of TRY_COMPILE
-MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
-//ADVANCED property for variable: MPI_mpi_LIBRARY
-MPI_mpi_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR

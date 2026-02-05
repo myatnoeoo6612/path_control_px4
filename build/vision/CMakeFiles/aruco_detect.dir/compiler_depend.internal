@@ -886,6 +886,8 @@ CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp
  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp

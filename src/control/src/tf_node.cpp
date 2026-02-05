@@ -1,142 +1,110 @@
 #include <memory>
-#include <algorithm>
-
 #include <rclcpp/rclcpp.hpp>
-
-#include <sensor_msgs/msg/point_cloud2.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
-
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-
 #include <px4_msgs/msg/vehicle_odometry.hpp>
 
 using std::placeholders::_1;
 
-class TfPointCloudTimeBridge : public rclcpp::Node
+class TfNode : public rclcpp::Node
 {
 public:
-    TfPointCloudTimeBridge()
-        : Node("tf_pointcloud_time_bridge")
+    TfNode() : Node("tf_node")
     {
-        sub_odometry_ = this->create_subscription<px4_msgs::msg::VehicleOdometry>(
+        // Use simulation time
+        this->set_parameter(rclcpp::Parameter("use_sim_time", true));
+
+        odom_sub_ = this->create_subscription<px4_msgs::msg::VehicleOdometry>(
             "/fmu/out/vehicle_odometry",
             rclcpp::SensorDataQoS(),
-            std::bind(&TfPointCloudTimeBridge::odometry_callback, this, _1));
+            std::bind(&TfNode::odom_callback, this, _1));
 
-        // sub_cloud_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-        //     "/world/default/model/x500_depth_0/link/realsense/base_link/sensor/realsense_d435/points",
-        //     rclcpp::SensorDataQoS(),
-        //     std::bind(&TfPointCloudTimeBridge::cloud_callback, this, _1));
+        tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
-        tf_broadcaster_ =
-            std::make_unique<tf2_ros::TransformBroadcaster>(*this);
+        timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(30),
+            std::bind(&TfNode::publish_tf, this));
 
-        RCLCPP_INFO(this->get_logger(),
-                    "TF–PointCloud Time Bridge running (FRD→FLU fixed)");
+        RCLCPP_INFO(this->get_logger(), "TF node running (world -> base_link)");
     }
 
 private:
-    // ================= PX4 ODOM =================
-    void odometry_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg)
+    void odom_callback(const px4_msgs::msg::VehicleOdometry::SharedPtr msg)
     {
-        // ---------- Position: NED → ENU ----------
-        latest_base_pose_.position.x = msg->position[1];   // East
-        latest_base_pose_.position.y = msg->position[0];   // North
-        latest_base_pose_.position.z = -msg->position[2];  // Up
+        // -------------------------
+        // Position: NED → ENU
+        // -------------------------
+        pos_.x =  msg->position[1];   // East
+        pos_.y =  msg->position[0];   // North
+        pos_.z = -msg->position[2];   // Up
 
-        // ---------- Orientation: FRD → FLU ----------
-        // PX4 quaternion: [w, x, y, z] in FRD
-        tf2::Quaternion q_frd(
-            msg->q[1],  // x
-            msg->q[2],  // y
-            msg->q[3],  // z
-            msg->q[0]   // w
-        );
+        // ---------------------------------------------
+        // Orientation
+        // PX4: body (FRD) w.r.t world (NED)
+        // ---------------------------------------------
+        tf2::Quaternion q_ned_frd(
+            msg->q[1], msg->q[2], msg->q[3], msg->q[0]);
 
-        // Rotate 180° about X axis to convert FRD → FLU
+        // NED → ENU
+        tf2::Quaternion q_ned_to_enu;
+        q_ned_to_enu.setRPY(M_PI, 0.0, M_PI_2);
+
+        // FRD → FLU
         tf2::Quaternion q_frd_to_flu;
-        q_frd_to_flu.setRPY(M_PI, 0.0, M_PI_2);
+        q_frd_to_flu.setRPY(M_PI, 0.0,0.0);
 
-        tf2::Quaternion q_flu = q_frd_to_flu * q_frd;
-        q_flu.normalize();
+        // Final: base_link (FLU) w.r.t world (ENU)
+        q_enu_flu_ = q_ned_to_enu * q_ned_frd * q_frd_to_flu;
+        q_enu_flu_.normalize();
 
-        latest_base_pose_.orientation = tf2::toMsg(q_flu);
-        base_pose_valid_ = true;
+        valid_ = true;
     }
 
-    // ================= CLOUD CALLBACK =================
-    void cloud_callback(const sensor_msgs::msg::PointCloud2::SharedPtr cloud)
+    void publish_tf()
     {
-        if (!base_pose_valid_)
+        if (!valid_)
             return;
 
-        // ---------- Monotonic TF time clamp ----------
-        rclcpp::Time cloud_stamp = cloud->header.stamp;
-        rclcpp::Time tf_stamp = cloud_stamp;
+        // Use ROS sim time
+        rclcpp::Time now = this->get_clock()->now();
 
-        if (last_tf_stamp_.nanoseconds() > 0 &&
-            tf_stamp <= last_tf_stamp_)
-        {
-            tf_stamp = last_tf_stamp_ + rclcpp::Duration(0, 1); // +1 ns
-        }
-        last_tf_stamp_ = tf_stamp;
+        // Wait until /clock is active
+        if (now.nanoseconds() == 0)
+            return;
 
-        // ---------- world → base_link ----------
-        geometry_msgs::msg::TransformStamped tf_world_base;
-        tf_world_base.header.stamp = tf_stamp;
-        tf_world_base.header.frame_id = "world";
-        tf_world_base.child_frame_id = "base_link";
-        tf_world_base.transform.translation.x = latest_base_pose_.position.x;
-        tf_world_base.transform.translation.y = latest_base_pose_.position.y;
-        tf_world_base.transform.translation.z = latest_base_pose_.position.z;
-        tf_world_base.transform.rotation = latest_base_pose_.orientation;
-        tf_broadcaster_->sendTransform(tf_world_base);
+        geometry_msgs::msg::TransformStamped tf;
+        tf.header.stamp = now;
+        tf.header.frame_id = "world";
+        tf.child_frame_id = "base_link";
 
-        // ---------- base_link → camera_link ----------
-        geometry_msgs::msg::TransformStamped tf_base_cam;
-        tf_base_cam.header.stamp = tf_stamp;
-        tf_base_cam.header.frame_id = "base_link";
-        tf_base_cam.child_frame_id = "camera_link";
+        tf.transform.translation.x = pos_.x;
+        tf.transform.translation.y = pos_.y;
+        tf.transform.translation.z = pos_.z;
 
-        // Camera mounting (ROS FLU)
-        tf_base_cam.transform.translation.y = 0.0;
-        tf_base_cam.transform.translation.x = 0.166;
-        tf_base_cam.transform.translation.z = 0.053;
+        tf.transform.rotation.x = q_enu_flu_.x();
+        tf.transform.rotation.y = q_enu_flu_.y();
+        tf.transform.rotation.z = q_enu_flu_.z();
+        tf.transform.rotation.w = q_enu_flu_.w();
 
-        tf2::Quaternion q_cam;
-        q_cam.setRPY(-M_PI_2, 0, -M_PI_2);
-        q_cam.normalize();
-        tf_base_cam.transform.rotation = tf2::toMsg(q_cam);
-        tf_broadcaster_->sendTransform(tf_base_cam);
-
-        // ---------- camera_link → alias ----------
-        geometry_msgs::msg::TransformStamped tf_alias;
-        tf_alias.header.stamp = tf_stamp;
-        tf_alias.header.frame_id = "camera_link";
-        tf_alias.child_frame_id =
-            "camera_color_optical_frame";
-        tf_alias.transform.rotation.w = 1.0;
-        tf_broadcaster_->sendTransform(tf_alias);
+        tf_broadcaster_->sendTransform(tf);
     }
 
-    // ================= ROS =================
-    rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr sub_odometry_;
-    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr sub_cloud_;
+    // ROS
+    rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr odom_sub_;
+    rclcpp::TimerBase::SharedPtr timer_;
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
-    geometry_msgs::msg::Pose latest_base_pose_;
-    bool base_pose_valid_{false};
-
-    rclcpp::Time last_tf_stamp_{0, 0, RCL_ROS_TIME};
+    // State
+    geometry_msgs::msg::Vector3 pos_;
+    tf2::Quaternion q_enu_flu_;
+    bool valid_{false};
 };
 
-// ===================== MAIN =====================
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<TfPointCloudTimeBridge>());
+    rclcpp::spin(std::make_shared<TfNode>());
     rclcpp::shutdown();
     return 0;
 }

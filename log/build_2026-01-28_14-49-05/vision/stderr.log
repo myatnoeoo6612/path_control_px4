@@ -1,0 +1,7 @@
+[01m[K/home/myat/path_control_px4/src/vision/src/pointcloud_node.cpp:137:1:[m[K [01;31m[Kfatal error: [m[Kerror writing to /tmp/ccZeuYIM.s: No space left on device
+  137 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/pointcloud_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

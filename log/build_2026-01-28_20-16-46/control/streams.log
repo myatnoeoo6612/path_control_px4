@@ -1,0 +1,35 @@
+[0.008s] Invoking command in '/home/myat/path_control_px4/build/control': AMENT_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib PYTHONPATH=/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.077s] [ 33%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[0.078s] [ 41%] Built target land
+[0.078s] [ 41%] Built target auto_fly_test
+[0.078s] [ 58%] Built target trajectory_fly
+[0.079s] [ 75%] Built target adaptive_land
+[0.081s] [ 91%] Built target px4_visualizer
+[7.377s] [100%] [32m[1mLinking CXX executable tf_node[0m
+[8.119s] [100%] Built target tf_node
+[8.131s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': AMENT_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib PYTHONPATH=/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[8.133s] Invoking command in '/home/myat/path_control_px4/build/control': AMENT_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib PYTHONPATH=/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/myat/path_control_px4/build/control
+[8.141s] -- Install configuration: ""
+[8.142s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node
+[8.147s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""
+[8.148s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+[8.149s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+[8.151s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+[8.152s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/land
+[8.153s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+[8.153s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[8.153s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+[8.154s] -- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+[8.154s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml
+[8.157s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': AMENT_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs LD_LIBRARY_PATH=/home/myat/path_control_px4/install/px4_msgs/lib PYTHONPATH=/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/myat/path_control_px4/build/control

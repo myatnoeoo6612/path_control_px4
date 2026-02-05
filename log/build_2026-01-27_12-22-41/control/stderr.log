@@ -1,0 +1,20 @@
+[01m[K/home/myat/path_control_px4/src/control/src/px4_visualizer.cpp:[m[K In member function ‘[01m[Kvoid PX4Visualizer::positionCallback(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/px4_visualizer.cpp:112:67:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[KEigen::Vector3f[m[K’ {aka ‘[01m[KEigen::Matrix<float, 3, 1>[m[K’} and ‘[01m[Kfloat[m[K’)
+  112 |         position_world_ = Eigen::[32m[KVector3f(msg->y, msg->x, -msg->z)[m[K[01;31m[K+[m[K[34m[K0.5f[m[K;
+      |                                  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K[01;31m[K^[m[K[34m[K~~~~[m[K
+      |                                  [32m[K|[m[K                                 [34m[K|[m[K
+      |                                  [32m[K|[m[K                                 [34m[Kfloat[m[K
+      |                                  [32m[KEigen::Vector3f {aka Eigen::Matrix<float, 3, 1>}[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/control/src/px4_visualizer.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:27:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> const Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>, const Derived, const OtherDerived> Eigen::MatrixBase<Derived>::operator+(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Eigen::Matrix<float, 3, 1>][m[K’
+   27 | [01;36m[KEIGEN_MAKE_CWISE_BINARY_OP[m[K(operator+,sum)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:27:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/myat/path_control_px4/src/control/src/px4_visualizer.cpp:112:68:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kfloat[m[K’
+  112 |         position_world_ = Eigen::Vector3f(msg->y, msg->x, -msg->z)+[01;36m[K0.5f[m[K;
+      |                                                                    [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/px4_visualizer.dir/build.make:76: CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/px4_visualizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

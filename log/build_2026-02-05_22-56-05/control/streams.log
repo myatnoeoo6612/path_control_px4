@@ -1,0 +1,357 @@
+[0.027s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.155s] [ 14%] Built target trajectory_fly
+[0.156s] [ 28%] Built target auto_fly_test
+[0.184s] [35m[1mConsolidate compiler generated dependencies of target land[0m
+[0.212s] [ 42%] Built target adaptive_land
+[0.219s] [ 50%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[0.266s] [ 64%] Built target tf_node
+[0.317s] [ 78%] Built target static_tf
+[0.381s] [ 92%] Built target px4_visualizer
+[6.141s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:319:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[6.141s]   319 |         [01;31m[Kelse[m[K if (state_ == "LAND")
+[6.141s]       |         [01;31m[K^~~~[m[K
+[6.143s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:323:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[6.143s]   323 |     }
+[6.143s]       |      [01;31m[K^[m[K
+[6.143s]       |      [32m[K;[m[K
+[6.205s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In constructor ‘[01m[KLinearTrajectoryController::LinearTrajectoryController()[m[K’:
+[6.205s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.205s]    58 |         [01;31m[Kset_state[m[K("INIT");
+[6.205s]       |         [01;31m[K^~~~~~~~~[m[K
+[6.205s]       |         [32m[Ksetstate[m[K
+[6.249s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid LinearTrajectoryController::cmdloop_callback()[m[K’:
+[6.249s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:166:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_offboard_control_mode[m[K’ was not declared in this scope
+[6.249s]   166 |         [01;31m[Kpublish_offboard_control_mode[m[K();
+[6.249s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.266s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:170:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.266s]   170 |             [01;31m[Kpublish_setpoint[m[K(0, 0, -0.8, 1.57);
+[6.266s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.280s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:171:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.280s]   171 |             [01;31m[Kset_state[m[K("OFFBOARD");
+[6.280s]       |             [01;31m[K^~~~~~~~~[m[K
+[6.280s]       |             [32m[Ksetstate[m[K
+[6.297s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:175:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.297s]   175 |             [01;31m[Kpublish_setpoint[m[K(0, 0, -3, 1.57);
+[6.297s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.317s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:176:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_offboard_mode[m[K’ was not declared in this scope
+[6.317s]   176 |             [01;31m[Kset_offboard_mode[m[K();
+[6.317s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[6.328s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:177:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karm[m[K’ was not declared in this scope
+[6.329s]   177 |             [01;31m[Karm[m[K();
+[6.329s]       |             [01;31m[K^~~[m[K
+[6.341s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:178:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.341s]   178 |             [01;31m[Kset_state[m[K("TAKEOFF");
+[6.341s]       |             [01;31m[K^~~~~~~~~[m[K
+[6.341s]       |             [32m[Ksetstate[m[K
+[6.360s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:182:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.360s]   182 |             [01;31m[Kpublish_setpoint[m[K(0, 0, -3, 1.57);
+[6.360s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.382s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:185:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgenerate_linear_trajectory[m[K’ was not declared in this scope
+[6.382s]   185 |                 [01;31m[Kgenerate_linear_trajectory[m[K(current_position_, square_waypoints_[0]);
+[6.382s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.398s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:187:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.398s]   187 |                 [01;31m[Kset_state[m[K("MOVE_TO_START");
+[6.398s]       |                 [01;31m[K^~~~~~~~~[m[K
+[6.398s]       |                 [32m[Ksetstate[m[K
+[6.417s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:192:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_trajectory[m[K’ was not declared in this scope
+[6.417s]   192 |             [01;31m[Kexecute_trajectory[m[K("START_HOLD", 1.57f);
+[6.417s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.433s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:196:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_hold_state[m[K’ was not declared in this scope
+[6.433s]   196 |             [01;31m[Krun_hold_state[m[K("SQUARE_FLY");
+[6.433s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.456s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:202:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgenerate_linear_trajectory[m[K’ was not declared in this scope
+[6.456s]   202 |                 [01;31m[Kgenerate_linear_trajectory[m[K(
+[6.456s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.472s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:206:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.472s]   206 |                 [01;31m[Kset_state[m[K("FLY_SEGMENT");
+[6.472s]       |                 [01;31m[K^~~~~~~~~[m[K
+[6.473s]       |                 [32m[Ksetstate[m[K
+[6.487s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:210:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.488s]   210 |                 [01;31m[Kset_state[m[K("RETURN_YAW_ALIGN");
+[6.488s]       |                 [01;31m[K^~~~~~~~~[m[K
+[6.488s]       |                 [32m[Ksetstate[m[K
+[6.509s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:215:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecute_trajectory[m[K’ was not declared in this scope
+[6.509s]   215 |             [01;31m[Kexecute_trajectory[m[K("CORNER_HOLD", current_yaw_);
+[6.509s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.523s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:219:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_hold_state[m[K’ was not declared in this scope
+[6.524s]   219 |             [01;31m[Krun_hold_state[m[K("SQUARE_FLY");
+[6.524s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.540s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:230:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.540s]   230 |             [01;31m[Kpublish_setpoint[m[K(
+[6.541s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.562s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:256:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgenerate_linear_trajectory[m[K’ was not declared in this scope
+[6.562s]   256 |                 [01;31m[Kgenerate_linear_trajectory[m[K(
+[6.562s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.580s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:262:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_precision_debug[m[K’ was not declared in this scope
+[6.580s]   262 |                 [01;31m[Kprint_precision_debug[m[K();
+[6.580s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.589s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:263:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.589s]   263 |                 [01;31m[Kset_state[m[K("RETURN_MOVE_TO_ARUCO");
+[6.589s]       |                 [01;31m[K^~~~~~~~~[m[K
+[6.589s]       |                 [32m[Ksetstate[m[K
+[6.609s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:274:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.610s]   274 |                 [01;31m[Kpublish_setpoint[m[K(p.x(), p.y(), -4.0, frozen_aruco_yaw_);
+[6.610s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.624s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.624s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.625s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[6.625s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:287:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_yaw_deg[m[K’ was not declared in this scope
+[6.625s]   287 |             [01;31m[Kdrone_yaw_deg[m[K,
+[6.625s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[6.639s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:288:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_yaw_deg[m[K’ was not declared in this scope; did you mean ‘[01m[Karuco_yaw_[m[K’?
+[6.639s]   288 |             [01;31m[Karuco_yaw_deg[m[K,
+[6.639s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[6.654s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:289:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_err_deg[m[K’ was not declared in this scope
+[6.655s]   289 |             [01;31m[Kyaw_err_deg[m[K);
+[6.655s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[6.677s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:292:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.677s]   292 |             [01;31m[Kpublish_setpoint[m[K(
+[6.677s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.700s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:297:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_precision_debug[m[K’ was not declared in this scope
+[6.701s]   297 |             [01;31m[Kprint_precision_debug[m[K();
+[6.701s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.716s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:309:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+[6.717s]   309 |                     [01;31m[Kset_state[m[K("LAND");
+[6.717s]       |                     [01;31m[K^~~~~~~~~[m[K
+[6.717s]       |                     [32m[Ksetstate[m[K
+[6.727s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid set_state(const string&)[m[K’:
+[6.727s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:328:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstatic[m[K’?
+[6.727s]   328 |         if ([01;31m[Kstate_[m[K != s)
+[6.728s]       |             [01;31m[K^~~~~~[m[K
+[6.728s]       |             [32m[Kstatic[m[K
+[6.729s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.730s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[6.730s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[6.730s]   330 |             RCLCPP_WARN([01;31m[Kget_logger[m[K(), "STATE → %s", s.c_str());
+[6.730s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[6.730s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.731s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[6.731s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[6.731s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[6.731s]       |                 [01;36m[K^~~~~~[m[K
+[6.731s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.732s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.732s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[6.732s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.732s]   330 |             [01;31m[KRCLCPP_WARN[m[K(get_logger(), "STATE → %s", s.c_str());
+[6.732s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[6.732s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.732s]   330 |             [01;31m[KRCLCPP_WARN[m[K(get_logger(), "STATE → %s", s.c_str());
+[6.732s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[6.732s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:330:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.732s]   330 |             [01;31m[KRCLCPP_WARN[m[K(get_logger(), "STATE → %s", s.c_str());
+[6.732s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[6.740s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid run_hold_state(const string&)[m[K’:
+[6.740s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:337:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kholding_[m[K’ was not declared in this scope
+[6.740s]   337 |         if (![01;31m[Kholding_[m[K)
+[6.741s]       |              [01;31m[K^~~~~~~~[m[K
+[6.753s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:340:13:[m[K [01;31m[Kerror: [m[K‘[01m[Khold_start_time_[m[K’ was not declared in this scope
+[6.753s]   340 |             [01;31m[Khold_start_time_[m[K = clock_.now();
+[6.753s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.762s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:340:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclock_[m[K’ was not declared in this scope; did you mean ‘[01m[Kclock_t[m[K’?
+[6.762s]   340 |             hold_start_time_ = [01;31m[Kclock_[m[K.now();
+[6.762s]       |                                [01;31m[K^~~~~~[m[K
+[6.762s]       |                                [32m[Kclock_t[m[K
+[6.778s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:344:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_position_[m[K’ was not declared in this scope
+[6.778s]   344 |             [01;31m[Kcurrent_position_[m[K.x(),
+[6.778s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[6.786s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:347:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+[6.786s]   347 |             [01;31m[Kcurrent_yaw_[m[K);
+[6.786s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[6.800s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:343:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.801s]   343 |         [01;31m[Kpublish_setpoint[m[K(
+[6.801s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.808s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:349:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclock_[m[K’ was not declared in this scope; did you mean ‘[01m[Kclock_t[m[K’?
+[6.808s]   349 |         if (([01;31m[Kclock_[m[K.now() - hold_start_time_).seconds() > 3.0)
+[6.808s]       |              [01;31m[K^~~~~~[m[K
+[6.808s]       |              [32m[Kclock_t[m[K
+[6.820s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:349:29:[m[K [01;31m[Kerror: [m[K‘[01m[Khold_start_time_[m[K’ was not declared in this scope
+[6.820s]   349 |         if ((clock_.now() - [01;31m[Khold_start_time_[m[K).seconds() > 3.0)
+[6.820s]       |                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.832s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:351:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kholding_[m[K’ was not declared in this scope
+[6.832s]   351 |             [01;31m[Kholding_[m[K = false;
+[6.832s]       |             [01;31m[K^~~~~~~~[m[K
+[6.845s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid generate_linear_trajectory(const Vector3f&, const Vector3f&)[m[K’:
+[6.845s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:359:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_points_[m[K’ was not declared in this scope
+[6.845s]   359 |         [01;31m[Ktrajectory_points_[m[K.clear();
+[6.845s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.941s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid execute_trajectory(const string&, float)[m[K’:
+[6.941s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_index_[m[K’ was not declared in this scope
+[6.941s]   367 |         if ([01;31m[Ktraj_index_[m[K < trajectory_points_.size())
+[6.941s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[6.953s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:367:27:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_points_[m[K’ was not declared in this scope
+[6.953s]   367 |         if (traj_index_ < [01;31m[Ktrajectory_points_[m[K.size())
+[6.954s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.966s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:370:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_setpoint[m[K’ was not declared in this scope
+[6.966s]   370 |             [01;31m[Kpublish_setpoint[m[K(p.x(), p.y(), p.z(), yaw);
+[6.966s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.976s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid publish_offboard_control_mode()[m[K’:
+[6.976s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:382:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclock_[m[K’ was not declared in this scope; did you mean ‘[01m[Kclock_t[m[K’?
+[6.977s]   382 |         m.timestamp = [01;31m[Kclock_[m[K.now().nanoseconds() / 1000;
+[6.977s]       |                       [01;31m[K^~~~~~[m[K
+[6.977s]       |                       [32m[Kclock_t[m[K
+[6.991s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:384:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_pub_[m[K’ was not declared in this scope
+[6.991s]   384 |         [01;31m[Koffboard_control_mode_pub_[m[K->publish(m);
+[6.992s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.998s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid publish_setpoint(float, float, float, float)[m[K’:
+[6.999s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:390:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclock_[m[K’ was not declared in this scope; did you mean ‘[01m[Kclock_t[m[K’?
+[6.999s]   390 |         m.timestamp = [01;31m[Kclock_[m[K.now().nanoseconds() / 1000;
+[6.999s]       |                       [01;31m[K^~~~~~[m[K
+[6.999s]       |                       [32m[Kclock_t[m[K
+[7.016s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:393:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_pub_[m[K’ was not declared in this scope
+[7.016s]   393 |         [01;31m[Ktrajectory_setpoint_pub_[m[K->publish(m);
+[7.016s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.031s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid set_offboard_mode()[m[K’:
+[7.031s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:398:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+[7.031s]   398 |         [01;31m[Kpublish_vehicle_command[m[K(
+[7.031s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.044s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid arm()[m[K’:
+[7.044s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:404:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+[7.044s]   404 |         [01;31m[Kpublish_vehicle_command[m[K(
+[7.044s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.062s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid land()[m[K’:
+[7.062s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:410:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+[7.062s]   410 |         [01;31m[Kpublish_vehicle_command[m[K(
+[7.062s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.077s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid precision_land()[m[K’:
+[7.077s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:416:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+[7.077s]   416 |         [01;31m[Kpublish_vehicle_command[m[K(
+[7.077s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.086s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid publish_vehicle_command(uint16_t, float, float)[m[K’:
+[7.087s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:423:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclock_[m[K’ was not declared in this scope; did you mean ‘[01m[Kclock_t[m[K’?
+[7.087s]   423 |         m.timestamp = [01;31m[Kclock_[m[K.now().nanoseconds() / 1000;
+[7.087s]       |                       [01;31m[K^~~~~~[m[K
+[7.087s]       |                       [32m[Kclock_t[m[K
+[7.102s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:432:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_pub_[m[K’ was not declared in this scope
+[7.102s]   432 |         [01;31m[Kvehicle_command_pub_[m[K->publish(m);
+[7.102s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.116s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid print_precision_debug()[m[K’:
+[7.116s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:436:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_yaw_[m[K’ was not declared in this scope
+[7.116s]   436 |         float drone_yaw_deg = [01;31m[Kcurrent_yaw_[m[K * 180.0f / M_PI;
+[7.116s]       |                               [01;31m[K^~~~~~~~~~~~[m[K
+[7.128s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:437:31:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_yaw_[m[K’ was not declared in this scope; did you mean ‘[01m[Karuco_yaw_deg[m[K’?
+[7.128s]   437 |         float aruco_yaw_deg = [01;31m[Karuco_yaw_[m[K * 180.0f / M_PI;
+[7.128s]       |                               [01;31m[K^~~~~~~~~~[m[K
+[7.128s]       |                               [32m[Karuco_yaw_deg[m[K
+[7.140s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:440:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knormalize_angle[m[K’ was not declared in this scope
+[7.140s]   440 |             [01;31m[Knormalize_angle[m[K(current_yaw_ - aruco_yaw_) * 180.0f / M_PI;
+[7.140s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.142s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.142s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[7.142s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:443:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[7.142s]   443 |             [01;31m[Kget_logger[m[K(), *get_clock(), 500,
+[7.143s]       |             [01;31m[K^~~~~~~~~~[m[K
+[7.143s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.143s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.143s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[7.143s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[7.144s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[7.144s]       |                 [01;36m[K^~~~~~[m[K
+[7.144s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.144s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[7.144s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:442:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.144s]   442 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[7.144s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.144s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:442:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.144s]   442 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[7.144s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.145s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:442:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.145s]   442 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[7.145s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.154s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:443:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_clock[m[K’ was not declared in this scope
+[7.154s]   443 |             get_logger(), *[01;31m[Kget_clock[m[K(), 500,
+[7.154s]       |                            [01;31m[K^~~~~~~~~[m[K
+[7.165s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In lambda function:
+[7.165s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:442:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[7.165s]   442 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+[7.165s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.182s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.183s]                  from [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:1[m[K:
+[7.183s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In function ‘[01m[Kvoid print_precision_debug()[m[K’:
+[7.183s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:450:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfrozen_aruco_position_[m[K’ was not declared in this scope
+[7.183s]   450 |             [01;31m[Kfrozen_aruco_position_[m[K.x(), frozen_aruco_position_.y(),
+[7.183s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.195s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:451:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_position_[m[K’ was not declared in this scope
+[7.195s]   451 |             [01;31m[Kcurrent_position_[m[K.x(), current_position_.y(),
+[7.195s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[7.195s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K At global scope:
+[7.195s] [01m[K/home/myat/path_control_px4/src/control/src/land.cpp:456:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[7.195s]   456 | [01;31m[K}[m[K;
+[7.195s]       | [01;31m[K^[m[K
+[15.717s] gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+[15.717s] gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/land.dir/all] Error 2
+[15.717s] gmake: *** [Makefile:146: all] Error 2
+[15.721s] Invoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/vision:/home/myat/Documents/path_control_px4/install/control:/home/myat/Documents/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/Documents/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12

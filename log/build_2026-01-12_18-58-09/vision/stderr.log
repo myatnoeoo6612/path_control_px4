@@ -1,9 +1,0 @@
-[0m** WARNING ** io features related to pcap will be disabled[0m
-[0m** WARNING ** io features related to png will be disabled[0m
-[01m[K/home/myat/path_control_px4/src/vision/src/obstacle.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/obstacle_distance.hpp: No such file or directory
-    3 | #include [01;31m[K<px4_msgs/msg/obstacle_distance.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/obstacle.dir/build.make:76: CMakeFiles/obstacle.dir/src/obstacle.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/obstacle.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

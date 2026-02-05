@@ -1,0 +1,8 @@
+[ 14%] Built target trajectory_fly
+[ 28%] Built target auto_fly_test
+[ 42%] Built target px4_visualizer
+[35m[1mConsolidate compiler generated dependencies of target land[0m
+[ 57%] Built target adaptive_land
+[ 71%] Built target tf_node
+[ 78%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[ 92%] Built target static_tf

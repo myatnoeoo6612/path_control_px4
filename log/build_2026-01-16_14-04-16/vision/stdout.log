@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target pointcloud_node[0m
-[ 16%] Built target camera_recorder
-[ 33%] Built target aruco_detect
-[ 50%] Built target depth_polygon_mask_node
-[ 66%] Built target lidar
-[ 83%] Built target obstacle_node
-[ 91%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m

@@ -1,9 +1,0 @@
-[ 16%] Built target auto_fly_test
-[ 41%] Built target trajectory_fly
-[ 50%] Built target adaptive_land
-[ 58%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
-[ 75%] Built target land
-[ 91%] Built target px4_visualizer
-gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/tf_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

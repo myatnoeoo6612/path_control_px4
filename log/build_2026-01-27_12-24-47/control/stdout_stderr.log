@@ -1,0 +1,9 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o[0m
+[ 66%] Built target adaptive_land
+[ 66%] Built target trajectory_fly
+[ 75%] Built target land
+[ 75%] Built target auto_fly_test
+[ 91%] Built target tf_node
+gmake[2]: *** [CMakeFiles/px4_visualizer.dir/build.make:76: CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/px4_visualizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

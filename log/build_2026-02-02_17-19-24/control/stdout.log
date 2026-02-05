@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_fly[0m
+[ 16%] Built target trajectory_fly
+[ 33%] Built target adaptive_land
+[35m[1mConsolidate compiler generated dependencies of target land[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m

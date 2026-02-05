@@ -1,0 +1,15 @@
+[ 14%] Built target trajectory_fly
+[ 28%] Built target auto_fly_test
+[ 42%] Built target px4_visualizer
+[35m[1mConsolidate compiler generated dependencies of target land[0m
+[ 57%] Built target adaptive_land
+[ 71%] Built target tf_node
+[ 78%] [32mBuilding CXX object CMakeFiles/land.dir/src/land.cpp.o[0m
+[ 92%] Built target static_tf
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:[m[K In member function ‘[01m[Kvoid LinearTrajectoryController::cmdloop_callback()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/land.cpp:252:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfrozen_aruco_position_[m[K’
+  252 |                 [01;31m[Kfrozen_aruco_position_[m[K.y() -= 0.3
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/land.dir/build.make:76: CMakeFiles/land.dir/src/land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

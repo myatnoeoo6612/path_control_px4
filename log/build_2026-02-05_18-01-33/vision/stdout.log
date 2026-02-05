@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target aruco_detect[0m
+[ 16%] Built target depth_polygon_mask_node
+[ 25%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[ 41%] Built target camera_recorder
+[ 58%] Built target lidar
+[ 75%] Built target obstacle_node
+[ 91%] Built target pointcloud_node

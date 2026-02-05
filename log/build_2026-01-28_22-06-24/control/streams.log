@@ -1,0 +1,36 @@
+[0.026s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.495s] [35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[0.495s] [ 16%] Built target land
+[0.495s] [ 33%] Built target auto_fly_test
+[0.495s] [ 50%] Built target px4_visualizer
+[0.495s] [ 66%] Built target trajectory_fly
+[0.495s] [ 91%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[0.495s] [ 91%] Built target adaptive_land
+[12.042s] [100%] [32m[1mLinking CXX executable tf_node[0m
+[13.177s] [100%] Built target tf_node
+[13.195s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/opt/ros/humble /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[13.198s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/control
+[13.210s] -- Install configuration: ""
+[13.210s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node
+[13.217s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/land
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+[13.218s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+[13.219s] -- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+[13.219s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+[13.220s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml
+[13.223s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/opt/ros/humble /usr/bin/cmake --install /home/myat/path_control_px4/build/control

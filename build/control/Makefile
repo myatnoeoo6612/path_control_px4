@@ -237,6 +237,19 @@ px4_visualizer/fast:
 .PHONY : px4_visualizer/fast
 
 #=============================================================================
+# Target rules for targets named static_tf
+
+# Build rule for target.
+static_tf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_tf
+.PHONY : static_tf
+
+# fast build rule for target.
+static_tf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/build
+.PHONY : static_tf/fast
+
+#=============================================================================
 # Target rules for targets named tf_node
 
 # Build rule for target.
@@ -371,6 +384,30 @@ src/px4_visualizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_visualizer.dir/build.make CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.s
 .PHONY : src/px4_visualizer.cpp.s
 
+src/static_tf.o: src/static_tf.cpp.o
+.PHONY : src/static_tf.o
+
+# target to build an object file
+src/static_tf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/src/static_tf.cpp.o
+.PHONY : src/static_tf.cpp.o
+
+src/static_tf.i: src/static_tf.cpp.i
+.PHONY : src/static_tf.i
+
+# target to preprocess a source file
+src/static_tf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/src/static_tf.cpp.i
+.PHONY : src/static_tf.cpp.i
+
+src/static_tf.s: src/static_tf.cpp.s
+.PHONY : src/static_tf.s
+
+# target to generate assembly for a file
+src/static_tf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_tf.dir/build.make CMakeFiles/static_tf.dir/src/static_tf.cpp.s
+.PHONY : src/static_tf.cpp.s
+
 src/tf_node.o: src/tf_node.cpp.o
 .PHONY : src/tf_node.o
 
@@ -438,6 +475,7 @@ help:
 	@echo "... auto_fly_test"
 	@echo "... land"
 	@echo "... px4_visualizer"
+	@echo "... static_tf"
 	@echo "... tf_node"
 	@echo "... trajectory_fly"
 	@echo "... src/adaptive_land.o"
@@ -452,6 +490,9 @@ help:
 	@echo "... src/px4_visualizer.o"
 	@echo "... src/px4_visualizer.i"
 	@echo "... src/px4_visualizer.s"
+	@echo "... src/static_tf.o"
+	@echo "... src/static_tf.i"
+	@echo "... src/static_tf.s"
 	@echo "... src/tf_node.o"
 	@echo "... src/tf_node.i"
 	@echo "... src/tf_node.s"

@@ -1,0 +1,10 @@
+digraph G {
+"world" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 1530000.0\nBuffer length: 0.0\nMost recent transform: 468.98\nOldest transform: 468.98\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 1530000.0\nBuffer length: 0.0\nMost recent transform: 468.98\nOldest transform: 468.98\n"];
+"map" -> "world"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "yinbot_0/realsense/base_link/realsense_d435"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1770277014.956502"[ shape=plaintext ] ;
+}->"map";
+}

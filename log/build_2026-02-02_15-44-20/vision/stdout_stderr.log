@@ -1,0 +1,9 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[ 41%] Built target lidar
+[ 41%] Built target camera_recorder
+[ 58%] Built target depth_polygon_mask_node
+[ 75%] Built target obstacle_node
+[ 91%] Built target pointcloud_node
+gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/aruco_detect.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
