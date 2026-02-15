@@ -67,6 +67,7 @@ all: CMakeFiles/camera_recorder.dir/all
 all: CMakeFiles/depth_polygon_mask_node.dir/all
 all: CMakeFiles/pointcloud_node.dir/all
 all: CMakeFiles/aruco_detect.dir/all
+all: CMakeFiles/my_aruco.dir/all
 all: CMakeFiles/lidar.dir/all
 all: CMakeFiles/obstacle_node.dir/all
 .PHONY : all
@@ -82,6 +83,7 @@ clean: CMakeFiles/camera_recorder.dir/clean
 clean: CMakeFiles/depth_polygon_mask_node.dir/clean
 clean: CMakeFiles/pointcloud_node.dir/clean
 clean: CMakeFiles/aruco_detect.dir/clean
+clean: CMakeFiles/my_aruco.dir/clean
 clean: CMakeFiles/lidar.dir/clean
 clean: CMakeFiles/obstacle_node.dir/clean
 .PHONY : clean
@@ -197,7 +199,7 @@ CMakeFiles/depth_polygon_mask_node.dir/clean:
 CMakeFiles/pointcloud_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointcloud_node.dir/build.make CMakeFiles/pointcloud_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointcloud_node.dir/build.make CMakeFiles/pointcloud_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/vision/CMakeFiles --progress-num=11,12 "Built target pointcloud_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/vision/CMakeFiles --progress-num=13,14 "Built target pointcloud_node"
 .PHONY : CMakeFiles/pointcloud_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,6 +245,32 @@ CMakeFiles/aruco_detect.dir/clean:
 .PHONY : CMakeFiles/aruco_detect.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/my_aruco.dir
+
+# All Build rule for target.
+CMakeFiles/my_aruco.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/vision/CMakeFiles --progress-num=9,10 "Built target my_aruco"
+.PHONY : CMakeFiles/my_aruco.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_aruco.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/myat/path_control_px4/build/vision/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_aruco.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/myat/path_control_px4/build/vision/CMakeFiles 0
+.PHONY : CMakeFiles/my_aruco.dir/rule
+
+# Convenience name for target.
+my_aruco: CMakeFiles/my_aruco.dir/rule
+.PHONY : my_aruco
+
+# clean rule for target.
+CMakeFiles/my_aruco.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/clean
+.PHONY : CMakeFiles/my_aruco.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lidar.dir
 
 # All Build rule for target.
@@ -275,7 +303,7 @@ CMakeFiles/lidar.dir/clean:
 CMakeFiles/obstacle_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_node.dir/build.make CMakeFiles/obstacle_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/vision/CMakeFiles --progress-num=9,10 "Built target obstacle_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/myat/path_control_px4/build/vision/CMakeFiles --progress-num=11,12 "Built target obstacle_node"
 .PHONY : CMakeFiles/obstacle_node.dir/all
 
 # Build rule for subdir invocation for target.

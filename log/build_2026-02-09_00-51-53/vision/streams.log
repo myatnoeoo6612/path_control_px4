@@ -1,0 +1,82 @@
+[0.286s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.374s] [35m[1mConsolidate compiler generated dependencies of target lidar[0m
+[0.374s] [35m[1mConsolidate compiler generated dependencies of target camera_recorder[0m
+[0.374s] [35m[1mConsolidate compiler generated dependencies of target my_aruco[0m
+[0.388s] [  7%] [32mBuilding CXX object CMakeFiles/depth_polygon_mask_node.dir/src/depth_polygon_mask_node.cpp.o[0m
+[0.395s] [ 21%] Built target aruco_detect
+[0.396s] [ 35%] [32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle.cpp.o[0m
+[0.396s] [ 35%] [32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o[0m
+[0.396s] [ 42%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m
+[0.397s] [ 57%] Built target lidar
+[0.398s] [ 71%] Built target camera_recorder
+[7.045s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:206:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+[7.046s]   206 | std::vector<Obs> [01;31m[Kobs_[m[K;
+[7.047s]       |                  [01;31m[K^~~~[m[K
+[7.047s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:70:18:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+[7.047s]    70 | std::vector<Obs> [01;36m[Kobs_[m[K;
+[7.047s]       |                  [01;36m[K^~~~[m[K
+[7.098s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)[m[K’:
+[7.098s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.098s]    94 |       {[01;35m[K-size/2[m[K,size/2,0},
+[7.098s]       |        [01;35m[K~~~~~^~[m[K
+[7.098s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.098s]    94 |       {-size/2,[01;35m[Ksize/2[m[K,0},
+[7.099s]       |                [01;35m[K~~~~^~[m[K
+[7.099s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.099s]    95 |       { [01;35m[Ksize/2[m[K,size/2,0},
+[7.099s]       |         [01;35m[K~~~~^~[m[K
+[7.099s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.099s]    95 |       { size/2,[01;35m[Ksize/2[m[K,0},
+[7.099s]       |                [01;35m[K~~~~^~[m[K
+[7.099s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.099s]    96 |       { [01;35m[Ksize/2[m[K,-size/2,0},
+[7.099s]       |         [01;35m[K~~~~^~[m[K
+[7.099s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.100s]    96 |       { size/2,[01;35m[K-size/2[m[K,0},
+[7.100s]       |                [01;35m[K~~~~~^~[m[K
+[7.100s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.100s]    97 |       {[01;35m[K-size/2[m[K,-size/2,0}
+[7.100s]       |        [01;35m[K~~~~~^~[m[K
+[7.100s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[7.100s]    97 |       {-size/2,[01;35m[K-size/2[m[K,0}
+[7.100s]       |                [01;35m[K~~~~~^~[m[K
+[7.107s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion&)[m[K’
+[7.107s]   132 |     tf.transform.rotation=[01;31m[Ktf2::toMsg(q)[m[K;
+[7.107s]       |                           [01;31m[K~~~~~~~~~~^~~[m[K
+[7.107s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43[m[K,
+[7.107s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42[m[K,
+[7.107s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+[7.107s]                  from [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16[m[K:
+[7.108s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+[7.109s]   129 | B [01;36m[KtoMsg[m[K(const A & a);
+[7.109s]       |   [01;36m[K^~~~~[m[K
+[7.109s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.109s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+[7.109s]   132 |     tf.transform.rotation=[01;36m[Ktf2::toMsg(q)[m[K;
+[7.109s]       |                           [01;36m[K~~~~~~~~~~^~~[m[K
+[7.110s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::computeWorldPose(const Header&)[m[K’:
+[7.110s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion)[m[K’
+[7.110s]   184 |     pose.pose.orientation=[01;31m[Ktf2::toMsg(T_wa.getRotation())[m[K;
+[7.110s]       |                           [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[7.110s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43[m[K,
+[7.110s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42[m[K,
+[7.110s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+[7.110s]                  from [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16[m[K:
+[7.110s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+[7.110s]   129 | B [01;36m[KtoMsg[m[K(const A & a);
+[7.110s]       |   [01;36m[K^~~~~[m[K
+[7.110s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.110s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+[7.111s]   184 |     pose.pose.orientation=[01;36m[Ktf2::toMsg(T_wa.getRotation())[m[K;
+[7.111s]       |                           [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[11.235s] gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1
+[11.237s] gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2
+[11.237s] gmake[1]: *** Waiting for unfinished jobs....
+[23.701s] [ 78%] [32m[1mLinking CXX executable obstacle_node[0m
+[27.192s] [ 78%] Built target obstacle_node
+[28.691s] [ 85%] [32m[1mLinking CXX executable pointcloud_node[0m
+[29.516s] [ 92%] [32m[1mLinking CXX executable depth_polygon_mask_node[0m
+[31.454s] [ 92%] Built target pointcloud_node
+[32.014s] [ 92%] Built target depth_polygon_mask_node
+[32.018s] gmake: *** [Makefile:146: all] Error 2
+[32.027s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

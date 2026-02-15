@@ -13,7 +13,7 @@ public:
     TfNode() : Node("tf_node")
     {
         // Use simulation time
-        this->set_parameter(rclcpp::Parameter("use_sim_time", true));
+        this->set_parameter(rclcpp::Parameter("use_sim_time", false));
 
         odom_sub_ = this->create_subscription<px4_msgs::msg::VehicleOdometry>(
             "/fmu/out/vehicle_odometry",

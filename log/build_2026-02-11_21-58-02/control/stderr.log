@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'trajectory_fly'
+gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:330: trajectory_fly] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/trajectory_fly.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

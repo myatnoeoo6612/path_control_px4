@@ -1,0 +1,64 @@
+[0.024s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.131s] [ 21%] Built target px4_visualizer
+[0.131s] [ 21%] [32mBuilding CXX object CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o[0m
+[0.133s] [ 35%] Built target static_tf
+[0.134s] [ 64%] Built target tf_node
+[0.134s] [ 64%] Built target trajectory_fly
+[0.138s] [ 78%] Built target auto_fly_test
+[0.138s] [ 92%] Built target land
+[5.139s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:38:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+[5.139s]    78 |     rclcpp::Publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>::SharedPtr vis_odom_pub_; // ADDED
+[5.139s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.139s]       |                                      [32m[KVehicleOdometry[m[K
+[5.139s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.139s]    78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry[01;31m[K>[m[K::SharedPtr vis_odom_pub_; // ADDED
+[5.139s]       |                                                           [01;31m[K^[m[K
+[5.139s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.140s]    78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::[01;31m[KSharedPtr[m[K vis_odom_pub_; // ADDED
+[5.140s]       |                                                              [01;31m[K^~~~~~~~~[m[K
+[5.140s]       |                                                                       [32m[K;[m[K
+[5.144s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ does not name a type
+[5.144s]    78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::SharedPtr [01;31m[Kvis_odom_pub_[m[K; // ADDED
+[5.144s]       |                                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[5.438s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:[m[K In constructor ‘[01m[KLinearTrajectoryController::LinearTrajectoryController()[m[K’:
+[5.439s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ was not declared in this scope
+[5.439s]    53 |         [01;31m[Kvis_odom_pub_[m[K =
+[5.439s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[5.439s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:45:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+[5.439s]    54 |             create_publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>(
+[5.439s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.439s]       |                                             [32m[KVehicleOdometry[m[K
+[5.439s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLinearTrajectoryController::create_publisher<<expression error> >(const char [32], int)[m[K’
+[5.439s]    54 |             [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+[5.439s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[5.439s]    55 | [01;31m[K                "/fmu/in/vehicle_visual_odometry", 100)[m[K;
+[5.439s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            
+[5.439s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[5.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.439s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[5.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.440s]                  from [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:1[m[K:
+[5.440s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[5.440s]    73 | [01;36m[KNode[m[K::create_publisher(
+[5.440s]       | [01;36m[K^~~~[m[K
+[5.440s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.440s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.440s]    54 |             [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+[5.440s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[5.440s]    55 | [01;31m[K                "/fmu/in/vehicle_visual_odometry", 100)[m[K;
+[5.440s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            
+[5.469s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:[m[K In member function ‘[01m[Kvoid LinearTrajectoryController::aruco_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.469s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:167:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+[5.470s]   167 |         px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K vo{};
+[5.470s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.470s]       |                        [32m[KVehicleOdometry[m[K
+[5.477s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:168:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvo[m[K’ was not declared in this scope
+[5.477s]   168 |         [01;31m[Kvo[m[K.timestamp = clock_.now().nanoseconds() / 1000;
+[5.478s]       |         [01;31m[K^~[m[K
+[5.496s] [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:182:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ was not declared in this scope
+[5.496s]   182 |         [01;31m[Kvis_odom_pub_[m[K->publish(vo);
+[5.496s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[15.297s] gmake[2]: *** [CMakeFiles/adaptive_land.dir/build.make:76: CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o] Error 1
+[15.299s] gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/adaptive_land.dir/all] Error 2
+[15.299s] gmake: *** [Makefile:146: all] Error 2
+[15.306s] Invoked command in '/home/myat/path_control_px4/build/control' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12

@@ -4,6 +4,7 @@
 /home/myat/path_control_px4/build/vision/CMakeFiles/depth_polygon_mask_node.dir
 /home/myat/path_control_px4/build/vision/CMakeFiles/pointcloud_node.dir
 /home/myat/path_control_px4/build/vision/CMakeFiles/aruco_detect.dir
+/home/myat/path_control_px4/build/vision/CMakeFiles/my_aruco.dir
 /home/myat/path_control_px4/build/vision/CMakeFiles/lidar.dir
 /home/myat/path_control_px4/build/vision/CMakeFiles/obstacle_node.dir
 /home/myat/path_control_px4/build/vision/CMakeFiles/test.dir

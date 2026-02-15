@@ -1,0 +1,7 @@
+[ 21%] Built target px4_visualizer
+[ 21%] [32mBuilding CXX object CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o[0m
+[ 35%] Built target static_tf
+[ 64%] Built target tf_node
+[ 64%] Built target trajectory_fly
+[ 78%] Built target auto_fly_test
+[ 92%] Built target land

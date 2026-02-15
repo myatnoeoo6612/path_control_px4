@@ -54,60 +54,60 @@ def generate_launch_description():
         #     ],
         # ),
 
-        Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='clock',
-            arguments=[
-                '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
-            ],
-            output='screen'
-        ),
+        # Node(
+        #     package='ros_gz_bridge',
+        #     executable='parameter_bridge',
+        #     name='clock',
+        #     arguments=[
+        #         '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
+        #     ],
+        #     output='screen'
+        # ),
 
-        Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='image_bridge',
-            arguments=[
-                '/depth_camera/image@sensor_msgs/msg/Image@gz.msgs.Image'
-            ],
-            output='screen'
-        ),
+        # Node(
+        #     package='ros_gz_bridge',
+        #     executable='parameter_bridge',
+        #     name='image_bridge',
+        #     arguments=[
+        #         '/depth_camera/image@sensor_msgs/msg/Image@gz.msgs.Image'
+        #     ],
+        #     output='screen'
+        # ),
 
-        # depth bridge
-        Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='depth_bridge',
-            arguments=[
-                '/depth_camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
-            ],
-            output='screen'
-        ),
+        # # depth bridge
+        # Node(
+        #     package='ros_gz_bridge',
+        #     executable='parameter_bridge',
+        #     name='depth_bridge',
+        #     arguments=[
+        #         '/depth_camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image'
+        #     ],
+        #     output='screen'
+        # ),
         
-        # CameraInfo bridge
-        Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='depth_camera_bridge',
-            arguments=[
-                '/depth_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
-            ],
-            output='screen'
-        ),
+        # # CameraInfo bridge
+        # Node(
+        #     package='ros_gz_bridge',
+        #     executable='parameter_bridge',
+        #     name='depth_camera_bridge',
+        #     arguments=[
+        #         '/depth_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
+        #     ],
+        #     output='screen'
+        # ),
 
-        Node(
-            package='ros_gz_bridge',
-            executable='parameter_bridge',
-            name='depth_camera_bridge',
-            arguments=[
-                '/depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'
-            ],
-            parameters=[{
-                'frame_name': 'camera_depth_frame'
-            }],
-            output='screen'
-        ),
+        # Node(
+        #     package='ros_gz_bridge',
+        #     executable='parameter_bridge',
+        #     name='depth_camera_bridge',
+        #     arguments=[
+        #         '/depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'
+        #     ],
+        #     parameters=[{
+        #         'frame_name': 'camera_depth_frame'
+        #     }],
+        #     output='screen'
+        # ),
 
 
         Node(

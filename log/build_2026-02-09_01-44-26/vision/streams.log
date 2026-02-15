@@ -1,0 +1,87 @@
+[0.541s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.663s] [ 14%] Built target camera_recorder
+[0.666s] [ 28%] Built target depth_polygon_mask_node
+[0.668s] [ 35%] [32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o[0m
+[0.675s] [ 50%] Built target aruco_detect
+[0.682s] [ 64%] Built target pointcloud_node
+[0.740s] [ 78%] Built target lidar
+[0.747s] [ 92%] Built target obstacle_node
+[6.971s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:157:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[6.972s]   157 | }
+[6.972s]       |  [01;31m[K^[m[K
+[6.972s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:23:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[6.972s]    23 | [01;36m[K{[m[K
+[6.972s]       | [01;36m[K^[m[K
+[6.990s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In constructor ‘[01m[KArucoLandingNode::ArucoLandingNode()[m[K’:
+[6.991s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdictionary_[m[K’ was not declared in this scope
+[6.991s]    27 |     [01;31m[Kdictionary_[m[K =
+[6.991s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[7.011s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparams_[m[K’ was not declared in this scope
+[7.012s]    30 |     [01;31m[Kparams_[m[K = cv::aruco::DetectorParameters();
+[7.012s]       |     [01;31m[K^~~~~~~[m[K
+[7.030s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_[m[K’ was not declared in this scope
+[7.030s]    39 |     [01;31m[Kdetector_[m[K = cv::aruco::ArucoDetector(dictionary_, params_);
+[7.030s]       |     [01;31m[K^~~~~~~~~[m[K
+[7.032s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:39:28:[m[K [01;31m[Kerror: [m[K‘[01m[KArucoDetector[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[7.032s]    39 |     detector_ = cv::aruco::[01;31m[KArucoDetector[m[K(dictionary_, params_);
+[7.032s]       |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[7.052s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+[7.052s]    41 |     [01;31m[Kmarker_sizes_[m[K =
+[7.052s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[7.075s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_matrix_[m[K’ was not declared in this scope
+[7.075s]    47 |     [01;31m[Kcamera_matrix_[m[K = (cv::Mat_<double>(3,3)<<
+[7.076s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.095s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_coeffs_[m[K’ was not declared in this scope
+[7.095s]    52 |     [01;31m[Kdist_coeffs_[m[K=cv::Mat::zeros(1,5,CV_64F);
+[7.096s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[7.112s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_sub_[m[K’ was not declared in this scope
+[7.113s]    54 |     [01;31m[Kimage_sub_[m[K = image_transport::create_subscription(
+[7.113s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.144s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[7.144s]    58 |     [01;31m[Kimage_pub_[m[K =
+[7.144s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.165s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_world_pub_[m[K’ was not declared in this scope
+[7.165s]    61 |     [01;31m[Kpose_world_pub_[m[K =
+[7.165s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.189s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+[7.190s]    65 |     [01;31m[Ktf_broadcaster_[m[K =
+[7.190s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.219s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[7.219s]    68 |     [01;31m[Ktf_buffer_[m[K =
+[7.219s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.250s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+[7.251s]    70 |     [01;31m[Ktf_listener_[m[K =
+[7.251s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[7.291s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)[m[K’:
+[7.291s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:99:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_[m[K’ was not declared in this scope
+[7.292s]    99 |   [01;31m[Kdetector_[m[K.detectMarkers(gray, corners, ids);
+[7.292s]       |   [01;31m[K^~~~~~~~~[m[K
+[7.315s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:107:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+[7.315s]   107 |     if([01;31m[Kmarker_sizes_[m[K.count(id)==0) continue;
+[7.316s]       |        [01;31m[K^~~~~~~~~~~~~[m[K
+[7.338s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:109:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+[7.338s]   109 |     double size=[01;31m[Kmarker_sizes_[m[K[id];
+[7.338s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[7.361s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:120:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_matrix_[m[K’ was not declared in this scope
+[7.361s]   120 |     cv::solvePnP(obj,corners[i],[01;31m[Kcamera_matrix_[m[K,
+[7.362s]       |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.380s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:121:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_coeffs_[m[K’ was not declared in this scope
+[7.380s]   121 |                  [01;31m[Kdist_coeffs_[m[K,rvec,tvec);
+[7.380s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[7.399s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+[7.399s]   152 |     [01;31m[Ktf_broadcaster_[m[K->sendTransform(tf);
+[7.399s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.422s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:155:3:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeWorldPose[m[K’ was not declared in this scope
+[7.422s]   155 |   [01;31m[KcomputeWorldPose[m[K(msg->header);
+[7.422s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.435s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:156:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[7.435s]   156 |   [01;31m[Kimage_pub_[m[K.publish(cv_ptr->toImageMsg());
+[7.435s]       |   [01;31m[K^~~~~~~~~~[m[K
+[7.444s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K At global scope:
+[7.444s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:157:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[7.444s]   157 | }
+[7.444s]       |  [01;31m[K^[m[K
+[10.741s] gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1
+[10.741s] gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2
+[10.742s] gmake: *** [Makefile:146: all] Error 2
+[10.751s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

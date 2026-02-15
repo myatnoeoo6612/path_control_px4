@@ -1,0 +1,7 @@
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:[m[K In constructor ‘[01m[KLinearTrajectoryController::LinearTrajectoryController()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_fly.cpp:85:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kzipzap_waypoints_[m[K’ was not declared in this scope
+   85 |         [01;31m[Kzipzap_waypoints_[m[K = {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trajectory_fly.dir/build.make:76: CMakeFiles/trajectory_fly.dir/src/trajectory_fly.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:149: CMakeFiles/trajectory_fly.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

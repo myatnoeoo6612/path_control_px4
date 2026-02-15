@@ -1,0 +1,62 @@
+[ 21%] Built target px4_visualizer
+[ 21%] [32mBuilding CXX object CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o[0m
+[ 35%] Built target static_tf
+[ 64%] Built target tf_node
+[ 64%] Built target trajectory_fly
+[ 78%] Built target auto_fly_test
+[ 92%] Built target land
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:38:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+   78 |     rclcpp::Publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>::SharedPtr vis_odom_pub_; // ADDED
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry[01;31m[K>[m[K::SharedPtr vis_odom_pub_; // ADDED
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::[01;31m[KSharedPtr[m[K vis_odom_pub_; // ADDED
+      |                                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                                       [32m[K;[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:78:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ does not name a type
+   78 |     rclcpp::Publisher<px4_msgs::msg::VehicleVisualOdometry>::SharedPtr [01;31m[Kvis_odom_pub_[m[K; // ADDED
+      |                                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:[m[K In constructor ‘[01m[KLinearTrajectoryController::LinearTrajectoryController()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ was not declared in this scope
+   53 |         [01;31m[Kvis_odom_pub_[m[K =
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:45:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+   54 |             create_publisher<px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K>(
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                             [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLinearTrajectoryController::create_publisher<<expression error> >(const char [32], int)[m[K’
+   54 |             [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   55 | [01;31m[K                "/fmu/in/vehicle_visual_odometry", 100)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:54:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   54 |             [01;31m[Kcreate_publisher<px4_msgs::msg::VehicleVisualOdometry>([m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   55 | [01;31m[K                "/fmu/in/vehicle_visual_odometry", 100)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:[m[K In member function ‘[01m[Kvoid LinearTrajectoryController::aruco_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:167:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleVisualOdometry[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg[m[K’; did you mean ‘[01m[KVehicleOdometry[m[K’?
+  167 |         px4_msgs::msg::[01;31m[KVehicleVisualOdometry[m[K vo{};
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[KVehicleOdometry[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:168:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvo[m[K’ was not declared in this scope
+  168 |         [01;31m[Kvo[m[K.timestamp = clock_.now().nanoseconds() / 1000;
+      |         [01;31m[K^~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:182:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_odom_pub_[m[K’ was not declared in this scope
+  182 |         [01;31m[Kvis_odom_pub_[m[K->publish(vo);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/adaptive_land.dir/build.make:76: CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/adaptive_land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

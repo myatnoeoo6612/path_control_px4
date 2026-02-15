@@ -1,0 +1,80 @@
+[35m[1mConsolidate compiler generated dependencies of target lidar[0m
+[35m[1mConsolidate compiler generated dependencies of target camera_recorder[0m
+[35m[1mConsolidate compiler generated dependencies of target my_aruco[0m
+[  7%] [32mBuilding CXX object CMakeFiles/depth_polygon_mask_node.dir/src/depth_polygon_mask_node.cpp.o[0m
+[ 21%] Built target aruco_detect
+[ 35%] [32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o[0m
+[ 57%] Built target lidar
+[ 71%] Built target camera_recorder
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:206:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+  206 | std::vector<Obs> [01;31m[Kobs_[m[K;
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:70:18:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+   70 | std::vector<Obs> [01;36m[Kobs_[m[K;
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   94 |       {[01;35m[K-size/2[m[K,size/2,0},
+      |        [01;35m[K~~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   94 |       {-size/2,[01;35m[Ksize/2[m[K,0},
+      |                [01;35m[K~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   95 |       { [01;35m[Ksize/2[m[K,size/2,0},
+      |         [01;35m[K~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   95 |       { size/2,[01;35m[Ksize/2[m[K,0},
+      |                [01;35m[K~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   96 |       { [01;35m[Ksize/2[m[K,-size/2,0},
+      |         [01;35m[K~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   96 |       { size/2,[01;35m[K-size/2[m[K,0},
+      |                [01;35m[K~~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   97 |       {[01;35m[K-size/2[m[K,-size/2,0}
+      |        [01;35m[K~~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   97 |       {-size/2,[01;35m[K-size/2[m[K,0}
+      |                [01;35m[K~~~~~^~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion&)[m[K’
+  132 |     tf.transform.rotation=[01;31m[Ktf2::toMsg(q)[m[K;
+      |                           [01;31m[K~~~~~~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+  129 | B [01;36m[KtoMsg[m[K(const A & a);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+  132 |     tf.transform.rotation=[01;36m[Ktf2::toMsg(q)[m[K;
+      |                           [01;36m[K~~~~~~~~~~^~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::computeWorldPose(const Header&)[m[K’:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(tf2::Quaternion)[m[K’
+  184 |     pose.pose.orientation=[01;31m[Ktf2::toMsg(T_wa.getRotation())[m[K;
+      |                           [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+  129 | B [01;36m[KtoMsg[m[K(const A & a);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+  184 |     pose.pose.orientation=[01;36m[Ktf2::toMsg(T_wa.getRotation())[m[K;
+      |                           [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 78%] [32m[1mLinking CXX executable obstacle_node[0m
+[ 78%] Built target obstacle_node
+[ 85%] [32m[1mLinking CXX executable pointcloud_node[0m
+[ 92%] [32m[1mLinking CXX executable depth_polygon_mask_node[0m
+[ 92%] Built target pointcloud_node
+[ 92%] Built target depth_polygon_mask_node
+gmake: *** [Makefile:146: all] Error 2

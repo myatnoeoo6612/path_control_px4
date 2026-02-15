@@ -1,0 +1,23 @@
+[0.038s] Invoking command in '/home/myat/path_control_px4/build/px4_msgs': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/px4_msgs -- -j12 -l12
+[0.673s] [  0%] Built target px4_msgs__cpp
+[0.728s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[0.745s] [ 12%] Built target ament_cmake_python_copy_px4_msgs
+[0.843s] [ 25%] Built target px4_msgs__rosidl_typesupport_c
+[0.846s] [ 37%] Built target px4_msgs__rosidl_typesupport_cpp
+[0.865s] [ 50%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[0.880s] [ 67%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[0.880s] [ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[0.909s] [ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[0.943s] [ 88%] Built target px4_msgs
+[0.990s] [ 88%] Built target px4_msgs__py
+[1.122s] [100%] Built target px4_msgs__rosidl_generator_py
+[1.167s] running egg_info
+[1.167s] writing px4_msgs.egg-info/PKG-INFO
+[1.172s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[1.172s] [100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.172s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[1.172s] [100%] Built target px4_msgs__rosidl_typesupport_c__pyext
+[1.172s] [100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext
+[1.177s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[1.181s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[1.262s] [100%] Built target ament_cmake_python_build_px4_msgs_egg

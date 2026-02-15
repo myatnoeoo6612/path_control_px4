@@ -1,0 +1,47 @@
+[0.286s] Invoking command in '/home/myat/path_control_px4/build/vision': CMAKE_PREFIX_PATH=/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12
+[0.334s] [35m[1mConsolidate compiler generated dependencies of target depth_polygon_mask_node[0m
+[0.336s] [35m[1mConsolidate compiler generated dependencies of target my_aruco[0m
+[0.338s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_node[0m
+[0.342s] [35m[1mConsolidate compiler generated dependencies of target obstacle_node[0m
+[0.351s] [ 28%] Built target aruco_detect
+[0.351s] [ 28%] Built target camera_recorder
+[0.351s] [ 42%] Built target lidar
+[0.364s] [ 50%] [32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o[0m
+[0.369s] [ 64%] Built target depth_polygon_mask_node
+[0.373s] [ 78%] Built target pointcloud_node
+[0.375s] [ 92%] Built target obstacle_node
+[3.958s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:207:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+[3.958s]   207 | std::vector<Obs> [01;31m[Kobs_[m[K;
+[3.958s]       |                  [01;31m[K^~~~[m[K
+[3.958s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:71:18:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_[m[K’
+[3.958s]    71 | std::vector<Obs> [01;36m[Kobs_[m[K;
+[3.958s]       |                  [01;36m[K^~~~[m[K
+[3.984s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)[m[K’:
+[3.985s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.985s]    95 |       {[01;35m[K-size/2[m[K,size/2,0},
+[3.985s]       |        [01;35m[K~~~~~^~[m[K
+[3.985s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.985s]    95 |       {-size/2,[01;35m[Ksize/2[m[K,0},
+[3.985s]       |                [01;35m[K~~~~^~[m[K
+[3.985s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.985s]    96 |       { [01;35m[Ksize/2[m[K,size/2,0},
+[3.985s]       |         [01;35m[K~~~~^~[m[K
+[3.985s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:20:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.985s]    96 |       { size/2,[01;35m[Ksize/2[m[K,0},
+[3.985s]       |                [01;35m[K~~~~^~[m[K
+[3.985s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(size / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.985s]    97 |       { [01;35m[Ksize/2[m[K,-size/2,0},
+[3.986s]       |         [01;35m[K~~~~^~[m[K
+[3.986s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.986s]    97 |       { size/2,[01;35m[K-size/2[m[K,0},
+[3.986s]       |                [01;35m[K~~~~~^~[m[K
+[3.986s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:98:13:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.986s]    98 |       {[01;35m[K-size/2[m[K,-size/2,0}
+[3.986s]       |        [01;35m[K~~~~~^~[m[K
+[3.986s] [01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:98:21:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((- size) / (double)2)[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[3.986s]    98 |       {-size/2,[01;35m[K-size/2[m[K,0}
+[3.986s]       |                [01;35m[K~~~~~^~[m[K
+[5.629s] gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1
+[5.629s] gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2
+[5.629s] gmake: *** [Makefile:146: all] Error 2
+[5.632s] Invoked command in '/home/myat/path_control_px4/build/vision' returned '2': CMAKE_PREFIX_PATH=/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/vision -- -j12 -l12

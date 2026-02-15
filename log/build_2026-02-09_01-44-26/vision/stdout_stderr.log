@@ -1,0 +1,85 @@
+[ 14%] Built target camera_recorder
+[ 28%] Built target depth_polygon_mask_node
+[ 35%] [32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o[0m
+[ 50%] Built target aruco_detect
+[ 64%] Built target pointcloud_node
+[ 78%] Built target lidar
+[ 92%] Built target obstacle_node
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:157:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  157 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:23:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   23 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In constructor ‘[01m[KArucoLandingNode::ArucoLandingNode()[m[K’:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdictionary_[m[K’ was not declared in this scope
+   27 |     [01;31m[Kdictionary_[m[K =
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparams_[m[K’ was not declared in this scope
+   30 |     [01;31m[Kparams_[m[K = cv::aruco::DetectorParameters();
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_[m[K’ was not declared in this scope
+   39 |     [01;31m[Kdetector_[m[K = cv::aruco::ArucoDetector(dictionary_, params_);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:39:28:[m[K [01;31m[Kerror: [m[K‘[01m[KArucoDetector[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+   39 |     detector_ = cv::aruco::[01;31m[KArucoDetector[m[K(dictionary_, params_);
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+   41 |     [01;31m[Kmarker_sizes_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_matrix_[m[K’ was not declared in this scope
+   47 |     [01;31m[Kcamera_matrix_[m[K = (cv::Mat_<double>(3,3)<<
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_coeffs_[m[K’ was not declared in this scope
+   52 |     [01;31m[Kdist_coeffs_[m[K=cv::Mat::zeros(1,5,CV_64F);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_sub_[m[K’ was not declared in this scope
+   54 |     [01;31m[Kimage_sub_[m[K = image_transport::create_subscription(
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+   58 |     [01;31m[Kimage_pub_[m[K =
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_world_pub_[m[K’ was not declared in this scope
+   61 |     [01;31m[Kpose_world_pub_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+   65 |     [01;31m[Ktf_broadcaster_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   68 |     [01;31m[Ktf_buffer_[m[K =
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+   70 |     [01;31m[Ktf_listener_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K In member function ‘[01m[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:99:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetector_[m[K’ was not declared in this scope
+   99 |   [01;31m[Kdetector_[m[K.detectMarkers(gray, corners, ids);
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:107:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+  107 |     if([01;31m[Kmarker_sizes_[m[K.count(id)==0) continue;
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:109:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_sizes_[m[K’ was not declared in this scope
+  109 |     double size=[01;31m[Kmarker_sizes_[m[K[id];
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:120:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_matrix_[m[K’ was not declared in this scope
+  120 |     cv::solvePnP(obj,corners[i],[01;31m[Kcamera_matrix_[m[K,
+      |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:121:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_coeffs_[m[K’ was not declared in this scope
+  121 |                  [01;31m[Kdist_coeffs_[m[K,rvec,tvec);
+      |                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+  152 |     [01;31m[Ktf_broadcaster_[m[K->sendTransform(tf);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:155:3:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeWorldPose[m[K’ was not declared in this scope
+  155 |   [01;31m[KcomputeWorldPose[m[K(msg->header);
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:156:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+  156 |   [01;31m[Kimage_pub_[m[K.publish(cv_ptr->toImageMsg());
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:[m[K At global scope:
+[01m[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:157:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  157 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

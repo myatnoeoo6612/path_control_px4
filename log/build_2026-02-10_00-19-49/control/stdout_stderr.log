@@ -1,0 +1,14 @@
+[ 14%] Built target static_tf
+[ 42%] Built target tf_node
+[ 42%] Built target land
+[ 57%] Built target trajectory_fly
+[ 71%] Built target auto_fly_test
+[ 85%] Built target px4_visualizer
+[ 92%] [32mBuilding CXX object CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o[0m
+[01m[K/home/myat/path_control_px4/src/control/src/adaptive_land.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/vehicle_visual_odometry.hpp: No such file or directory
+    8 | #include [01;31m[K<px4_msgs/msg/vehicle_visual_odometry.hpp>[m[K   // ADDED
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/adaptive_land.dir/build.make:76: CMakeFiles/adaptive_land.dir/src/adaptive_land.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/adaptive_land.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

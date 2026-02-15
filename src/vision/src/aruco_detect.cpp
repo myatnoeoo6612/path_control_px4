@@ -26,13 +26,18 @@ public:
   ArucoDetectorNode() : Node("aruco_detect")
   {
     // ---- Marker + camera params ----
-    marker_size_ = 0.1;
-    target_id_ = 1;
+    marker_size_ = 0.3;
+    target_id_ = 0;
 
-    fx_ = 432.496042035043;
-    fy_ = 432.496042035043;
-    cx_ = 320.0;
-    cy_ = 240.0;
+    // fx_ = 432.496042035043;
+    // fy_ = 432.496042035043;
+    // cx_ = 320.0;
+    // cy_ = 240.0;
+       fx_ = 607.4483642578125;
+       fy_ = 607.068359375;
+       cx_ = 322.2811584472656;
+       cy_ = 242.37261962890625;
+    
 
     camera_matrix_ = (cv::Mat_<double>(3,3) <<
       fx_, 0, cx_,
@@ -46,17 +51,17 @@ public:
 
     // ---- ROS interfaces ----
     image_sub_ = image_transport::create_subscription(
-      this, "/depth_camera/image",
+      this, "/camera/camera/color/image_raw",
       std::bind(&ArucoDetectorNode::image_callback, this, _1), "raw");
 
     image_pub_ =
       image_transport::create_publisher(this, "/aruco/image");
 
     pose_cam_pub_ =
-      create_publisher<geometry_msgs::msg::PoseStamped>("/aruco/pose", 10);
+      create_publisher<geometry_msgs::msg::PoseStamped>("/aruco/pose", 100);
 
     pose_world_pub_ =
-      create_publisher<geometry_msgs::msg::PoseStamped>("/aruco/pose_world", 10);
+      create_publisher<geometry_msgs::msg::PoseStamped>("/aruco/pose_world", 40);
 
     tf_broadcaster_ =
       std::make_unique<tf2_ros::TransformBroadcaster>(*this);
@@ -222,7 +227,7 @@ private:
       world_pose.header.stamp = now();
       world_pose.header.frame_id = "world";
       world_pose.pose.position.x = T_wa.getOrigin().x();
-      world_pose.pose.position.y = T_wa.getOrigin().y();
+      world_pose.pose.position.y = T_wa.getOrigin().y()-0.18;
       world_pose.pose.position.z = T_wa.getOrigin().z();
       world_pose.pose.orientation =
         tf2::toMsg(T_wa.getRotation());

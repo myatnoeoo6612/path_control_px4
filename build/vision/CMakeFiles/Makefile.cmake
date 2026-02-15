@@ -1102,6 +1102,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/depth_polygon_mask_node.dir/DependInfo.cmake"
   "CMakeFiles/pointcloud_node.dir/DependInfo.cmake"
   "CMakeFiles/aruco_detect.dir/DependInfo.cmake"
+  "CMakeFiles/my_aruco.dir/DependInfo.cmake"
   "CMakeFiles/lidar.dir/DependInfo.cmake"
   "CMakeFiles/obstacle_node.dir/DependInfo.cmake"
   )

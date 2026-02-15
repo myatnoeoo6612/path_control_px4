@@ -1,0 +1,1003 @@
+[0.000000] (-) TimerEvent: {}
+[0.000145] (bringup_drone) JobQueued: {'identifier': 'bringup_drone', 'dependencies': OrderedDict()}
+[0.000176] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000196] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.000209] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.000228] (px4_offboard) JobQueued: {'identifier': 'px4_offboard', 'dependencies': OrderedDict([('px4_msgs', '/home/myat/path_control_px4/install/px4_msgs')])}
+[0.000248] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.024960] (bringup_drone) JobStarted: {'identifier': 'bringup_drone'}
+[0.033821] (vision) JobStarted: {'identifier': 'vision'}
+[0.041380] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.043245] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.043875] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/px4_msgs', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/px4_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('ROS_PACKAGE_PATH', '/home/myat/ros2_ws/install/arm/share:/home/myat/ros2_ws/install/4dof/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/ros2_ws/install/serial/lib:/home/myat/ros2_ws/install/realsense2_camera/lib:/home/myat/ros2_ws/install/realsense2_camera_msgs/lib:/home/myat/ros2_ws/install/px4_ros_com/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2086'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '174073'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/ros2_ws/install:/home/myat/my_uav/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:24634'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/myat/ros2_ws/install/arm/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/arm/lib/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/myat/.local/bin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/2450,unix/myat:/tmp/.ICE-unix/2450'), ('INVOCATION_ID', '880c2663b6274e4fbf38152873fd1f8f'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3577793f-752f-431f-9357-125a974b2858'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/ros2_ws/install/servo_control/lib/python3.10/site-packages:/home/myat/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages:/home/myat/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_mind/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_hex/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_depth/lib/python3.10/site-packages:/home/myat/ros2_ws/install/joint_state_converter/lib/python3.10/site-packages:/home/myat/ros2_ws/install/aruco_detector/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs')]), 'shell': False}
+[0.099179] (-) TimerEvent: {}
+[0.199549] (-) TimerEvent: {}
+[0.299939] (-) TimerEvent: {}
+[0.399834] (vision) JobProgress: {'identifier': 'vision', 'progress': 'cmake'}
+[0.399962] (-) TimerEvent: {}
+[0.401380] (vision) JobProgress: {'identifier': 'vision', 'progress': 'build'}
+[0.401915] (vision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/myat/path_control_px4/build/vision', '--', '-j12', '-l12'], 'cwd': '/home/myat/path_control_px4/build/vision', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '2147450879'), ('LANGUAGE', 'en_US:en'), ('USER', 'myat'), ('LC_TIME', 'en_US.UTF-8'), ('ROS_PACKAGE_PATH', '/home/myat/ros2_ws/install/arm/share:/home/myat/ros2_ws/install/4dof/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/ros2_ws/install/serial/lib:/home/myat/ros2_ws/install/realsense2_camera/lib:/home/myat/ros2_ws/install/realsense2_camera_msgs/lib:/home/myat/ros2_ws/install/px4_ros_com/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/myat'), ('OLDPWD', '/home/myat'), ('DESKTOP_SESSION', 'ubuntu'), ('LSCOLORS', 'Gxfxcxdxdxegedabagacad'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2086'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '174073'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/myat/path_control_px4/install:/home/myat/ros2_ws/install:/home/myat/my_uav/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'myat'), ('OSH', '/home/myat/.oh-my-bash'), ('SUMO_HOME', '/usr/share/sumo'), ('JOURNAL_STREAM', '8:24634'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/myat/ros2_ws/install/arm/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/arm/lib/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'myat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/myat/.local/bin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/myat:@/tmp/.ICE-unix/2450,unix/myat:/tmp/.ICE-unix/2450'), ('INVOCATION_ID', '880c2663b6274e4fbf38152873fd1f8f'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('HISTSIZE', '2147450879'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3577793f-752f-431f-9357-125a974b2858'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/myat/path_control_px4/build/vision'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/ros2_ws/install/servo_control/lib/python3.10/site-packages:/home/myat/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages:/home/myat/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_mind/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_hex/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_depth/lib/python3.10/site-packages:/home/myat/ros2_ws/install/joint_state_converter/lib/python3.10/site-packages:/home/myat/ros2_ws/install/aruco_detector/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs')]), 'shell': False}
+[0.500083] (-) TimerEvent: {}
+[0.523966] (vision) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600355] (-) TimerEvent: {}
+[0.621056] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.657140] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_armed__functions.c.o\x1b[0m\n'}
+[0.657782] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_controls_status__functions.c.o\x1b[0m\n'}
+[0.657882] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos__functions.c.o\x1b[0m\n'}
+[0.658917] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_motors__functions.c.o\x1b[0m\n'}
+[0.659748] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_outputs__functions.c.o\x1b[0m\n'}
+[0.662955] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.c.o\x1b[0m\n'}
+[0.667194] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_servos_trim__functions.c.o\x1b[0m\n'}
+[0.669214] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/actuator_test__functions.c.o\x1b[0m\n'}
+[0.700490] (-) TimerEvent: {}
+[0.762167] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp.o\x1b[0m\n'}
+[0.774458] (vision) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.795541] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp.o\x1b[0m\n'}
+[0.795888] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.cpp.o\x1b[0m\n'}
+[0.801656] (-) TimerEvent: {}
+[0.817112] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_armed__type_support.cpp.o\x1b[0m\n'}
+[0.820337] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_armed__type_support.cpp.o\x1b[0m\n'}
+[0.826270] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/adc_report__functions.c.o\x1b[0m\n'}
+[0.826506] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_controls_status__type_support.cpp.o\x1b[0m\n'}
+[0.826593] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_controls_status__type_support.cpp.o\x1b[0m\n'}
+[0.829962] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed__functions.c.o\x1b[0m\n'}
+[0.836753] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_armed__type_support.cpp.o\x1b[0m\n'}
+[0.840113] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_motors__type_support.cpp.o\x1b[0m\n'}
+[0.901764] (-) TimerEvent: {}
+[0.927755] (vision) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.940586] (vision) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.944341] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_controls_status__type_support.cpp.o\x1b[0m\n'}
+[0.955200] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_validated__functions.c.o\x1b[0m\n'}
+[0.960077] (vision) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.993761] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[1.003391] (-) TimerEvent: {}
+[1.005723] (vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.037635] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/airspeed_wind__functions.c.o\x1b[0m\n'}
+[1.066462] (vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.103519] (-) TimerEvent: {}
+[1.126680] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_motors__type_support.cpp.o\x1b[0m\n'}
+[1.195097] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_reply__functions.c.o\x1b[0m\n'}
+[1.203633] (-) TimerEvent: {}
+[1.211131] (vision) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.220505] (vision) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.305485] (-) TimerEvent: {}
+[1.383923] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/arming_check_request__functions.c.o\x1b[0m\n'}
+[1.405621] (-) TimerEvent: {}
+[1.430069] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_outputs__type_support.cpp.o\x1b[0m\n'}
+[1.507593] (-) TimerEvent: {}
+[1.533696] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c.o\x1b[0m\n'}
+[1.562187] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_outputs__type_support.cpp.o\x1b[0m\n'}
+[1.586094] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_servos__type_support.cpp.o\x1b[0m\n'}
+[1.590059] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_servos__type_support.cpp.o\x1b[0m\n'}
+[1.606989] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o\x1b[0m\n'}
+[1.608411] (-) TimerEvent: {}
+[1.626288] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_motors__type_support.cpp.o\x1b[0m\n'}
+[1.701468] (vision) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.708547] (-) TimerEvent: {}
+[1.739557] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o\x1b[0m\n'}
+[1.792295] (px4_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_servos_trim__type_support.cpp.o\x1b[0m\n'}
+[1.792731] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/actuator_test__type_support.cpp.o\x1b[0m\n'}
+[1.792852] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o\x1b[0m\n'}
+[1.808659] (-) TimerEvent: {}
+[1.816790] (bringup_drone) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/bringup_drone', 'build', '--build-base', '/home/myat/path_control_px4/build/bringup_drone/build', 'install', '--record', '/home/myat/path_control_px4/build/bringup_drone/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/myat/path_control_px4/src/bringup_drone', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'HISTFILESIZE': '2147450879', 'LANGUAGE': 'en_US:en', 'USER': 'myat', 'LC_TIME': 'en_US.UTF-8', 'ROS_PACKAGE_PATH': '/home/myat/ros2_ws/install/arm/share:/home/myat/ros2_ws/install/4dof/share', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/myat/path_control_px4/install/px4_msgs/lib:/home/myat/ros2_ws/install/serial/lib:/home/myat/ros2_ws/install/realsense2_camera/lib:/home/myat/ros2_ws/install/realsense2_camera_msgs/lib:/home/myat/ros2_ws/install/px4_ros_com/lib:/home/myat/my_uav/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'LESS': '-R', 'HOME': '/home/myat', 'OLDPWD': '/home/myat', 'DESKTOP_SESSION': 'ubuntu', 'LSCOLORS': 'Gxfxcxdxdxegedabagacad', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'LC_MONETARY': 'en_US.UTF-8', 'MANAGERPID': '2086', 'SYSTEMD_EXEC_PID': '2478', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '174073', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/myat/path_control_px4/install:/home/myat/ros2_ws/install:/home/myat/my_uav/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'myat', 'OSH': '/home/myat/.oh-my-bash', 'SUMO_HOME': '/usr/share/sumo', 'JOURNAL_STREAM': '8:24634', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/myat/ros2_ws/install/arm/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/arm/lib/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/x86_64-linux-gnu/pkgconfig:/home/myat/ros2_ws/install/4dof/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'myat', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/myat/.local/bin:/opt/ros/humble/bin:/home/myat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/myat:@/tmp/.ICE-unix/2450,unix/myat:/tmp/.ICE-unix/2450', 'INVOCATION_ID': '880c2663b6274e4fbf38152873fd1f8f', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'HISTSIZE': '2147450879', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/px4_offboard:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:3577793f-752f-431f-9357-125a974b2858', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/myat/path_control_px4/build/bringup_drone', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/myat/path_control_px4/build/bringup_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/path_control_px4/install/px4_offboard/lib/python3.10/site-packages:/home/myat/path_control_px4/install/px4_msgs/local/lib/python3.10/dist-packages:/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages:/home/myat/ros2_ws/install/servo_control/lib/python3.10/site-packages:/home/myat/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages:/home/myat/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/myat/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_mind/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_hex/lib/python3.10/site-packages:/home/myat/ros2_ws/install/my_depth/lib/python3.10/site-packages:/home/myat/ros2_ws/install/joint_state_converter/lib/python3.10/site-packages:/home/myat/ros2_ws/install/aruco_detector/lib/python3.10/site-packages:/home/myat/my_uav/install/vision_python/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_offboard/lib/python3.10/site-packages:/home/myat/my_uav/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/path_control_px4/install/px4_msgs:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs'}, 'shell': False}
+[1.833573] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_servos_trim__type_support.cpp.o\x1b[0m\n'}
+[1.840482] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_outputs__type_support.cpp.o\x1b[0m\n'}
+[1.895649] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/adc_report__type_support.cpp.o\x1b[0m\n'}
+[1.896024] (vision) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.907663] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_capture__functions.c.o\x1b[0m\n'}
+[1.908724] (-) TimerEvent: {}
+[2.007546] (vision) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[2.011626] (-) TimerEvent: {}
+[2.034785] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_status__functions.c.o\x1b[0m\n'}
+[2.062886] (vision) StdoutLine: {'line': b'-- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)\n'}
+[2.071228] (vision) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.094840] (vision) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.111737] (-) TimerEvent: {}
+[2.158577] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.193737] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/camera_trigger__functions.c.o\x1b[0m\n'}
+[2.207101] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_servos__type_support.cpp.o\x1b[0m\n'}
+[2.211908] (-) TimerEvent: {}
+[2.313053] (-) TimerEvent: {}
+[2.346501] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/can_interface_status__functions.c.o\x1b[0m\n'}
+[2.386010] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/airspeed_validated__type_support.cpp.o\x1b[0m\n'}
+[2.399516] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.400560] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[2.401592] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[2.404177] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[2.413180] (-) TimerEvent: {}
+[2.414685] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[2.424486] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[2.431462] (vision) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.439566] (px4_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cellular_status__functions.c.o\x1b[0m\n'}
+[2.451166] (vision) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.453515] (vision) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.454457] (vision) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.480027] (px4_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/actuator_test__type_support.cpp.o\x1b[0m\n'}
+[2.491425] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_servos_trim__type_support.cpp.o\x1b[0m\n'}
+[2.497555] (vision) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.514015] (-) TimerEvent: {}
+[2.541023] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/actuator_test__type_support.cpp.o\x1b[0m\n'}
+[2.547482] (px4_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[2.548866] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/airspeed_wind__type_support.cpp.o\x1b[0m\n'}
+[2.564451] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.o\x1b[0m\n'}
+[2.564914] (bringup_drone) StdoutLine: {'line': b'running egg_info\n'}
+[2.569377] (bringup_drone) StdoutLine: {'line': b'writing ../../build/bringup_drone/bringup_drone.egg-info/PKG-INFO\n'}
+[2.570204] (bringup_drone) StdoutLine: {'line': b'writing dependency_links to ../../build/bringup_drone/bringup_drone.egg-info/dependency_links.txt\n'}
+[2.570656] (bringup_drone) StdoutLine: {'line': b'writing entry points to ../../build/bringup_drone/bringup_drone.egg-info/entry_points.txt\n'}
+[2.570869] (bringup_drone) StdoutLine: {'line': b'writing requirements to ../../build/bringup_drone/bringup_drone.egg-info/requires.txt\n'}
+[2.571026] (bringup_drone) StdoutLine: {'line': b'writing top-level names to ../../build/bringup_drone/bringup_drone.egg-info/top_level.txt\n'}
+[2.577299] (bringup_drone) StdoutLine: {'line': b"reading manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'\n"}
+[2.580455] (bringup_drone) StdoutLine: {'line': b"writing manifest file '../../build/bringup_drone/bringup_drone.egg-info/SOURCES.txt'\n"}
+[2.580757] (bringup_drone) StdoutLine: {'line': b'running build\n'}
+[2.580955] (bringup_drone) StdoutLine: {'line': b'running build_py\n'}
+[2.581477] (bringup_drone) StdoutLine: {'line': b'running install\n'}
+[2.582521] (bringup_drone) StdoutLine: {'line': b'running install_lib\n'}
+[2.585980] (bringup_drone) StdoutLine: {'line': b'running install_data\n'}
+[2.586212] (bringup_drone) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.590877] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o\x1b[0m\n'}
+[2.591101] (bringup_drone) StdoutLine: {'line': b"removing '/home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.594344] (bringup_drone) StdoutLine: {'line': b'Copying ../../build/bringup_drone/bringup_drone.egg-info to /home/myat/path_control_px4/install/bringup_drone/lib/python3.10/site-packages/bringup_drone-0.0.0-py3.10.egg-info\n'}
+[2.596643] (bringup_drone) StdoutLine: {'line': b'running install_scripts\n'}
+[2.598272] (vision) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.615624] (-) TimerEvent: {}
+[2.624381] (vision) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.624728] (vision) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[2.624860] (vision) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.635564] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/arming_check_reply__type_support.cpp.o\x1b[0m\n'}
+[2.641634] (bringup_drone) StdoutLine: {'line': b"writing list of installed files to '/home/myat/path_control_px4/build/bringup_drone/install.log'\n"}
+[2.675610] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/adc_report__type_support.cpp.o\x1b[0m\n'}
+[2.697585] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/adc_report__type_support.cpp.o\x1b[0m\n'}
+[2.717718] (-) TimerEvent: {}
+[2.741109] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o\x1b[0m\n'}
+[2.756483] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed__type_support.cpp.o\x1b[0m\n'}
+[2.758077] (bringup_drone) CommandEnded: {'returncode': 0}
+[2.784917] (vision) StdoutLine: {'line': b'-- Could NOT find MPI (missing: MPI_C_FOUND C) \n'}
+[2.785442] (vision) StdoutLine: {'line': b"    Reason given by package: MPI component 'C' was requested, but language C is not enabled.  \n"}
+[2.786361] (vision) StdoutLine: {'line': b'\n'}
+[2.806369] (bringup_drone) JobEnded: {'identifier': 'bringup_drone', 'rc': 0}
+[2.817868] (-) TimerEvent: {}
+[2.879328] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/control_allocator_status__functions.c.o\x1b[0m\n'}
+[2.922367] (-) TimerEvent: {}
+[2.955782] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/arming_check_request__type_support.cpp.o\x1b[0m\n'}
+[3.000597] (vision) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[3.022501] (-) TimerEvent: {}
+[3.026278] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/cpuload__functions.c.o\x1b[0m\n'}
+[3.030868] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed_validated__type_support.cpp.o\x1b[0m\n'}
+[3.115323] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/autotune_attitude_control_status__type_support.cpp.o\x1b[0m\n'}
+[3.122619] (-) TimerEvent: {}
+[3.156922] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_request__functions.c.o\x1b[0m\n'}
+[3.207856] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.cpp.o\x1b[0m\n'}
+[3.222751] (-) TimerEvent: {}
+[3.238597] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/airspeed__type_support.cpp.o\x1b[0m\n'}
+[3.249015] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/dataman_response__functions.c.o\x1b[0m\n'}
+[3.252655] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/airspeed_wind__type_support.cpp.o\x1b[0m\n'}
+[3.322873] (-) TimerEvent: {}
+[3.331787] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/airspeed_validated__type_support.cpp.o\x1b[0m\n'}
+[3.332481] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.o\x1b[0m\n'}
+[3.354700] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o\x1b[0m\n'}
+[3.423201] (-) TimerEvent: {}
+[3.460637] (px4_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.cpp.o\x1b[0m\n'}
+[3.475926] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o\x1b[0m\n'}
+[3.482472] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/arming_check_reply__type_support.cpp.o\x1b[0m\n'}
+[3.524943] (-) TimerEvent: {}
+[3.585471] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/airspeed_wind__type_support.cpp.o\x1b[0m\n'}
+[3.614856] (vision) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.626495] (-) TimerEvent: {}
+[3.646520] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o\x1b[0m\n'}
+[3.653586] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/arming_check_request__type_support.cpp.o\x1b[0m\n'}
+[3.726605] (-) TimerEvent: {}
+[3.732420] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/camera_capture__type_support.cpp.o\x1b[0m\n'}
+[3.741452] (vision) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[3.757646] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o\x1b[0m\n'}
+[3.782393] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/autotune_attitude_control_status__type_support.cpp.o\x1b[0m\n'}
+[3.831537] (-) TimerEvent: {}
+[3.852527] (vision) StdoutLine: {'line': b'-- Could NOT find MPI (missing: MPI_C_FOUND C) \n'}
+[3.852765] (vision) StdoutLine: {'line': b"    Reason given by package: MPI component 'C' was requested, but language C is not enabled.  MPI component 'C' was requested, but language C is not enabled.  \n"}
+[3.852909] (vision) StdoutLine: {'line': b'\n'}
+[3.874373] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.o\x1b[0m\n'}
+[3.931649] (-) TimerEvent: {}
+[4.004792] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o\x1b[0m\n'}
+[4.020433] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.o\x1b[0m\n'}
+[4.032878] (-) TimerEvent: {}
+[4.116622] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.o\x1b[0m\n'}
+[4.132994] (-) TimerEvent: {}
+[4.179782] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o\x1b[0m\n'}
+[4.202222] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_report__functions.c.o\x1b[0m\n'}
+[4.233142] (-) TimerEvent: {}
+[4.252590] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/esc_status__functions.c.o\x1b[0m\n'}
+[4.273815] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__functions.c.o\x1b[0m\n'}
+[4.330220] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/camera_status__type_support.cpp.o\x1b[0m\n'}
+[4.333268] (-) TimerEvent: {}
+[4.345740] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/arming_check_reply__type_support.cpp.o\x1b[0m\n'}
+[4.356163] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/camera_trigger__type_support.cpp.o\x1b[0m\n'}
+[4.365479] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.o\x1b[0m\n'}
+[4.375133] (vision) StdoutLine: {'line': b'-- Could NOT find MPI (missing: MPI_C_FOUND C) \n'}
+[4.375388] (vision) StdoutLine: {'line': b"    Reason given by package: MPI component 'C' was requested, but language C is not enabled.  MPI component 'C' was requested, but language C is not enabled.  MPI component 'C' was requested, but language C is not enabled.  \n"}
+[4.375550] (vision) StdoutLine: {'line': b'\n'}
+[4.396875] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/can_interface_status__type_support.cpp.o\x1b[0m\n'}
+[4.421880] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source2d__functions.c.o\x1b[0m\n'}
+[4.434750] (-) TimerEvent: {}
+[4.489106] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/cellular_status__type_support.cpp.o\x1b[0m\n'}
+[4.511657] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.cpp.o\x1b[0m\n'}
+[4.520082] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.cpp.o\x1b[0m\n'}
+[4.535491] (-) TimerEvent: {}
+[4.556155] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_capture__type_support.cpp.o\x1b[0m\n'}
+[4.578876] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source3d__functions.c.o\x1b[0m\n'}
+[4.598886] (px4_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias__functions.c.o\x1b[0m\n'}
+[4.635636] (-) TimerEvent: {}
+[4.728241] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.o\x1b[0m\n'}
+[4.736813] (-) TimerEvent: {}
+[4.756627] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_status__type_support.cpp.o\x1b[0m\n'}
+[4.756926] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_bias3d__functions.c.o\x1b[0m\n'}
+[4.840495] (-) TimerEvent: {}
+[4.869589] (vision) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[4.870686] (vision) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[4.870985] (vision) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[4.871490] (vision) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[4.871794] (vision) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[4.873173] (vision) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[4.873376] (vision) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[4.873556] (vision) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[4.875040] (vision) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[4.875282] (vision) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[4.875869] (vision) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[4.879612] (vision) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[4.879776] (vision) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[4.887798] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_event_flags__functions.c.o\x1b[0m\n'}
+[4.930128] (vision) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[4.940623] (-) TimerEvent: {}
+[4.979774] (vision) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/myat/my_uav/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[4.987556] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_gps_status__functions.c.o\x1b[0m\n'}
+[5.021422] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_innovations__functions.c.o\x1b[0m\n'}
+[5.040754] (-) TimerEvent: {}
+[5.061530] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_selector_status__functions.c.o\x1b[0m\n'}
+[5.094940] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.cpp.o\x1b[0m\n'}
+[5.119068] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/arming_check_request__type_support.cpp.o\x1b[0m\n'}
+[5.140873] (-) TimerEvent: {}
+[5.154733] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/control_allocator_status__type_support.cpp.o\x1b[0m\n'}
+[5.159475] (px4_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/cpuload__type_support.cpp.o\x1b[0m\n'}
+[5.179711] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_sensor_bias__functions.c.o\x1b[0m\n'}
+[5.212992] (vision) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.228444] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/dataman_request__type_support.cpp.o\x1b[0m\n'}
+[5.240979] (-) TimerEvent: {}
+[5.243000] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/autotune_attitude_control_status__type_support.cpp.o\x1b[0m\n'}
+[5.284781] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/camera_trigger__type_support.cpp.o\x1b[0m\n'}
+[5.300512] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_states__functions.c.o\x1b[0m\n'}
+[5.305830] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/dataman_response__type_support.cpp.o\x1b[0m\n'}
+[5.341120] (-) TimerEvent: {}
+[5.368752] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status__functions.c.o\x1b[0m\n'}
+[5.395034] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/can_interface_status__type_support.cpp.o\x1b[0m\n'}
+[5.441232] (-) TimerEvent: {}
+[5.470543] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/estimator_status_flags__functions.c.o\x1b[0m\n'}
+[5.541435] (-) TimerEvent: {}
+[5.547437] (vision) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.548805] (vision) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.549005] (vision) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.556791] (vision) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.562709] (vision) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.563105] (vision) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.565104] (vision) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.571686] (vision) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.618689] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.cpp.o\x1b[0m\n'}
+[5.634552] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/event__functions.c.o\x1b[0m\n'}
+[5.636221] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/cellular_status__type_support.cpp.o\x1b[0m\n'}
+[5.643218] (-) TimerEvent: {}
+[5.740466] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failsafe_flags__functions.c.o\x1b[0m\n'}
+[5.743325] (-) TimerEvent: {}
+[5.845672] (-) TimerEvent: {}
+[5.867591] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o\x1b[0m\n'}
+[5.900489] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/failure_detector_status__functions.c.o\x1b[0m\n'}
+[5.902582] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.cpp.o\x1b[0m\n'}
+[5.933709] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.cpp.o\x1b[0m\n'}
+[5.945822] (-) TimerEvent: {}
+[5.957504] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/figure_eight_status__functions.c.o\x1b[0m\n'}
+[5.998661] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/flight_phase_estimation__functions.c.o\x1b[0m\n'}
+[6.003504] (vision) StdoutLine: {'line': b'-- Generating done\n'}
+[6.021645] (px4_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_array__type_support.cpp.o\x1b[0m\n'}
+[6.021914] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.o\x1b[0m\n'}
+[6.034793] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_key_value__type_support.cpp.o\x1b[0m\n'}
+[6.043612] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target__functions.c.o\x1b[0m\n'}
+[6.047854] (-) TimerEvent: {}
+[6.063432] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/camera_capture__type_support.cpp.o\x1b[0m\n'}
+[6.079577] (vision) StdoutLine: {'line': b'-- Build files have been written to: /home/myat/path_control_px4/build/vision\n'}
+[6.107311] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.cpp.o\x1b[0m\n'}
+[6.147993] (-) TimerEvent: {}
+[6.180452] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_estimator__functions.c.o\x1b[0m\n'}
+[6.192960] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.o\x1b[0m\n'}
+[6.212123] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_value__type_support.cpp.o\x1b[0m\n'}
+[6.218669] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_recorder\x1b[0m\n'}
+[6.227822] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar\x1b[0m\n'}
+[6.232646] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depth_polygon_mask_node\x1b[0m\n'}
+[6.234527] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pointcloud_node\x1b[0m\n'}
+[6.237499] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_detect\x1b[0m\n'}
+[6.240432] (vision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_node\x1b[0m\n'}
+[6.248488] (-) TimerEvent: {}
+[6.278925] (vision) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o\x1b[0m\n'}
+[6.296130] (vision) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/camera_recorder.dir/src/camera_recorder.cpp.o\x1b[0m\n'}
+[6.299160] (vision) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o\x1b[0m\n'}
+[6.314073] (vision) StdoutLine: {'line': b'[ 35%] Built target aruco_detect\n'}
+[6.331892] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/control_allocator_status__type_support.cpp.o\x1b[0m\n'}
+[6.335065] (vision) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/depth_polygon_mask_node.dir/src/depth_polygon_mask_node.cpp.o\x1b[0m\n'}
+[6.348667] (-) TimerEvent: {}
+[6.356724] (vision) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o\x1b[0m\n'}
+[6.367521] (vision) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_node.dir/src/obstacle.cpp.o\x1b[0m\n'}
+[6.380124] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o\x1b[0m\n'}
+[6.397059] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/cpuload__type_support.cpp.o\x1b[0m\n'}
+[6.449082] (-) TimerEvent: {}
+[6.500588] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_result__functions.c.o\x1b[0m\n'}
+[6.549283] (-) TimerEvent: {}
+[6.596923] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/dataman_request__type_support.cpp.o\x1b[0m\n'}
+[6.641858] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/geofence_status__functions.c.o\x1b[0m\n'}
+[6.649408] (-) TimerEvent: {}
+[6.672581] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/camera_status__type_support.cpp.o\x1b[0m\n'}
+[6.749501] (-) TimerEvent: {}
+[6.752258] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.cpp.o\x1b[0m\n'}
+[6.757993] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_controls__functions.c.o\x1b[0m\n'}
+[6.794470] (px4_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c.o\x1b[0m\n'}
+[6.795456] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__functions.c.o\x1b[0m\n'}
+[6.850230] (-) TimerEvent: {}
+[6.867721] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/dataman_response__type_support.cpp.o\x1b[0m\n'}
+[6.920583] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/camera_trigger__type_support.cpp.o\x1b[0m\n'}
+[6.941585] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.o\x1b[0m\n'}
+[6.957513] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.cpp.o\x1b[0m\n'}
+[6.957933] (-) TimerEvent: {}
+[6.959499] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c.o\x1b[0m\n'}
+[7.015847] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_information__functions.c.o\x1b[0m\n'}
+[7.027230] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/can_interface_status__type_support.cpp.o\x1b[0m\n'}
+[7.030374] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.cpp.o\x1b[0m\n'}
+[7.058082] (-) TimerEvent: {}
+[7.085275] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/cellular_status__type_support.cpp.o\x1b[0m\n'}
+[7.158193] (-) TimerEvent: {}
+[7.165517] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c.o\x1b[0m\n'}
+[7.260484] (-) TimerEvent: {}
+[7.345349] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c.o\x1b[0m\n'}
+[7.360615] (-) TimerEvent: {}
+[7.364174] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_array__type_support.cpp.o\x1b[0m\n'}
+[7.402150] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_key_value__type_support.cpp.o\x1b[0m\n'}
+[7.460834] (-) TimerEvent: {}
+[7.547567] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gimbal_manager_status__functions.c.o\x1b[0m\n'}
+[7.560967] (-) TimerEvent: {}
+[7.638168] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/goto_setpoint__functions.c.o\x1b[0m\n'}
+[7.657007] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_config__functions.c.o\x1b[0m\n'}
+[7.661067] (-) TimerEvent: {}
+[7.698048] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_in__functions.c.o\x1b[0m\n'}
+[7.757475] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_out__functions.c.o\x1b[0m\n'}
+[7.761182] (-) TimerEvent: {}
+[7.763575] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_value__type_support.cpp.o\x1b[0m\n'}
+[7.781122] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.o\x1b[0m\n'}
+[7.800466] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.cpp.o\x1b[0m\n'}
+[7.832953] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.cpp.o\x1b[0m\n'}
+[7.841712] (px4_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o\x1b[0m\n'}
+[7.857544] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.o\x1b[0m\n'}
+[7.861303] (-) TimerEvent: {}
+[7.906838] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gpio_request__functions.c.o\x1b[0m\n'}
+[7.962712] (-) TimerEvent: {}
+[8.065605] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_dump__functions.c.o\x1b[0m\n'}
+[8.065975] (-) TimerEvent: {}
+[8.142688] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.cpp.o\x1b[0m\n'}
+[8.167478] (-) TimerEvent: {}
+[8.225276] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o\x1b[0m\n'}
+[8.269533] (-) TimerEvent: {}
+[8.324900] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/esc_report__type_support.cpp.o\x1b[0m\n'}
+[8.330748] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.cpp.o\x1b[0m\n'}
+[8.369672] (-) TimerEvent: {}
+[8.377570] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gripper__functions.c.o\x1b[0m\n'}
+[8.390329] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.cpp.o\x1b[0m\n'}
+[8.401568] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/health_report__functions.c.o\x1b[0m\n'}
+[8.464497] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.cpp.o\x1b[0m\n'}
+[8.473482] (-) TimerEvent: {}
+[8.504659] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/esc_status__type_support.cpp.o\x1b[0m\n'}
+[8.514510] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/control_allocator_status__type_support.cpp.o\x1b[0m\n'}
+[8.541615] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/esc_report__type_support.cpp.o\x1b[0m\n'}
+[8.573619] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_aid_source1d__type_support.cpp.o\x1b[0m\n'}
+[8.574046] (-) TimerEvent: {}
+[8.575896] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/heater_status__functions.c.o\x1b[0m\n'}
+[8.599794] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/cpuload__type_support.cpp.o\x1b[0m\n'}
+[8.676703] (-) TimerEvent: {}
+[8.733672] (px4_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/home_position__functions.c.o\x1b[0m\n'}
+[8.776872] (-) TimerEvent: {}
+[8.879150] (-) TimerEvent: {}
+[8.895710] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/hover_thrust_estimate__functions.c.o\x1b[0m\n'}
+[8.904458] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.o\x1b[0m\n'}
+[8.980638] (-) TimerEvent: {}
+[9.013408] (px4_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/esc_status__type_support.cpp.o\x1b[0m\n'}
+[9.049706] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_aid_source2d__type_support.cpp.o\x1b[0m\n'}
+[9.054869] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o\x1b[0m\n'}
+[9.080755] (-) TimerEvent: {}
+[9.150363] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_aid_source3d__type_support.cpp.o\x1b[0m\n'}
+[9.151439] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__functions.c.o\x1b[0m\n'}
+[9.163347] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source1d__type_support.cpp.o\x1b[0m\n'}
+[9.184479] (-) TimerEvent: {}
+[9.205443] (px4_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/dataman_request__type_support.cpp.o\x1b[0m\n'}
+[9.266599] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source2d__type_support.cpp.o\x1b[0m\n'}
+[9.282771] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/irlock_report__functions.c.o\x1b[0m\n'}
+[9.285509] (-) TimerEvent: {}
+[9.388184] (-) TimerEvent: {}
+[9.430335] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear__functions.c.o\x1b[0m\n'}
+[9.491326] (-) TimerEvent: {}
+[9.536064] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_aid_source3d__type_support.cpp.o\x1b[0m\n'}
+[9.575860] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_bias__type_support.cpp.o\x1b[0m\n'}
+[9.591782] (-) TimerEvent: {}
+[9.611701] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__functions.c.o\x1b[0m\n'}
+[9.611982] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.c.o\x1b[0m\n'}
+[9.612110] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_bias3d__type_support.cpp.o\x1b[0m\n'}
+[9.624091] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_bias__type_support.cpp.o\x1b[0m\n'}
+[9.691898] (-) TimerEvent: {}
+[9.748471] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_event_flags__type_support.cpp.o\x1b[0m\n'}
+[9.759147] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/landing_target_pose__functions.c.o\x1b[0m\n'}
+[9.794505] (-) TimerEvent: {}
+[9.894995] (-) TimerEvent: {}
+[9.963591] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_gps_status__type_support.cpp.o\x1b[0m\n'}
+[9.963945] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/launch_detection_status__functions.c.o\x1b[0m\n'}
+[9.998473] (-) TimerEvent: {}
+[10.028476] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_bias3d__type_support.cpp.o\x1b[0m\n'}
+[10.101447] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/led_control__functions.c.o\x1b[0m\n'}
+[10.101746] (-) TimerEvent: {}
+[10.203652] (-) TimerEvent: {}
+[10.237452] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_event_flags__type_support.cpp.o\x1b[0m\n'}
+[10.304381] (-) TimerEvent: {}
+[10.305264] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/log_message__functions.c.o\x1b[0m\n'}
+[10.320679] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/logger_status__functions.c.o\x1b[0m\n'}
+[10.347231] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/dataman_response__type_support.cpp.o\x1b[0m\n'}
+[10.405592] (-) TimerEvent: {}
+[10.407128] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mag_worker_data__functions.c.o\x1b[0m\n'}
+[10.433835] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_array__type_support.cpp.o\x1b[0m\n'}
+[10.445738] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_innovations__type_support.cpp.o\x1b[0m\n'}
+[10.450582] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_gps_status__type_support.cpp.o\x1b[0m\n'}
+[10.511666] (-) TimerEvent: {}
+[10.516554] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_innovations__type_support.cpp.o\x1b[0m\n'}
+[10.578937] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/magnetometer_bias_estimate__functions.c.o\x1b[0m\n'}
+[10.611854] (-) TimerEvent: {}
+[10.629501] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_selector_status__type_support.cpp.o\x1b[0m\n'}
+[10.634354] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_key_value__type_support.cpp.o\x1b[0m\n'}
+[10.715596] (-) TimerEvent: {}
+[10.723572] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_setpoint__functions.c.o\x1b[0m\n'}
+[10.744300] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_selector_status__type_support.cpp.o\x1b[0m\n'}
+[10.815672] (-) TimerEvent: {}
+[10.885101] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__functions.c.o\x1b[0m\n'}
+[10.915790] (-) TimerEvent: {}
+[10.992638] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_log__functions.c.o\x1b[0m\n'}
+[10.994438] (px4_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_sensor_bias__type_support.cpp.o\x1b[0m\n'}
+[11.015921] (-) TimerEvent: {}
+[11.120987] (-) TimerEvent: {}
+[11.213558] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mavlink_tunnel__functions.c.o\x1b[0m\n'}
+[11.223353] (-) TimerEvent: {}
+[11.323781] (-) TimerEvent: {}
+[11.355775] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_request__functions.c.o\x1b[0m\n'}
+[11.393906] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_sensor_bias__type_support.cpp.o\x1b[0m\n'}
+[11.423905] (-) TimerEvent: {}
+[11.467944] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_states__type_support.cpp.o\x1b[0m\n'}
+[11.480155] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/message_format_response__functions.c.o\x1b[0m\n'}
+[11.524021] (-) TimerEvent: {}
+[11.549759] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_status__type_support.cpp.o\x1b[0m\n'}
+[11.569622] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_states__type_support.cpp.o\x1b[0m\n'}
+[11.624438] (-) TimerEvent: {}
+[11.663467] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission__functions.c.o\x1b[0m\n'}
+[11.663774] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_value__type_support.cpp.o\x1b[0m\n'}
+[11.724682] (-) TimerEvent: {}
+[11.762499] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.cpp.o\x1b[0m\n'}
+[11.796593] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/estimator_status_flags__type_support.cpp.o\x1b[0m\n'}
+[11.810328] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mission_result__functions.c.o\x1b[0m\n'}
+[11.810709] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_status__type_support.cpp.o\x1b[0m\n'}
+[11.824804] (-) TimerEvent: {}
+[11.854319] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.o\x1b[0m\n'}
+[11.891571] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mode_completed__functions.c.o\x1b[0m\n'}
+[11.924913] (-) TimerEvent: {}
+[11.953830] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.cpp.o\x1b[0m\n'}
+[11.977307] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.cpp.o\x1b[0m\n'}
+[12.029786] (-) TimerEvent: {}
+[12.031140] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/event__type_support.cpp.o\x1b[0m\n'}
+[12.032921] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/mount_orientation__functions.c.o\x1b[0m\n'}
+[12.129962] (-) TimerEvent: {}
+[12.189733] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.o\x1b[0m\n'}
+[12.230083] (-) TimerEvent: {}
+[12.330645] (-) TimerEvent: {}
+[12.339742] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.c.o\x1b[0m\n'}
+[12.344387] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/npfg_status__functions.c.o\x1b[0m\n'}
+[12.356092] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.cpp.o\x1b[0m\n'}
+[12.386578] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/estimator_status_flags__type_support.cpp.o\x1b[0m\n'}
+[12.430768] (-) TimerEvent: {}
+[12.464570] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__functions.c.o\x1b[0m\n'}
+[12.496038] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/esc_report__type_support.cpp.o\x1b[0m\n'}
+[12.530879] (-) TimerEvent: {}
+[12.636504] (-) TimerEvent: {}
+[12.637006] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__functions.c.o\x1b[0m\n'}
+[12.699567] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/failsafe_flags__type_support.cpp.o\x1b[0m\n'}
+[12.736650] (-) TimerEvent: {}
+[12.778916] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.o\x1b[0m\n'}
+[12.801478] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/failure_detector_status__type_support.cpp.o\x1b[0m\n'}
+[12.816531] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.c.o\x1b[0m\n'}
+[12.832244] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/event__type_support.cpp.o\x1b[0m\n'}
+[12.837559] (-) TimerEvent: {}
+[12.905522] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/esc_status__type_support.cpp.o\x1b[0m\n'}
+[12.905792] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_large__functions.c.o\x1b[0m\n'}
+[12.937706] (-) TimerEvent: {}
+[12.942860] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/figure_eight_status__type_support.cpp.o\x1b[0m\n'}
+[12.958425] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orb_test_medium__functions.c.o\x1b[0m\n'}
+[13.040029] (-) TimerEvent: {}
+[13.054259] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/orbit_status__functions.c.o\x1b[0m\n'}
+[13.076487] (px4_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_aid_source1d__type_support.cpp.o\x1b[0m\n'}
+[13.106449] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_aid_source2d__type_support.cpp.o\x1b[0m\n'}
+[13.108813] (px4_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/flight_phase_estimation__type_support.cpp.o\x1b[0m\n'}
+[13.140444] (-) TimerEvent: {}
+[13.219473] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.c.o\x1b[0m\n'}
+[13.242509] (-) TimerEvent: {}
+[13.258926] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_aid_source3d__type_support.cpp.o\x1b[0m\n'}
+[13.289438] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_bias__type_support.cpp.o\x1b[0m\n'}
+[13.342633] (-) TimerEvent: {}
+[13.369469] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_used_request__functions.c.o\x1b[0m\n'}
+[13.370686] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_bias3d__type_support.cpp.o\x1b[0m\n'}
+[13.431715] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/failsafe_flags__type_support.cpp.o\x1b[0m\n'}
+[13.445525] (-) TimerEvent: {}
+[13.526266] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.c.o\x1b[0m\n'}
+[13.547485] (-) TimerEvent: {}
+[13.617812] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target__type_support.cpp.o\x1b[0m\n'}
+[13.647606] (-) TimerEvent: {}
+[13.719242] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_response__functions.c.o\x1b[0m\n'}
+[13.747831] (-) TimerEvent: {}
+[13.750755] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_event_flags__type_support.cpp.o\x1b[0m\n'}
+[13.780504] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_gps_status__type_support.cpp.o\x1b[0m\n'}
+[13.847853] (-) TimerEvent: {}
+[13.920421] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/parameter_update__functions.c.o\x1b[0m\n'}
+[13.949595] (-) TimerEvent: {}
+[13.966486] (px4_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/failure_detector_status__type_support.cpp.o\x1b[0m\n'}
+[14.049651] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_estimator__type_support.cpp.o\x1b[0m\n'}
+[14.049955] (-) TimerEvent: {}
+[14.105138] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ping__functions.c.o\x1b[0m\n'}
+[14.152448] (-) TimerEvent: {}
+[14.168641] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/figure_eight_status__type_support.cpp.o\x1b[0m\n'}
+[14.250255] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_landing_status__functions.c.o\x1b[0m\n'}
+[14.252535] (-) TimerEvent: {}
+[14.284458] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_innovations__type_support.cpp.o\x1b[0m\n'}
+[14.343899] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_selector_status__type_support.cpp.o\x1b[0m\n'}
+[14.353482] (-) TimerEvent: {}
+[14.403303] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_sensor_bias__type_support.cpp.o\x1b[0m\n'}
+[14.416149] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_controller_status__functions.c.o\x1b[0m\n'}
+[14.429831] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.cpp.o\x1b[0m\n'}
+[14.446003] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/flight_phase_estimation__type_support.cpp.o\x1b[0m\n'}
+[14.453864] (-) TimerEvent: {}
+[14.555246] (-) TimerEvent: {}
+[14.600940] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__functions.c.o\x1b[0m\n'}
+[14.655822] (-) TimerEvent: {}
+[14.699892] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/position_setpoint_triplet__functions.c.o\x1b[0m\n'}
+[14.748674] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_button_state__functions.c.o\x1b[0m\n'}
+[14.756032] (-) TimerEvent: {}
+[14.796723] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/power_monitor__functions.c.o\x1b[0m\n'}
+[14.816206] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_states__type_support.cpp.o\x1b[0m\n'}
+[14.823960] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.o\x1b[0m\n'}
+[14.852267] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.cpp.o\x1b[0m\n'}
+[14.858895] (-) TimerEvent: {}
+[14.911492] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.c.o\x1b[0m\n'}
+[14.943439] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_status__type_support.cpp.o\x1b[0m\n'}
+[14.948553] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target__type_support.cpp.o\x1b[0m\n'}
+[14.959078] (-) TimerEvent: {}
+[15.015422] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/px4io_status__functions.c.o\x1b[0m\n'}
+[15.022493] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/geofence_result__type_support.cpp.o\x1b[0m\n'}
+[15.060222] (-) TimerEvent: {}
+[15.076494] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/estimator_status_flags__type_support.cpp.o\x1b[0m\n'}
+[15.160380] (-) TimerEvent: {}
+[15.179566] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_req__functions.c.o\x1b[0m\n'}
+[15.260477] (-) TimerEvent: {}
+[15.360876] (-) TimerEvent: {}
+[15.366617] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/qshell_retval__functions.c.o\x1b[0m\n'}
+[15.461084] (-) TimerEvent: {}
+[15.499277] (px4_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/event__type_support.cpp.o\x1b[0m\n'}
+[15.513979] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target_estimator__type_support.cpp.o\x1b[0m\n'}
+[15.525334] (px4_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/failsafe_flags__type_support.cpp.o\x1b[0m\n'}
+[15.561233] (-) TimerEvent: {}
+[15.591504] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/radio_status__functions.c.o\x1b[0m\n'}
+[15.602817] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/failure_detector_status__type_support.cpp.o\x1b[0m\n'}
+[15.661349] (-) TimerEvent: {}
+[15.668176] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/figure_eight_status__type_support.cpp.o\x1b[0m\n'}
+[15.718430] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.cpp.o\x1b[0m\n'}
+[15.752475] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rate_ctrl_status__functions.c.o\x1b[0m\n'}
+[15.763490] (-) TimerEvent: {}
+[15.863956] (-) TimerEvent: {}
+[15.877486] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/geofence_status__type_support.cpp.o\x1b[0m\n'}
+[15.959692] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_channels__functions.c.o\x1b[0m\n'}
+[15.964062] (-) TimerEvent: {}
+[15.991473] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.cpp.o\x1b[0m\n'}
+[16.064195] (-) TimerEvent: {}
+[16.131005] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rc_parameter_map__functions.c.o\x1b[0m\n'}
+[16.132134] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/geofence_result__type_support.cpp.o\x1b[0m\n'}
+[16.159064] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_controls__type_support.cpp.o\x1b[0m\n'}
+[16.164325] (-) TimerEvent: {}
+[16.179593] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_device_attitude_status__type_support.cpp.o\x1b[0m\n'}
+[16.264578] (-) TimerEvent: {}
+[16.275803] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_reply__functions.c.o\x1b[0m\n'}
+[16.292546] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_device_information__type_support.cpp.o\x1b[0m\n'}
+[16.364685] (-) TimerEvent: {}
+[16.452947] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.o\x1b[0m\n'}
+[16.467595] (-) TimerEvent: {}
+[16.568046] (-) TimerEvent: {}
+[16.598584] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/geofence_status__type_support.cpp.o\x1b[0m\n'}
+[16.600431] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_device_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[16.604817] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o\x1b[0m\n'}
+[16.624686] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_status__functions.c.o\x1b[0m\n'}
+[16.651042] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_manager_information__type_support.cpp.o\x1b[0m\n'}
+[16.668329] (-) TimerEvent: {}
+[16.684281] (px4_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/flight_phase_estimation__type_support.cpp.o\x1b[0m\n'}
+[16.746480] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target__type_support.cpp.o\x1b[0m\n'}
+[16.759415] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_controls__type_support.cpp.o\x1b[0m\n'}
+[16.767819] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rtl_time_estimate__functions.c.o\x1b[0m\n'}
+[16.768367] (-) TimerEvent: {}
+[16.848090] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_manager_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[16.868575] (-) TimerEvent: {}
+[16.969748] (-) TimerEvent: {}
+[16.972167] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/satellite_info__functions.c.o\x1b[0m\n'}
+[17.070478] (-) TimerEvent: {}
+[17.170465] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_estimator__type_support.cpp.o\x1b[0m\n'}
+[17.170766] (-) TimerEvent: {}
+[17.170934] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel__functions.c.o\x1b[0m\n'}
+[17.240441] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_accel_fifo__functions.c.o\x1b[0m\n'}
+[17.270960] (-) TimerEvent: {}
+[17.300080] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_manager_set_manual_control__type_support.cpp.o\x1b[0m\n'}
+[17.351535] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_airflow__functions.c.o\x1b[0m\n'}
+[17.371077] (-) TimerEvent: {}
+[17.398164] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_baro__functions.c.o\x1b[0m\n'}
+[17.413463] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.cpp.o\x1b[0m\n'}
+[17.461283] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_attitude_status__type_support.cpp.o\x1b[0m\n'}
+[17.471230] (-) TimerEvent: {}
+[17.513714] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gimbal_manager_status__type_support.cpp.o\x1b[0m\n'}
+[17.552171] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o\x1b[0m\n'}
+[17.556328] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/goto_setpoint__type_support.cpp.o\x1b[0m\n'}
+[17.572510] (-) TimerEvent: {}
+[17.574960] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gpio_config__type_support.cpp.o\x1b[0m\n'}
+[17.622018] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.cpp.o\x1b[0m\n'}
+[17.636215] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_information__type_support.cpp.o\x1b[0m\n'}
+[17.641483] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_correction__functions.c.o\x1b[0m\n'}
+[17.672643] (-) TimerEvent: {}
+[17.775070] (-) TimerEvent: {}
+[17.875487] (-) TimerEvent: {}
+[17.905488] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gnss_relative__functions.c.o\x1b[0m\n'}
+[17.978488] (-) TimerEvent: {}
+[18.040573] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/geofence_result__type_support.cpp.o\x1b[0m\n'}
+[18.078602] (-) TimerEvent: {}
+[18.117510] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o\x1b[0m\n'}
+[18.152121] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gpio_in__type_support.cpp.o\x1b[0m\n'}
+[18.184484] (-) TimerEvent: {}
+[18.279993] (px4_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gpio_out__type_support.cpp.o\x1b[0m\n'}
+[18.284617] (-) TimerEvent: {}
+[18.301590] (px4_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro__functions.c.o\x1b[0m\n'}
+[18.316132] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gpio_request__type_support.cpp.o\x1b[0m\n'}
+[18.387493] (-) TimerEvent: {}
+[18.389505] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/geofence_status__type_support.cpp.o\x1b[0m\n'}
+[18.411689] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_device_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[18.446453] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fft__functions.c.o\x1b[0m\n'}
+[18.487609] (-) TimerEvent: {}
+[18.510597] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_controls__type_support.cpp.o\x1b[0m\n'}
+[18.540545] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_device_attitude_status__type_support.cpp.o\x1b[0m\n'}
+[18.583565] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c.o\x1b[0m\n'}
+[18.591490] (-) TimerEvent: {}
+[18.691902] (-) TimerEvent: {}
+[18.707571] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_device_information__type_support.cpp.o\x1b[0m\n'}
+[18.740845] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_hygrometer__functions.c.o\x1b[0m\n'}
+[18.749201] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_information__type_support.cpp.o\x1b[0m\n'}
+[18.768546] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gps_dump__type_support.cpp.o\x1b[0m\n'}
+[18.792022] (-) TimerEvent: {}
+[18.895037] (-) TimerEvent: {}
+[18.907152] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_mag__functions.c.o\x1b[0m\n'}
+[18.965365] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_device_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[18.995174] (-) TimerEvent: {}
+[19.056564] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_optical_flow__functions.c.o\x1b[0m\n'}
+[19.095298] (-) TimerEvent: {}
+[19.183634] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:206:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.186171] (vision) StderrLine: {'line': b'  206 | std::vector<Obs> \x1b[01;31m\x1b[Kobs_\x1b[m\x1b[K;\n'}
+[19.186502] (vision) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[19.186645] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:70:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ArucoLandingNode::Obs> ArucoLandingNode::obs_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.186782] (vision) StderrLine: {'line': b'   70 | std::vector<Obs> \x1b[01;36m\x1b[Kobs_\x1b[m\x1b[K;\n'}
+[19.186882] (vision) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[19.195813] (-) TimerEvent: {}
+[19.204448] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_preflight_mag__functions.c.o\x1b[0m\n'}
+[19.255311] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_selection__functions.c.o\x1b[0m\n'}
+[19.296234] (-) TimerEvent: {}
+[19.309071] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gps_inject_data__type_support.cpp.o\x1b[0m\n'}
+[19.327605] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[19.365754] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_manager_information__type_support.cpp.o\x1b[0m\n'}
+[19.378448] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_uwb__functions.c.o\x1b[0m\n'}
+[19.386936] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ArucoLandingNode::imageCallback(const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.387358] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((- size) / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.387569] (vision) StderrLine: {'line': b'   94 |       {\x1b[01;35m\x1b[K-size/2\x1b[m\x1b[K,size/2,0},\n'}
+[19.387874] (vision) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~^~\x1b[m\x1b[K\n'}
+[19.388102] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:94:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(size / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.388480] (vision) StderrLine: {'line': b'   94 |       {-size/2,\x1b[01;35m\x1b[Ksize/2\x1b[m\x1b[K,0},\n'}
+[19.388742] (vision) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~^~\x1b[m\x1b[K\n'}
+[19.388821] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(size / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.388894] (vision) StderrLine: {'line': b'   95 |       { \x1b[01;35m\x1b[Ksize/2\x1b[m\x1b[K,size/2,0},\n'}
+[19.388958] (vision) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~\x1b[m\x1b[K\n'}
+[19.389035] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:95:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(size / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.389103] (vision) StderrLine: {'line': b'   95 |       { size/2,\x1b[01;35m\x1b[Ksize/2\x1b[m\x1b[K,0},\n'}
+[19.389166] (vision) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~^~\x1b[m\x1b[K\n'}
+[19.389227] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(size / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.389292] (vision) StderrLine: {'line': b'   96 |       { \x1b[01;35m\x1b[Ksize/2\x1b[m\x1b[K,-size/2,0},\n'}
+[19.389354] (vision) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~\x1b[m\x1b[K\n'}
+[19.389424] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:96:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((- size) / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.389506] (vision) StderrLine: {'line': b'   96 |       { size/2,\x1b[01;35m\x1b[K-size/2\x1b[m\x1b[K,0},\n'}
+[19.389571] (vision) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~^~\x1b[m\x1b[K\n'}
+[19.389632] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((- size) / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.389696] (vision) StderrLine: {'line': b'   97 |       {\x1b[01;35m\x1b[K-size/2\x1b[m\x1b[K,-size/2,0}\n'}
+[19.389755] (vision) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~^~\x1b[m\x1b[K\n'}
+[19.389813] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:97:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K((- size) / (double)2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.389892] (vision) StderrLine: {'line': b'   97 |       {-size/2,\x1b[01;35m\x1b[K-size/2\x1b[m\x1b[K,0}\n'}
+[19.389951] (vision) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~^~\x1b[m\x1b[K\n'}
+[19.394563] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_set_manual_control__type_support.cpp.o\x1b[0m\n'}
+[19.396298] (-) TimerEvent: {}
+[19.406331] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KtoMsg(tf2::Quaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.406632] (vision) StderrLine: {'line': b'  132 |     tf.transform.rotation=\x1b[01;31m\x1b[Ktf2::toMsg(q)\x1b[m\x1b[K;\n'}
+[19.406771] (vision) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.415184] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gripper__type_support.cpp.o\x1b[0m\n'}
+[19.428476] (vision) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43\x1b[m\x1b[K,\n'}
+[19.428730] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42\x1b[m\x1b[K,\n'}
+[19.428851] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35\x1b[m\x1b[K,\n'}
+[19.428939] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16\x1b[m\x1b[K:\n'}
+[19.429026] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class A, class B> B tf2::toMsg(const A&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.429100] (vision) StderrLine: {'line': b'  129 | B \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const A & a);\n'}
+[19.429166] (vision) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[19.429231] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[19.429297] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:132:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KB\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.429360] (vision) StderrLine: {'line': b'  132 |     tf.transform.rotation=\x1b[01;36m\x1b[Ktf2::toMsg(q)\x1b[m\x1b[K;\n'}
+[19.429475] (vision) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.436155] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ArucoLandingNode::computeWorldPose(const Header&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.436430] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KtoMsg(tf2::Quaternion)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.436581] (vision) StderrLine: {'line': b'  184 |     pose.pose.orientation=\x1b[01;31m\x1b[Ktf2::toMsg(T_wa.getRotation())\x1b[m\x1b[K;\n'}
+[19.436716] (vision) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.436845] (vision) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:43\x1b[m\x1b[K,\n'}
+[19.436927] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:42\x1b[m\x1b[K,\n'}
+[19.437000] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35\x1b[m\x1b[K,\n'}
+[19.437062] (vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:16\x1b[m\x1b[K:\n'}
+[19.437121] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class A, class B> B tf2::toMsg(const A&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.437203] (vision) StderrLine: {'line': b'  129 | B \x1b[01;36m\x1b[KtoMsg\x1b[m\x1b[K(const A & a);\n'}
+[19.437265] (vision) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[19.437325] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2/tf2/convert.hpp:129:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[19.437387] (vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/myat/path_control_px4/src/vision/src/my_aruco.cpp:184:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KB\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.437462] (vision) StderrLine: {'line': b'  184 |     pose.pose.orientation=\x1b[01;36m\x1b[Ktf2::toMsg(T_wa.getRotation())\x1b[m\x1b[K;\n'}
+[19.437524] (vision) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.498492] (-) TimerEvent: {}
+[19.599125] (-) TimerEvent: {}
+[19.619750] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status__functions.c.o\x1b[0m\n'}
+[19.630074] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensors_status_imu__functions.c.o\x1b[0m\n'}
+[19.699379] (-) TimerEvent: {}
+[19.743069] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/system_power__functions.c.o\x1b[0m\n'}
+[19.774773] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/takeoff_status__functions.c.o\x1b[0m\n'}
+[19.784595] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_manager_set_attitude__type_support.cpp.o\x1b[0m\n'}
+[19.786213] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gimbal_manager_status__type_support.cpp.o\x1b[0m\n'}
+[19.803489] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_manager_set_manual_control__type_support.cpp.o\x1b[0m\n'}
+[19.803802] (-) TimerEvent: {}
+[19.810349] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/health_report__type_support.cpp.o\x1b[0m\n'}
+[19.897979] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gimbal_manager_status__type_support.cpp.o\x1b[0m\n'}
+[19.901815] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/goto_setpoint__type_support.cpp.o\x1b[0m\n'}
+[19.903903] (-) TimerEvent: {}
+[19.913592] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/task_stack_info__functions.c.o\x1b[0m\n'}
+[20.004064] (-) TimerEvent: {}
+[20.082175] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tecs_status__functions.c.o\x1b[0m\n'}
+[20.104544] (-) TimerEvent: {}
+[20.207464] (-) TimerEvent: {}
+[20.240028] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c.o\x1b[0m\n'}
+[20.248657] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/telemetry_status__functions.c.o\x1b[0m\n'}
+[20.310480] (-) TimerEvent: {}
+[20.313218] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/heater_status__type_support.cpp.o\x1b[0m\n'}
+[20.411527] (-) TimerEvent: {}
+[20.441914] (px4_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/home_position__type_support.cpp.o\x1b[0m\n'}
+[20.454835] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o\x1b[0m\n'}
+[20.508234] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/hover_thrust_estimate__type_support.cpp.o\x1b[0m\n'}
+[20.521757] (-) TimerEvent: {}
+[20.549856] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/goto_setpoint__type_support.cpp.o\x1b[0m\n'}
+[20.621866] (-) TimerEvent: {}
+[20.723157] (-) TimerEvent: {}
+[20.726072] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.cpp.o\x1b[0m\n'}
+[20.730760] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o\x1b[0m\n'}
+[20.732346] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_config__type_support.cpp.o\x1b[0m\n'}
+[20.794562] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o\x1b[0m\n'}
+[20.823287] (-) TimerEvent: {}
+[20.825757] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gpio_config__type_support.cpp.o\x1b[0m\n'}
+[20.848089] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o\x1b[0m\n'}
+[20.863387] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.cpp.o\x1b[0m\n'}
+[20.873832] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_in__type_support.cpp.o\x1b[0m\n'}
+[20.884063] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gpio_in__type_support.cpp.o\x1b[0m\n'}
+[20.891888] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/iridiumsbd_status__type_support.cpp.o\x1b[0m\n'}
+[20.923500] (-) TimerEvent: {}
+[21.004005] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o\x1b[0m\n'}
+[21.026160] (-) TimerEvent: {}
+[21.126875] (-) TimerEvent: {}
+[21.179993] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_out__type_support.cpp.o\x1b[0m\n'}
+[21.219303] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/tune_control__functions.c.o\x1b[0m\n'}
+[21.228689] (-) TimerEvent: {}
+[21.331535] (-) TimerEvent: {}
+[21.432055] (-) TimerEvent: {}
+[21.440323] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_request__functions.c.o\x1b[0m\n'}
+[21.440748] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/uavcan_parameter_value__functions.c.o\x1b[0m\n'}
+[21.532320] (-) TimerEvent: {}
+[21.634650] (-) TimerEvent: {}
+[21.709578] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.c.o\x1b[0m\n'}
+[21.710781] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gpio_out__type_support.cpp.o\x1b[0m\n'}
+[21.734756] (-) TimerEvent: {}
+[21.751657] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ulog_stream_ack__functions.c.o\x1b[0m\n'}
+[21.753054] (px4_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/irlock_report__type_support.cpp.o\x1b[0m\n'}
+[21.755894] (px4_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gpio_request__type_support.cpp.o\x1b[0m\n'}
+[21.835908] (-) TimerEvent: {}
+[21.917759] (px4_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/unregister_ext_component__functions.c.o\x1b[0m\n'}
+[21.920004] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gpio_request__type_support.cpp.o\x1b[0m\n'}
+[21.934703] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gps_dump__type_support.cpp.o\x1b[0m\n'}
+[21.936362] (-) TimerEvent: {}
+[21.959621] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gps_dump__type_support.cpp.o\x1b[0m\n'}
+[21.971485] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/landing_gear__type_support.cpp.o\x1b[0m\n'}
+[22.008854] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gps_inject_data__type_support.cpp.o\x1b[0m\n'}
+[22.031764] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_acceleration__functions.c.o\x1b[0m\n'}
+[22.036632] (-) TimerEvent: {}
+[22.045856] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gps_inject_data__type_support.cpp.o\x1b[0m\n'}
+[22.052688] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_air_data__functions.c.o\x1b[0m\n'}
+[22.082059] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gripper__type_support.cpp.o\x1b[0m\n'}
+[22.137764] (-) TimerEvent: {}
+[22.200452] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gripper__type_support.cpp.o\x1b[0m\n'}
+[22.238228] (-) TimerEvent: {}
+[22.254151] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c.o\x1b[0m\n'}
+[22.341471] (-) TimerEvent: {}
+[22.441866] (-) TimerEvent: {}
+[22.454656] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c.o\x1b[0m\n'}
+[22.545654] (-) TimerEvent: {}
+[22.616997] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/health_report__type_support.cpp.o\x1b[0m\n'}
+[22.650479] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o\x1b[0m\n'}
+[22.650777] (-) TimerEvent: {}
+[22.751085] (-) TimerEvent: {}
+[22.857496] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o\x1b[0m\n'}
+[22.860931] (-) TimerEvent: {}
+[22.861138] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/landing_gear_wheel__type_support.cpp.o\x1b[0m\n'}
+[22.861319] (px4_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/heater_status__type_support.cpp.o\x1b[0m\n'}
+[22.898560] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+[22.929321] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/health_report__type_support.cpp.o\x1b[0m\n'}
+[22.961069] (-) TimerEvent: {}
+[23.019604] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/home_position__type_support.cpp.o\x1b[0m\n'}
+[23.031799] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command_ack__functions.c.o\x1b[0m\n'}
+[23.032149] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/landing_target_innovations__type_support.cpp.o\x1b[0m\n'}
+[23.061200] (-) TimerEvent: {}
+[23.115059] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/heater_status__type_support.cpp.o\x1b[0m\n'}
+[23.163365] (-) TimerEvent: {}
+[23.178741] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/landing_target_pose__type_support.cpp.o\x1b[0m\n'}
+[23.246895] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_constraints__functions.c.o\x1b[0m\n'}
+[23.263482] (-) TimerEvent: {}
+[23.366494] (-) TimerEvent: {}
+[23.394890] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/hover_thrust_estimate__type_support.cpp.o\x1b[0m\n'}
+[23.430253] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o\x1b[0m\n'}
+[23.466684] (-) TimerEvent: {}
+[23.567118] (-) TimerEvent: {}
+[23.640888] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/launch_detection_status__type_support.cpp.o\x1b[0m\n'}
+[23.642413] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.cpp.o\x1b[0m\n'}
+[23.642648] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_global_position__functions.c.o\x1b[0m\n'}
+[23.659231] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/hover_thrust_estimate__type_support.cpp.o\x1b[0m\n'}
+[23.671482] (px4_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/home_position__type_support.cpp.o\x1b[0m\n'}
+[23.671921] (-) TimerEvent: {}
+[23.772332] (-) TimerEvent: {}
+[23.802783] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/led_control__type_support.cpp.o\x1b[0m\n'}
+[23.872460] (-) TimerEvent: {}
+[23.904893] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu__functions.c.o\x1b[0m\n'}
+[23.937797] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.cpp.o\x1b[0m\n'}
+[23.957110] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_imu_status__functions.c.o\x1b[0m\n'}
+[23.972606] (-) TimerEvent: {}
+[24.077490] (-) TimerEvent: {}
+[24.176084] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_land_detected__functions.c.o\x1b[0m\n'}
+[24.177480] (-) TimerEvent: {}
+[24.178845] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.cpp.o\x1b[0m\n'}
+[24.280512] (-) TimerEvent: {}
+[24.381191] (-) TimerEvent: {}
+[24.482031] (-) TimerEvent: {}
+[24.583474] (-) TimerEvent: {}
+[24.625854] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o\x1b[0m\n'}
+[24.683634] (-) TimerEvent: {}
+[24.728476] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.cpp.o\x1b[0m\n'}
+[24.783760] (-) TimerEvent: {}
+[24.838728] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mag_worker_data__type_support.cpp.o\x1b[0m\n'}
+[24.883949] (-) TimerEvent: {}
+[24.936790] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o\x1b[0m\n'}
+[24.984060] (-) TimerEvent: {}
+[25.085127] (-) TimerEvent: {}
+[25.185742] (-) TimerEvent: {}
+[25.290518] (-) TimerEvent: {}
+[25.410946] (-) TimerEvent: {}
+[25.502263] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/landing_gear__type_support.cpp.o\x1b[0m\n'}
+[25.538914] (-) TimerEvent: {}
+[25.543893] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_magnetometer__functions.c.o\x1b[0m\n'}
+[25.661304] (-) TimerEvent: {}
+[26.052728] (vision) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_aruco.dir/build.make:76: CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o] Error 1\n'}
+[26.061477] (-) TimerEvent: {}
+[26.063049] (vision) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/my_aruco.dir/all] Error 2\n'}
+[26.063195] (vision) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[26.161598] (-) TimerEvent: {}
+[26.261947] (-) TimerEvent: {}
+[26.363492] (-) TimerEvent: {}
+[26.395566] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/manual_control_setpoint__type_support.cpp.o\x1b[0m\n'}
+[26.397000] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/irlock_report__type_support.cpp.o\x1b[0m\n'}
+[26.459734] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow__functions.c.o\x1b[0m\n'}
+[26.466481] (-) TimerEvent: {}
+[26.532804] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o\x1b[0m\n'}
+[26.567024] (-) TimerEvent: {}
+[26.678580] (-) TimerEvent: {}
+[26.786665] (-) TimerEvent: {}
+[26.899926] (-) TimerEvent: {}
+[27.030471] (-) TimerEvent: {}
+[27.146199] (-) TimerEvent: {}
+[27.235663] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c.o\x1b[0m\n'}
+[27.261004] (-) TimerEvent: {}
+[27.269306] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/iridiumsbd_status__type_support.cpp.o\x1b[0m\n'}
+[27.381348] (-) TimerEvent: {}
+[27.522567] (-) TimerEvent: {}
+[27.669494] (-) TimerEvent: {}
+[27.843532] (-) TimerEvent: {}
+[28.443452] (-) TimerEvent: {}
+[28.631279] (-) TimerEvent: {}
+[30.451557] (-) TimerEvent: {}
+[31.832289] (-) TimerEvent: {}
+[33.931405] (-) TimerEvent: {}
+[38.512257] (-) TimerEvent: {}
+[42.777355] (-) TimerEvent: {}
+[45.302897] (-) TimerEvent: {}
+[48.327909] (-) TimerEvent: {}
+[51.437866] (-) TimerEvent: {}
+[54.568038] (-) TimerEvent: {}
+[57.466484] (-) TimerEvent: {}
+[61.358922] (-) TimerEvent: {}
+[66.776065] (-) TimerEvent: {}
+[76.399272] (-) TimerEvent: {}
+[82.116826] (-) TimerEvent: {}
+[87.449321] (-) TimerEvent: {}
+[94.728912] (-) TimerEvent: {}
+[100.307441] (-) TimerEvent: {}
+[100.661304] (-) TimerEvent: {}
+[101.447372] (-) TimerEvent: {}
+[103.523652] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mavlink_log__type_support.cpp.o\x1b[0m\n'}
+[104.100861] (-) TimerEvent: {}
+[104.727775] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/landing_gear_wheel__type_support.cpp.o\x1b[0m\n'}
+[105.133928] (-) TimerEvent: {}
+[106.238552] (-) TimerEvent: {}
+[107.315064] (-) TimerEvent: {}
+[108.045832] (-) TimerEvent: {}
+[108.231079] (-) TimerEvent: {}
+[108.331442] (-) TimerEvent: {}
+[108.432477] (-) TimerEvent: {}
+[108.540845] (-) TimerEvent: {}
+[108.641260] (-) TimerEvent: {}
+[108.741709] (-) TimerEvent: {}
+[108.785256] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o\x1b[0m\n'}
+[108.789006] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_gear__type_support.cpp.o\x1b[0m\n'}
+[108.841830] (-) TimerEvent: {}
+[108.943489] (-) TimerEvent: {}
+[109.045512] (-) TimerEvent: {}
+[109.062948] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_roi__functions.c.o\x1b[0m\n'}
+[109.146357] (-) TimerEvent: {}
+[109.248955] (-) TimerEvent: {}
+[109.353729] (-) TimerEvent: {}
+[109.454370] (-) TimerEvent: {}
+[109.558494] (-) TimerEvent: {}
+[109.658871] (-) TimerEvent: {}
+[109.682025] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/mavlink_tunnel__type_support.cpp.o\x1b[0m\n'}
+[109.686911] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o\x1b[0m\n'}
+[109.687138] (vision) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable camera_recorder\x1b[0m\n'}
+[109.689062] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/landing_target_pose__type_support.cpp.o\x1b[0m\n'}
+[109.741733] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_gear_wheel__type_support.cpp.o\x1b[0m\n'}
+[109.759502] (-) TimerEvent: {}
+[109.860296] (-) TimerEvent: {}
+[109.876927] (px4_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c.o\x1b[0m\n'}
+[109.963370] (-) TimerEvent: {}
+[109.993496] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.o\x1b[0m\n'}
+[110.065673] (-) TimerEvent: {}
+[110.080482] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o\x1b[0m\n'}
+[110.165957] (-) TimerEvent: {}
+[110.201577] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_target_innovations__type_support.cpp.o\x1b[0m\n'}
+[110.203827] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o\x1b[0m\n'}
+[110.266174] (-) TimerEvent: {}
+[110.301362] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o\x1b[0m\n'}
+[110.369501] (-) TimerEvent: {}
+[110.463499] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vtol_vehicle_status__functions.c.o\x1b[0m\n'}
+[110.469617] (-) TimerEvent: {}
+[110.488207] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/message_format_request__type_support.cpp.o\x1b[0m\n'}
+[110.554963] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wheel_encoders__functions.c.o\x1b[0m\n'}
+[110.563943] (vision) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable lidar\x1b[0m\n'}
+[110.569745] (-) TimerEvent: {}
+[110.578980] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/launch_detection_status__type_support.cpp.o\x1b[0m\n'}
+[110.600061] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/landing_target_pose__type_support.cpp.o\x1b[0m\n'}
+[110.670691] (-) TimerEvent: {}
+[110.692790] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/wind__functions.c.o\x1b[0m\n'}
+[110.772193] (-) TimerEvent: {}
+[110.783534] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/yaw_estimator_status__functions.c.o\x1b[0m\n'}
+[110.872633] (-) TimerEvent: {}
+[110.893317] (px4_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/srv/detail/vehicle_command__functions.c.o\x1b[0m\n'}
+                                                                                                                                                                            

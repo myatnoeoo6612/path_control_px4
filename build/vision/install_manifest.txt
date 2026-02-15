@@ -4,6 +4,7 @@
 /home/myat/path_control_px4/install/vision/lib/vision/aruco_detect
 /home/myat/path_control_px4/install/vision/lib/vision/lidar
 /home/myat/path_control_px4/install/vision/lib/vision/obstacle_node
+/home/myat/path_control_px4/install/vision/lib/vision/my_aruco
 /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/package_run_dependencies/vision
 /home/myat/path_control_px4/install/vision/share/ament_index/resource_index/parent_prefix_path/vision
 /home/myat/path_control_px4/install/vision/share/vision/environment/ament_prefix_path.sh

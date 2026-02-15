@@ -250,6 +250,19 @@ aruco_detect/fast:
 .PHONY : aruco_detect/fast
 
 #=============================================================================
+# Target rules for targets named my_aruco
+
+# Build rule for target.
+my_aruco: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_aruco
+.PHONY : my_aruco
+
+# fast build rule for target.
+my_aruco/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/build
+.PHONY : my_aruco/fast
+
+#=============================================================================
 # Target rules for targets named lidar
 
 # Build rule for target.
@@ -371,6 +384,30 @@ src/lidar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar.dir/build.make CMakeFiles/lidar.dir/src/lidar.cpp.s
 .PHONY : src/lidar.cpp.s
 
+src/my_aruco.o: src/my_aruco.cpp.o
+.PHONY : src/my_aruco.o
+
+# target to build an object file
+src/my_aruco.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/src/my_aruco.cpp.o
+.PHONY : src/my_aruco.cpp.o
+
+src/my_aruco.i: src/my_aruco.cpp.i
+.PHONY : src/my_aruco.i
+
+# target to preprocess a source file
+src/my_aruco.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/src/my_aruco.cpp.i
+.PHONY : src/my_aruco.cpp.i
+
+src/my_aruco.s: src/my_aruco.cpp.s
+.PHONY : src/my_aruco.s
+
+# target to generate assembly for a file
+src/my_aruco.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_aruco.dir/build.make CMakeFiles/my_aruco.dir/src/my_aruco.cpp.s
+.PHONY : src/my_aruco.cpp.s
+
 src/obstacle.o: src/obstacle.cpp.o
 .PHONY : src/obstacle.o
 
@@ -438,6 +475,7 @@ help:
 	@echo "... camera_recorder"
 	@echo "... depth_polygon_mask_node"
 	@echo "... lidar"
+	@echo "... my_aruco"
 	@echo "... obstacle_node"
 	@echo "... pointcloud_node"
 	@echo "... src/aruco_detect.o"
@@ -452,6 +490,9 @@ help:
 	@echo "... src/lidar.o"
 	@echo "... src/lidar.i"
 	@echo "... src/lidar.s"
+	@echo "... src/my_aruco.o"
+	@echo "... src/my_aruco.i"
+	@echo "... src/my_aruco.s"
 	@echo "... src/obstacle.o"
 	@echo "... src/obstacle.i"
 	@echo "... src/obstacle.s"

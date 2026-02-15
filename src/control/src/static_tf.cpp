@@ -50,7 +50,7 @@ private:
 
     tf.header.stamp = this->get_clock()->now();
     tf.header.frame_id = "camera_link";
-    tf.child_frame_id = "yinbot_0/realsense/base_link/realsense_d435";
+    tf.child_frame_id = "camera_color_optical_frame";
 
     tf.transform.translation.x = 0.0;
     tf.transform.translation.y = 0.0;
@@ -74,7 +74,7 @@ private:
     tf.header.frame_id = "base_link";
     tf.child_frame_id = "camera_link";
 
-    tf.transform.translation.x = 0.1616;
+    tf.transform.translation.x = 0.1316;
     tf.transform.translation.y = 0.0;
     tf.transform.translation.z = -0.038;
 

@@ -36,6 +36,7 @@ cv_bridge
 add_executable(depth_polygon_mask_node src/depth_polygon_mask_node.cpp)
 add_executable(pointcloud_node src/pointcloud_node.cpp)
 add_executable(aruco_detect  src/aruco_detect.cpp)
+add_executable(my_aruco  src/my_aruco.cpp)
 add_executable(lidar src/lidar.cpp)
 add_executable(obstacle_node src/obstacle.cpp)
 
@@ -99,7 +100,21 @@ ament_target_dependencies(aruco_detect
   tf2_geometry_msgs
 )
 
+ament_target_dependencies(my_aruco
+  rclcpp
+  sensor_msgs
+  geometry_msgs
+  image_transport
+  cv_bridge
+  tf2
+  tf2_geometry_msgs
+)
+
 target_link_libraries(aruco_detect
+  ${OpenCV_LIBS}
+)
+
+target_link_libraries(my_aruco
   ${OpenCV_LIBS}
 )
 
@@ -131,6 +146,7 @@ install(TARGETS
   aruco_detect
   lidar
   obstacle_node
+  my_aruco
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
