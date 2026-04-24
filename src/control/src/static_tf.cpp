@@ -74,12 +74,13 @@ private:
     tf.header.frame_id = "base_link";
     tf.child_frame_id = "camera_link";
 
-    tf.transform.translation.x = 0.1316;
+    tf.transform.translation.x = 0.10;
     tf.transform.translation.y = 0.0;
     tf.transform.translation.z = -0.038;
 
     tf2::Quaternion q;
-    q.setRPY(0.0, 1.570796, 0.0);  // roll, pitch, yaw
+    //q.setRPY(0.0, 1.570796, 0.0);  // roll, pitch, yaw
+    q.setRPY(0.0, 0.0, 0.0);
     tf.transform.rotation.x = q.x();
     tf.transform.rotation.y = q.y();
     tf.transform.rotation.z = q.z();

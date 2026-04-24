@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target reference_traj_node[0m
+[  5%] [32mBuilding CXX object CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o[0m
+[ 16%] Built target static_tf
+[ 27%] Built target reference_traj_node
+[ 38%] Built target land
+[ 50%] Built target auto_fly_test
+[ 61%] Built target tf_node
+[ 83%] Built target trajectory_fly
+[ 83%] Built target adaptive_land
+[ 94%] Built target px4_visualizer

@@ -1,0 +1,25 @@
+[  5%] [32mBuilding CXX object CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o[0m
+[ 38%] Built target static_tf
+[ 38%] Built target tf_node
+[ 44%] Built target trajectory_fly
+[ 50%] Built target auto_fly_test
+[ 83%] Built target adaptive_land
+[ 83%] Built target land
+[ 83%] Built target reference_traj_node
+[ 94%] Built target px4_visualizer
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryController::control_loop()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:129:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ktr_next[m[K’ was not declared in this scope
+  129 | float dx = [01;31m[Ktr_next[m[K.translation.x - tr.translation.x;
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:133:7:[m[K [01;31m[Kerror: [m[K‘[01m[Knormalize_yaw[m[K’ was not declared in this scope
+  133 | yaw = [01;31m[Knormalize_yaw[m[K(yaw);
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:140:7:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(((double)v) * cos(((double)yaw)))[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  140 |     [01;35m[Kv * cos(yaw)[m[K,
+      |     [01;35m[K~~^~~~~~~~~~[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:141:7:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(((double)v) * sin(((double)yaw)))[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  141 |     [01;35m[Kv * sin(yaw)[m[K,
+      |     [01;35m[K~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trajectory_controller_node.dir/build.make:76: CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/trajectory_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

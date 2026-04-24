@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-df50995e7bbe1b317586.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "adaptive_land::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-adaptive_land-01a0349c4c270bf78c9c.json",
+					"name" : "adaptive_land",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "auto_fly_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_fly_test-e55b2d924280aa1aa9a7.json",
+					"name" : "auto_fly_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control_uninstall-7358f25eaa9b7bcd1226.json",
+					"name" : "control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "land::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-land-8a059b89987cb196eefd.json",
+					"name" : "land",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_visualizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_visualizer-7ba2e3f8e351ac1ac9f3.json",
+					"name" : "px4_visualizer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reference_traj_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reference_traj_node-41b2f73b875c08c5e667.json",
+					"name" : "reference_traj_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "static_tf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-static_tf-956b98e8f221aace38fd.json",
+					"name" : "static_tf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tf_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tf_node-216543472d406251876c.json",
+					"name" : "tf_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_controller_node-be46d93d0a69eaf9f83e.json",
+					"name" : "trajectory_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_fly::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_fly-b01fa7d73cf6950f2bdc.json",
+					"name" : "trajectory_fly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4672fedbee3bbdd7bbbb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/myat/path_control_px4/build/control",
+		"source" : "/home/myat/path_control_px4/src/control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

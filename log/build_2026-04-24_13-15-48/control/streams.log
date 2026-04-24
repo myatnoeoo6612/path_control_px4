@@ -1,0 +1,55 @@
+[0.016s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[0.071s] [35m[1mConsolidate compiler generated dependencies of target trajectory_controller_node[0m
+[0.088s] [ 16%] [32m[1mLinking CXX executable auto_fly_test[0m
+[0.088s] [ 16%] [32m[1mLinking CXX executable trajectory_fly[0m
+[0.089s] [ 16%] [32m[1mLinking CXX executable reference_traj_node[0m
+[0.095s] [ 22%] [32m[1mLinking CXX executable trajectory_controller_node[0m
+[0.741s] [ 27%] Built target reference_traj_node
+[0.786s] [ 44%] [32m[1mLinking CXX executable land[0m
+[0.786s] [ 44%] [32m[1mLinking CXX executable tf_node[0m
+[0.786s] [ 44%] [32m[1mLinking CXX executable adaptive_land[0m
+[1.527s] [ 50%] Built target auto_fly_test
+[1.581s] [ 66%] Built target static_tf
+[1.582s] [ 66%] [32m[1mLinking CXX executable px4_visualizer[0m
+[2.085s] [ 72%] Built target tf_node
+[2.088s] [ 77%] Built target trajectory_controller_node
+[2.113s] [ 83%] Built target trajectory_fly
+[2.427s] [ 88%] Built target land
+[2.471s] [ 94%] Built target adaptive_land
+[2.737s] [100%] Built target px4_visualizer
+[2.752s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --build /home/myat/path_control_px4/build/control -- -j12 -l12
+[2.753s] Invoking command in '/home/myat/path_control_px4/build/control': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/control
+[2.763s] -- Install configuration: ""
+[2.763s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/tf_node
+[2.768s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/tf_node" to ""
+[2.768s] -- Up-to-date: /home/myat/path_control_px4/install/control/lib/control/static_tf
+[2.768s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/trajectory_fly
+[2.776s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/trajectory_fly" to ""
+[2.776s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/trajectory_controller_node
+[2.783s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/trajectory_controller_node" to ""
+[2.784s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/reference_traj_node
+[2.785s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/reference_traj_node" to ""
+[2.785s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/px4_visualizer
+[2.795s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/px4_visualizer" to ""
+[2.795s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/auto_fly_test
+[2.804s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/auto_fly_test" to ""
+[2.804s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/land
+[2.813s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/land" to ""
+[2.813s] -- Installing: /home/myat/path_control_px4/install/control/lib/control/adaptive_land
+[2.823s] -- Set runtime path of "/home/myat/path_control_px4/install/control/lib/control/adaptive_land" to ""
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.sh
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/ament_prefix_path.dsv
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.sh
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/environment/path.dsv
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.bash
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.sh
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.zsh
+[2.823s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/local_setup.dsv
+[2.824s] -- Installing: /home/myat/path_control_px4/install/control/share/control/package.dsv
+[2.824s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/ament_index/resource_index/packages/control
+[2.824s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig.cmake
+[2.824s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/cmake/controlConfig-version.cmake
+[2.824s] -- Up-to-date: /home/myat/path_control_px4/install/control/share/control/package.xml
+[2.826s] Invoked command in '/home/myat/path_control_px4/build/control' returned '0': CMAKE_PREFIX_PATH=/home/myat/path_control_px4/install/px4_msgs:/home/myat/path_control_px4/install/vision:/home/myat/path_control_px4/install/control:/home/myat/ros2_ws/install/serial:/home/myat/ros2_ws/install/ros2_control_demo_description:/home/myat/ros2_ws/install/realsense2_description:/home/myat/ros2_ws/install/realsense2_camera:/home/myat/ros2_ws/install/realsense2_camera_msgs:/home/myat/ros2_ws/install/px4_ros_com:/home/myat/ros2_ws/install/my_dof:/home/myat/ros2_ws/install/my_config:/home/myat/ros2_ws/install/my_arm_config:/home/myat/ros2_ws/install/my_arm:/home/myat/ros2_ws/install/bcr_bot:/home/myat/path_control_px4/install/px4_offboard:/home/myat/path_control_px4/install/bringup_drone:/home/myat/ros2_ws/install/servo_control:/home/myat/ros2_ws/install/ros2_aruco:/home/myat/ros2_ws/install/my_pkg:/home/myat/ros2_ws/install/my_mind:/home/myat/ros2_ws/install/my_hex:/home/myat/ros2_ws/install/my_depth:/home/myat/ros2_ws/install/joint_state_converter:/home/myat/ros2_ws/install/aruco_detector:/home/myat/my_uav/install/vision_python:/home/myat/my_uav/install/px4_offboard:/opt/ros/humble:/home/myat/ros2_ws/install/arm:/home/myat/ros2_ws/install/4dof:/home/myat/my_uav/install/vision_cpp:/home/myat/my_uav/install/control_cpp:/home/myat/my_uav/install/px4_msgs /usr/bin/cmake --install /home/myat/path_control_px4/build/control

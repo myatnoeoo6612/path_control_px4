@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target reference_traj_node[0m
+[35m[1mConsolidate compiler generated dependencies of target trajectory_controller_node[0m
+[ 11%] Built target trajectory_controller_node
+[ 22%] Built target auto_fly_test
+[ 27%] [32mBuilding CXX object CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.o[0m
+[ 38%] Built target trajectory_fly
+[ 50%] Built target tf_node
+[ 61%] Built target static_tf
+[ 72%] Built target px4_visualizer
+[ 83%] Built target land
+[ 94%] Built target adaptive_land
+[01m[K/home/myat/path_control_px4/src/control/src/reference_traj_node.cpp:81:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/path.hpp: No such file or directory
+   81 | #include [01;31m[K<nav_msgs/msg/path.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/reference_traj_node.dir/build.make:76: CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/reference_traj_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/trajectory_controller_node.dir/build.make:76: CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/trajectory_controller_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

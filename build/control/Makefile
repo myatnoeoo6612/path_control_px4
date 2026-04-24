@@ -198,6 +198,32 @@ control_uninstall/fast:
 .PHONY : control_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named reference_traj_node
+
+# Build rule for target.
+reference_traj_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference_traj_node
+.PHONY : reference_traj_node
+
+# fast build rule for target.
+reference_traj_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference_traj_node.dir/build.make CMakeFiles/reference_traj_node.dir/build
+.PHONY : reference_traj_node/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_controller_node
+
+# Build rule for target.
+trajectory_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trajectory_controller_node
+.PHONY : trajectory_controller_node
+
+# fast build rule for target.
+trajectory_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_controller_node.dir/build.make CMakeFiles/trajectory_controller_node.dir/build
+.PHONY : trajectory_controller_node/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_fly
 
 # Build rule for target.
@@ -384,6 +410,30 @@ src/px4_visualizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_visualizer.dir/build.make CMakeFiles/px4_visualizer.dir/src/px4_visualizer.cpp.s
 .PHONY : src/px4_visualizer.cpp.s
 
+src/reference_traj_node.o: src/reference_traj_node.cpp.o
+.PHONY : src/reference_traj_node.o
+
+# target to build an object file
+src/reference_traj_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference_traj_node.dir/build.make CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.o
+.PHONY : src/reference_traj_node.cpp.o
+
+src/reference_traj_node.i: src/reference_traj_node.cpp.i
+.PHONY : src/reference_traj_node.i
+
+# target to preprocess a source file
+src/reference_traj_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference_traj_node.dir/build.make CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.i
+.PHONY : src/reference_traj_node.cpp.i
+
+src/reference_traj_node.s: src/reference_traj_node.cpp.s
+.PHONY : src/reference_traj_node.s
+
+# target to generate assembly for a file
+src/reference_traj_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference_traj_node.dir/build.make CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.s
+.PHONY : src/reference_traj_node.cpp.s
+
 src/static_tf.o: src/static_tf.cpp.o
 .PHONY : src/static_tf.o
 
@@ -432,6 +482,30 @@ src/tf_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf_node.dir/build.make CMakeFiles/tf_node.dir/src/tf_node.cpp.s
 .PHONY : src/tf_node.cpp.s
 
+src/trajectory_controller_node.o: src/trajectory_controller_node.cpp.o
+.PHONY : src/trajectory_controller_node.o
+
+# target to build an object file
+src/trajectory_controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_controller_node.dir/build.make CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o
+.PHONY : src/trajectory_controller_node.cpp.o
+
+src/trajectory_controller_node.i: src/trajectory_controller_node.cpp.i
+.PHONY : src/trajectory_controller_node.i
+
+# target to preprocess a source file
+src/trajectory_controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_controller_node.dir/build.make CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.i
+.PHONY : src/trajectory_controller_node.cpp.i
+
+src/trajectory_controller_node.s: src/trajectory_controller_node.cpp.s
+.PHONY : src/trajectory_controller_node.s
+
+# target to generate assembly for a file
+src/trajectory_controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trajectory_controller_node.dir/build.make CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.s
+.PHONY : src/trajectory_controller_node.cpp.s
+
 src/trajectory_fly.o: src/trajectory_fly.cpp.o
 .PHONY : src/trajectory_fly.o
 
@@ -475,8 +549,10 @@ help:
 	@echo "... auto_fly_test"
 	@echo "... land"
 	@echo "... px4_visualizer"
+	@echo "... reference_traj_node"
 	@echo "... static_tf"
 	@echo "... tf_node"
+	@echo "... trajectory_controller_node"
 	@echo "... trajectory_fly"
 	@echo "... src/adaptive_land.o"
 	@echo "... src/adaptive_land.i"
@@ -490,12 +566,18 @@ help:
 	@echo "... src/px4_visualizer.o"
 	@echo "... src/px4_visualizer.i"
 	@echo "... src/px4_visualizer.s"
+	@echo "... src/reference_traj_node.o"
+	@echo "... src/reference_traj_node.i"
+	@echo "... src/reference_traj_node.s"
 	@echo "... src/static_tf.o"
 	@echo "... src/static_tf.i"
 	@echo "... src/static_tf.s"
 	@echo "... src/tf_node.o"
 	@echo "... src/tf_node.i"
 	@echo "... src/tf_node.s"
+	@echo "... src/trajectory_controller_node.o"
+	@echo "... src/trajectory_controller_node.i"
+	@echo "... src/trajectory_controller_node.s"
 	@echo "... src/trajectory_fly.o"
 	@echo "... src/trajectory_fly.i"
 	@echo "... src/trajectory_fly.s"

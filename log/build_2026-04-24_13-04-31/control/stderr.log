@@ -1,0 +1,7 @@
+[01m[K/home/myat/path_control_px4/src/control/src/reference_traj_node.cpp:81:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/path.hpp: No such file or directory
+   81 | #include [01;31m[K<nav_msgs/msg/path.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/reference_traj_node.dir/build.make:76: CMakeFiles/reference_traj_node.dir/src/reference_traj_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/reference_traj_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

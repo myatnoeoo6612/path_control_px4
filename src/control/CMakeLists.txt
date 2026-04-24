@@ -20,6 +20,37 @@ find_package(nav_msgs REQUIRED)
 find_package(PCL REQUIRED COMPONENTS common io filters segmentation features search)
 find_package(pcl_conversions REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+
+add_executable(reference_traj_node src/reference_traj_node.cpp)
+ament_target_dependencies(reference_traj_node
+  rclcpp 
+  px4_msgs 
+  std_msgs 
+  geometry_msgs 
+  tf2 
+  tf2_ros 
+  tf2_geometry_msgs
+  trajectory_msgs
+  nav_msgs
+  visualization_msgs
+  pcl_conversions
+)
+
+add_executable(trajectory_controller_node src/trajectory_controller_node.cpp)
+ament_target_dependencies(trajectory_controller_node
+  rclcpp 
+  px4_msgs 
+  std_msgs 
+  geometry_msgs 
+  tf2 
+  tf2_ros 
+  tf2_geometry_msgs
+  trajectory_msgs
+  nav_msgs
+  visualization_msgs
+  pcl_conversions
+)
 
 add_executable(trajectory_fly src/trajectory_fly.cpp)
 ament_target_dependencies(trajectory_fly
@@ -108,6 +139,8 @@ install(TARGETS
   tf_node
   static_tf
   trajectory_fly
+  trajectory_controller_node
+  reference_traj_node  
   px4_visualizer
   auto_fly_test
   land

@@ -1,0 +1,12 @@
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryController::control_loop()[m[K’:
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:178:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kvx[m[K’ was not declared in this scope; did you mean ‘[01m[Kdx[m[K’?
+  178 |       if (fabs([01;31m[Kvx[m[K) > 1e-4 || fabs(vy) > 1e-4)
+      |                [01;31m[K^~[m[K
+      |                [32m[Kdx[m[K
+[01m[K/home/myat/path_control_px4/src/control/src/trajectory_controller_node.cpp:178:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kvy[m[K’ was not declared in this scope; did you mean ‘[01m[Kdy[m[K’?
+  178 |       if (fabs(vx) > 1e-4 || fabs([01;31m[Kvy[m[K) > 1e-4)
+      |                                   [01;31m[K^~[m[K
+      |                                   [32m[Kdy[m[K
+gmake[2]: *** [CMakeFiles/trajectory_controller_node.dir/build.make:76: CMakeFiles/trajectory_controller_node.dir/src/trajectory_controller_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/trajectory_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
